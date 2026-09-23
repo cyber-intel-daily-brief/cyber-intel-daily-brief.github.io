@@ -1,14 +1,14 @@
 {
-  "report_id": "TEST-20260923-1440",
+  "report_id": "TEST-V5-20260923-1445",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "[TEST] Cyber Intel Scheduled Run 2\nทดสอบเส้นทาง GitHub → Netlify → LINE\nDashboard: https://cyber-intel-chatgpt-deploy.netlify.app"
+        "text": "[TEST] Cyber Intel Dashboard v5\nทดสอบรูปแบบใหม่: สถานการณ์ / ผลกระทบ / ข้อเสนอแนะ\nDashboard: https://cyber-intel-chatgpt-deploy.netlify.app"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Scheduled Run 2",
+        "altText": "Cyber Intel Dashboard v5 Test",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -18,18 +18,8 @@
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
-                  {
-                    "type": "text",
-                    "text": "TEST Scheduled Run 2",
-                    "weight": "bold",
-                    "wrap": true
-                  },
-                  {
-                    "type": "text",
-                    "text": "หากได้รับข้อความนี้ แสดงว่า GitHub Actions สามารถส่ง LINE Broadcast ได้สำเร็จ",
-                    "size": "sm",
-                    "wrap": true
-                  }
+                  {"type":"text","text":"Dashboard v5 Test","weight":"bold","wrap":true},
+                  {"type":"text","text":"ปรับ Incident Card ให้เหลือเฉพาะ สถานการณ์ ผลกระทบ และข้อเสนอแนะ พร้อมชื่อแหล่งข้อมูลจริง","size":"sm","wrap":true}
                 ]
               },
               "footer": {
