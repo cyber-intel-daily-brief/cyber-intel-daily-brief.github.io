@@ -1,0 +1,55 @@
+{
+  "report_id": "TEST-20260923-1440",
+  "broadcast": {
+    "messages": [
+      {
+        "type": "text",
+        "text": "[TEST] Cyber Intel Scheduled Run 2\nทดสอบเส้นทาง GitHub → Netlify → LINE\nDashboard: https://cyber-intel-chatgpt-deploy.netlify.app"
+      },
+      {
+        "type": "flex",
+        "altText": "Cyber Intel Scheduled Run 2",
+        "contents": {
+          "type": "carousel",
+          "contents": [
+            {
+              "type": "bubble",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "TEST Scheduled Run 2",
+                    "weight": "bold",
+                    "wrap": true
+                  },
+                  {
+                    "type": "text",
+                    "text": "หากได้รับข้อความนี้ แสดงว่า GitHub Actions สามารถส่ง LINE Broadcast ได้สำเร็จ",
+                    "size": "sm",
+                    "wrap": true
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-chatgpt-deploy.netlify.app"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
