@@ -1,0 +1,87 @@
+name: Publish Dashboard and Broadcast LINE
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  DASHBOARD_URL: https://cyber-intel-chatgpt-deploy.netlify.app
+
+jobs:
+  verify-and-broadcast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate LINE payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f line-payload.json
+          REPORT_ID="$(jq -r '.report_id // empty' line-payload.json)"
+          if [ -z "$REPORT_ID" ]; then
+            echo "line-payload.json does not contain report_id"
+            exit 1
+          fi
+          jq -e '.broadcast.messages | type == "array" and length > 0' line-payload.json >/dev/null
+          echo "REPORT_ID=$REPORT_ID" >> "$GITHUB_ENV"
+
+      - name: Wait for Netlify production deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Waiting for report_id: $REPORT_ID"
+          for i in $(seq 1 30); do
+            BODY="$(curl -fsSL "${DASHBOARD_URL}?cb=${GITHUB_SHA}-${i}" || true)"
+            if printf '%s' "$BODY" | grep -Fq "$REPORT_ID"; then
+              echo "Netlify production contains the expected report_id."
+              exit 0
+            fi
+            echo "Attempt ${i}/30: dashboard not updated yet."
+            sleep 10
+          done
+          echo "Timed out waiting for Netlify deployment."
+          exit 1
+
+      - name: Prepare LINE request
+        shell: bash
+        run: |
+          set -euo pipefail
+          jq '.broadcast' line-payload.json > /tmp/line-broadcast.json
+          jq -e '.messages | type == "array" and length > 0' /tmp/line-broadcast.json >/dev/null
+
+      - name: Broadcast to LINE
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${LINE_CHANNEL_ACCESS_TOKEN:-}" ]; then
+            echo "Missing repository secret: LINE_CHANNEL_ACCESS_TOKEN"
+            exit 1
+          fi
+
+          HTTP_CODE="$(
+            curl -sS -o /tmp/line-response.txt -w "%{http_code}" \
+              -X POST "https://api.line.me/v2/bot/message/broadcast" \
+              -H "Authorization: Bearer ${LINE_CHANNEL_ACCESS_TOKEN}" \
+              -H "Content-Type: application/json" \
+              --data-binary @/tmp/line-broadcast.json
+          )"
+
+          cat /tmp/line-response.txt || true
+          echo
+          echo "LINE HTTP status: ${HTTP_CODE}"
+
+          if [ "${HTTP_CODE}" != "200" ]; then
+            exit 1
+          fi
+
+          echo "LINE broadcast completed successfully."
