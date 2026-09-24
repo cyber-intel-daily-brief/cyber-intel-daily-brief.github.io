@@ -1,41 +1,46 @@
 {
-  "report_id": "TEST-V5-20260923-1445",
+  "report_id": "CIB-20260924-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "[TEST] Cyber Intel Dashboard v5\nทดสอบรูปแบบใหม่: สถานการณ์ / ผลกระทบ / ข้อเสนอแนะ\nDashboard: https://cyber-intel-chatgpt-deploy.netlify.app"
+        "text": "Cyber Intel Daily Brief | 24 ก.ย. 2569\nประเด็นเร่งด่วน: F5 BIG-IP APM, Check Point Gateway/Management, WordPress Core และ VeloCloud Orchestrator มีความเสี่ยงสูง โดยหลายรายการมีการยืนยันการโจมตีจริง\nสำหรับหน่วยงาน Defense/Navy ให้เร่งตรวจ Internet-facing assets, VPN/identity edge, SD-WAN management และ CMS พร้อมทำ forensic triage ก่อน/ควบคู่การ patch\nดูรายละเอียด: https://cyber-intel-chatgpt-deploy.netlify.app"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Dashboard v5 Test",
+        "altText": "Cyber Intel Daily Brief 24 Sep 2026",
         "contents": {
           "type": "carousel",
           "contents": [
             {
               "type": "bubble",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {"type":"text","text":"Dashboard v5 Test","weight":"bold","wrap":true},
-                  {"type":"text","text":"ปรับ Incident Card ให้เหลือเฉพาะ สถานการณ์ ผลกระทบ และข้อเสนอแนะ พร้อมชื่อแหล่งข้อมูลจริง","size":"sm","wrap":true}
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-chatgpt-deploy.netlify.app"
-                    }
-                  }
-                ]
-              }
+              "body": {"type":"box","layout":"vertical","contents":[{"type":"text","text":"CRITICAL | F5 BIG-IP APM","weight":"bold","wrap":true},{"type":"text","text":"CVE-2026-94127: unauthenticated RCE ใน OAuth Authorization Server; F5 ยืนยันถูก exploit แล้ว","size":"sm","wrap":true}]},
+              "footer": {"type":"box","layout":"vertical","contents":[{"type":"button","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}
+            },
+            {
+              "type": "bubble",
+              "body": {"type":"box","layout":"vertical","contents":[{"type":"text","text":"CRITICAL | Check Point","weight":"bold","wrap":true},{"type":"text","text":"CVE-2026-85102 และ CVE-2026-93616 ถูกใช้โจมตี Gateway VPN และ Security Management","size":"sm","wrap":true}]},
+              "footer": {"type":"box","layout":"vertical","contents":[{"type":"button","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}
+            },
+            {
+              "type": "bubble",
+              "body": {"type":"box","layout":"vertical","contents":[{"type":"text","text":"CRITICAL | WordPress Core","weight":"bold","wrap":true},{"type":"text","text":"CVE-2026-87902: path traversal/LFI ที่อาจนำไปสู่ RCE; มีรายงานการ exploit หลังออกแพตช์","size":"sm","wrap":true}]},
+              "footer": {"type":"box","layout":"vertical","contents":[{"type":"button","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}
+            },
+            {
+              "type": "bubble",
+              "body": {"type":"box","layout":"vertical","contents":[{"type":"text","text":"CRITICAL | VeloCloud Orchestrator","weight":"bold","wrap":true},{"type":"text","text":"CVE-2026-93952 CVSS 10.0; Arista ยืนยัน active exploitation ต่อ VCO on-prem","size":"sm","wrap":true}]},
+              "footer": {"type":"box","layout":"vertical","contents":[{"type":"button","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}
+            },
+            {
+              "type": "bubble",
+              "body": {"type":"box","layout":"vertical","contents":[{"type":"text","text":"HIGH | EvilTokens","weight":"bold","wrap":true},{"type":"text","text":"AI-assisted device-code phishing ขโมย token; Microsoft ระบุ 12,000+ inboxes ใน 10,000+ องค์กร","size":"sm","wrap":true}]},
+              "footer": {"type":"box","layout":"vertical","contents":[{"type":"button","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}
+            },
+            {
+              "type": "bubble",
+              "body": {"type":"box","layout":"vertical","contents":[{"type":"text","text":"HIGH | RemControl Android","weight":"bold","wrap":true},{"type":"text","text":"Banking trojan แบบ MaaS ใช้ fake TVTap, Accessibility abuse, overlay, keylogging และ remote control","size":"sm","wrap":true}]},
+              "footer": {"type":"box","layout":"vertical","contents":[{"type":"button","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}
             }
           ]
         }
