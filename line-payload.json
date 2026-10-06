@@ -1,10 +1,10 @@
 {
-  "report_id": "TEST-20261006-0810",
+  "report_id": "TEST-20261006-0920",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "[TEST] Cyber Intel Manual Test\nทดสอบ Dashboard → GitHub Pages → GitHub Actions → LINE\nDashboard: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+        "text": "[TEST] Cyber Intel Manual Test — GitHub Pages\nทดสอบ GitHub → GitHub Pages → GitHub Actions → LINE\nDashboard: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
       },
       {
         "type": "flex",
