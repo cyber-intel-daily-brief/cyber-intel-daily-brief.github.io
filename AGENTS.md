@@ -477,3 +477,27 @@ Daily Brief ที่เสร็จสมบูรณ์ควรทำให�
 - ห้ามใช้ Homepage, หน้า Blog รวม, หน้า News รวม หรือ Search Result แทน Direct URL
 - หากหา Direct URL ที่ยืนยันได้ไม่ได้ ให้ระบุว่าไม่พบ Direct Source ที่ยืนยันได้ และห้ามสร้าง URL ขึ้นเอง
 - ให้แสดง Primary Source ก่อน Secondary Source
+
+
+---
+
+## 22. Typography มาตรฐาน Dashboard
+
+เพื่อไม่ให้ตัวอักษรกลับไปเล็กเมื่อระบบสร้าง Dashboard ใหม่ในแต่ละวัน ให้ใช้ขนาดตัวอักษรมาตรฐานดังนี้เป็นอย่างน้อย:
+
+- Hero title: 36px
+- Hero subtitle / วันที่ / Coverage / Timezone: 14–16px
+- Section heading เช่น Top 3 และ Incident Briefs: 22px
+- Top 3 headline: 18px
+- Top 3 summary: อย่างน้อย 14px
+- Incident headline: 20px
+- English subtitle: อย่างน้อย 14px
+- Executive Summary: 16px
+- Metadata / Tags / Source buttons: 13–14px
+- เนื้อหาใน สถานการณ์ / ผลกระทบ / ข้อเสนอแนะ: **16px**
+- หัวข้อย่อย สถานการณ์ / ผลกระทบ / ข้อเสนอแนะ: อย่างน้อย 15px
+
+หลักการ:
+- ห้ามลดเนื้อหาหลักต่ำกว่า 16px บน Desktop
+- Mobile สามารถปรับลดได้เล็กน้อยเฉพาะองค์ประกอบรอง แต่เนื้อหาหลักต้องยังอ่านง่าย
+- ให้รักษา Header + Summary + Top 3 แบบ Executive Dashboard และ Incident แบบ Compact Card + Expand Details
