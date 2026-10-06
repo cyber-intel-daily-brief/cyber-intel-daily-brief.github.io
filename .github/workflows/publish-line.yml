@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  DASHBOARD_URL: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/
+  DASHBOARD_URL: https://cyber-intel-daily-brief.github.io/
 
 jobs:
   verify-and-send:
