@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="report-id" content="CIB-20261006-1224">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyber Intel Daily Brief Archive — 6 Oct 2026</title>
+<style>
+:root{--bg:#f4f7fb;--surface:#fff;--ink:#10203a;--muted:#64748b;--navy:#0b1e38;--navy2:#243f67;--line:#d8e2ee;--red:#d7263d;--redsoft:#fff1f2;--orange:#d75a0b;--orangesoft:#fff7ed;--blue:#315be8;--bluesoft:#eef4ff;--green:#078260;--greensoft:#ebfbf4;--teal:#087f8c;--shadow:0 10px 28px rgba(15,23,42,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai","Leelawadee UI",Tahoma,Arial,sans-serif;line-height:1.68}
+.hero{background:linear-gradient(125deg,#0c1c35,#243f67);color:#fff;border-bottom:4px solid var(--red);padding:38px 0 34px}.inner,.wrap{max-width:1120px;margin:auto;padding-left:20px;padding-right:20px}.kicker{font-size:14px;letter-spacing:.13em;opacity:.74}.hero h1{font-size:36px;line-height:1.2;margin:6px 0 8px}.hero .subtitle{font-size:16px;margin:0;opacity:.86}.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}.hero-meta span{padding:7px 10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:8px;font-size:14px}.wrap{padding-bottom:54px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-20px;position:relative;z-index:2}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}.stat b{display:block;font-size:27px;color:var(--navy)}.stat span{font-size:14px;color:var(--muted)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:34px 0 14px}.section-head h2{margin:0;font-size:22px;color:var(--navy)}.section-head p{margin:0;color:var(--muted);font-size:14px}
+.top3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.top-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:14px;padding:17px 17px 16px;box-shadow:var(--shadow)}.priority{font-size:13px;font-weight:800;color:var(--red);letter-spacing:.08em}.top-card h3{font-size:18px;line-height:1.45;margin:6px 0 7px}.top-card p{font-size:14.5px;color:#526173;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.incident-list{display:grid;gap:16px}.incident-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:15px;box-shadow:var(--shadow);overflow:hidden}.incident-card.critical{border-left-color:var(--red)}.incident-head{padding:18px 20px 15px}.headline-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start}.incident-head h3{font-size:20px;line-height:1.45;margin:0;color:#10203a}.en-sub{margin:4px 0 0;font-size:14.5px;color:#66758a;font-style:italic}.severity{font-size:13px;font-weight:800;padding:6px 11px;border-radius:9px;white-space:nowrap}.severity.high{color:#c44b06;background:var(--orangesoft);border:1px solid #fed7aa}.severity.critical{color:#b91c1c;background:var(--redsoft);border:1px solid #fecaca}.tags{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0}.tags span{font-size:13px;color:#44546a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:3px 9px}.executive{font-size:16px;color:#344256;margin:0 0 12px}.meta-row{display:flex;gap:14px;flex-wrap:wrap;padding-top:10px;border-top:1px solid #edf2f7}.meta-row span{font-size:14px;color:#536277}
+details{border-top:1px solid #edf2f7;background:#fbfdff}summary{cursor:pointer;list-style:none;padding:12px 20px;font-size:15px;font-weight:800;color:var(--teal);display:flex;align-items:center;gap:8px}summary::-webkit-details-marker{display:none}summary:before{content:"›";display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#e5fafa;color:var(--teal);font-size:20px;transition:.18s transform}details[open] summary:before{transform:rotate(90deg)}
+.incident-details{padding:0 20px 18px;display:grid;gap:11px}.detail-block{background:#fff;border:1px solid #e2e9f2;border-radius:12px;padding:14px 15px}.detail-block h4{margin:0 0 7px;font-size:15px;display:flex;gap:8px;align-items:center}.detail-block h4 b{width:28px;height:27px;display:grid;place-items:center;border-radius:7px;font-size:13px}.situation h4 b{background:var(--bluesoft);color:var(--blue)}.impact h4 b{background:var(--redsoft);color:var(--red)}.recommendation h4 b{background:var(--greensoft);color:var(--green)}.detail-block p{margin:0;font-size:16px;color:#344256}
+.sources{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-top:13px;border-top:1px dashed #d6e0ea}.sources strong{font-size:14px;color:#64748b}.sources a{font-size:14px;color:#26364d;text-decoration:none;background:#fff;border:1px solid #ccd8e5;border-radius:8px;padding:5px 9px}.sources a:hover{text-decoration:underline;border-color:#94a3b8;background:#f8fafc}
+.dashboard-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.dashboard-nav a{display:inline-flex;align-items:center;text-decoration:none;color:#fff;font-size:14px;font-weight:700;padding:8px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.09);border-radius:9px}.dashboard-nav a:hover{background:rgba(255,255,255,.16)}.dashboard-nav a.primary{background:#fff;color:var(--navy);border-color:#fff}
+.footer-note{margin-top:26px;background:#eef5ff;border:1px solid #cfe1ff;border-radius:13px;padding:14px 16px;font-size:14px;color:#40516a}.footer{text-align:center;color:#8290a3;font-size:13px;padding:28px 0 5px}
+@media(max-width:860px){.stats{grid-template-columns:1fr 1fr}.top3{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.top-card p{-webkit-line-clamp:unset}}
+@media(max-width:620px){.inner,.wrap{padding-left:14px;padding-right:14px}.hero h1{font-size:30px}.headline-row{grid-template-columns:1fr}.severity{justify-self:start}.stats{gap:9px}.stat{padding:13px}.incident-head{padding:16px}.incident-details{padding-left:14px;padding-right:14px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="inner">
+<div class="kicker">CYBER INTELLIGENCE</div>
+<h1>Cyber Intel Daily Brief</h1>
+<p class="subtitle">สรุปสถานการณ์ภัยคุกคามทางไซเบอร์ที่ควรเฝ้าระวังประจำวัน</p>
+<div class="hero-meta"><span>ประจำวันที่ 6 ตุลาคม 2569</span><span>Coverage: 00:00 วันนี้ + ย้อนหลัง 24 ชม.</span><span>Asia/Bangkok</span><span>Report ID: CIB-20261006-1224</span></div>
+<nav class="dashboard-nav" aria-label="Dashboard navigation"><a href="../../">ข่าวล่าสุด</a><a class="primary" href="../">ข่าวย้อนหลัง</a></nav>
+</div></header>
+<main class="wrap">
+<section class="stats">
+<div class="stat"><b>8</b><span>เหตุการณ์ที่คัดเลือก</span></div>
+<div class="stat"><b>2</b><span>Critical</span></div>
+<div class="stat"><b>6</b><span>High</span></div>
+<div class="stat"><b>3</b><span>Top Priority</span></div>
+</section>
+<div class="section-head"><h2>Top 3 — ประเด็นที่ควรเฝ้าระวัง</h2><p>สรุปภาพรวมสำหรับผู้บริหาร</p></div>
+<section class="top3">
+<article class="top-card">
+  <div class="priority">PRIORITY 01</div>
+  <h3>Rejetto HFS ถูกนำไปใช้โจมตีเพื่อยึดสิทธิ์ผู้ดูแลระบบและสั่งการจากระยะไกล</h3>
+  <p>พบการนำช่องโหว่ CVE-2026-61500 ใน Rejetto HTTP File Server ไปใช้โจมตีจริง โดยผู้โจมตีสามารถสร้าง Administrator Session ปลอมและใช้สิทธิ์ดังกล่าวสั่งการระบบจากระยะไกลได้ ระบบ HFS ที่เปิดให้เข้าถึงจากอินเทอร์เน็ตและยังไม่ได้อัปเดตควรได้รับการตรวจสอบโดยเร่งด่วน</p>
+</article>
+<article class="top-card">
+  <div class="priority">PRIORITY 02</div>
+  <h3>Citrix NetScaler พบ Zero-Day ที่ถูกนำไปใช้โจมตีระบบ SAML</h3>
+  <p>Citrix เปิดเผยช่องโหว่ CVE-2026-88779 ใน NetScaler ADC และ NetScaler Gateway ที่ใช้งาน SAML และยืนยันว่ามีการโจมตีระบบที่ยังไม่ได้รับการแก้ไขแล้ว ผลกระทบที่ผู้ผลิตยืนยันในขณะนี้คือการทำให้บริการหยุดชะงัก</p>
+</article>
+<article class="top-card">
+  <div class="priority">PRIORITY 03</div>
+  <h3>เกาหลีใต้ยกระดับรับมือเหตุโจมตีไซเบอร์ต่อสถาบันการเงินหลายแห่ง</h3>
+  <p>หน่วยงานกำกับดูแลด้านการเงินของเกาหลีใต้สั่งตรวจสอบระบบที่เปิดสู่ภายนอก การยืนยันตัวตน และการควบคุมสิทธิ์ทั่วทั้งภาคการเงิน หลังพบเหตุข้อมูลรั่วไหลและการโจมตีต่อสถาบันการเงินหลายแห่ง ขณะที่ประเด็นการใช้ AI ช่วยโจมตียังอยู่ระหว่างการตรวจสอบและยังไม่มีข้อยืนยันอย่างเป็นทางการ</p>
+</article></section>
+<div class="section-head"><h2>Incident Briefs</h2><p>กดแต่ละการ์ดเพื่อดู สถานการณ์ / ผลกระทบ / ข้อเสนอแนะ</p></div>
+<section class="incident-list">
+<article class="incident-card critical">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>1. Rejetto HFS ถูกนำไปใช้โจมตีเพื่อยึดสิทธิ์ผู้ดูแลระบบและสั่งการจากระยะไกล</h3>
+        <p class="en-sub">CVE-2026-61500 enables forged administrator sessions and remote code execution</p>
+      </div>
+      <span class="severity critical">CRITICAL</span>
+    </div>
+    <div class="tags"><span>CVE-2026-61500</span><span>Active Exploitation</span><span>Remote Code Execution</span></div>
+    <p class="executive">พบการนำช่องโหว่ CVE-2026-61500 ใน Rejetto HTTP File Server ไปใช้โจมตีจริง โดยผู้โจมตีสามารถสร้าง Administrator Session ปลอมและใช้สิทธิ์ดังกล่าวสั่งการระบบจากระยะไกลได้ ระบบ HFS ที่เปิดให้เข้าถึงจากอินเทอร์เน็ตและยังไม่ได้อัปเดตควรได้รับการตรวจสอบโดยเร่งด่วน</p>
+    <div class="meta-row"><span>ประเด็น: Internet-facing File Server</span><span>สถานะ: Active Exploitation</span><span>การดำเนินการ: Upgrade ≥ 3.2.1</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>VulnCheck เปิดเผยช่องโหว่ CVE-2026-61500 ใน Rejetto HTTP File Server รุ่น 3.0.0 ถึงก่อน 3.2.1 ซึ่งเกิดจากการใช้ตัวสร้างค่าสุ่มที่ไม่เหมาะสมสำหรับ Session Signing Key และมีการเปิดเผยค่าที่เกี่ยวข้องต่อผู้ใช้ที่ยังไม่ยืนยันตัวตน ผู้โจมตีสามารถนำข้อมูลดังกล่าวไปคำนวณ Signing Key และสร้าง Administrator Session ปลอม ก่อนใช้ฟังก์ชันของระบบเพื่อสั่งการจากระยะไกลได้ ต่อมามีรายงานว่าช่องโหว่นี้ถูกนำไปใช้โจมตีจริงแล้ว</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>หากโจมตีสำเร็จ ผู้โจมตีอาจได้รับสิทธิ์ผู้ดูแลระบบของ HFS เข้าถึง แก้ไข หรือนำไฟล์ออกจากระบบ รวมถึงติดตั้งมัลแวร์และใช้เครื่องแม่ข่ายเป็นจุดเริ่มต้นในการขยายการโจมตีไปยังระบบอื่นภายในเครือข่าย ความเสี่ยงจะสูงเป็นพิเศษเมื่อ HFS เปิดบริการจากอินเทอร์เน็ตโดยตรง</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้ตรวจสอบว่ามี Rejetto HFS อยู่ในการใช้งานหรือไม่ โดยเฉพาะระบบที่เปิดจากอินเทอร์เน็ต หากพบรุ่นที่ได้รับผลกระทบให้ปรับปรุงเป็นรุ่น 3.2.1 หรือใหม่กว่าโดยเร็ว พร้อมตรวจสอบ Administrator Session, Login Log และคำสั่งที่ถูกเรียกใช้งานย้อนหลัง หากพบพฤติกรรมผิดปกติให้แยกระบบ เก็บหลักฐาน และดำเนินการตรวจสอบตามกระบวนการตอบสนองเหตุการณ์</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://www.vulncheck.com/advisories/rejetto-hfs-session-forgery-via-predictable-signing-key" target="_blank" rel="noopener noreferrer">VulnCheck Advisory</a><a href="https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/" target="_blank" rel="noopener noreferrer">SecurityWeek</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card high">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>2. Citrix NetScaler พบ Zero-Day ที่ถูกนำไปใช้โจมตีระบบ SAML</h3>
+        <p class="en-sub">CVE-2026-88779 affects NetScaler ADC/Gateway configured as SAML SP or IdP</p>
+      </div>
+      <span class="severity high">HIGH</span>
+    </div>
+    <div class="tags"><span>CVE-2026-88779</span><span>Zero-Day</span><span>NetScaler</span></div>
+    <p class="executive">Citrix เปิดเผยช่องโหว่ CVE-2026-88779 ใน NetScaler ADC และ NetScaler Gateway ที่ใช้งาน SAML และยืนยันว่ามีการโจมตีระบบที่ยังไม่ได้รับการแก้ไขแล้ว ผลกระทบที่ผู้ผลิตยืนยันในขณะนี้คือการทำให้บริการหยุดชะงัก</p>
+    <div class="meta-row"><span>ประเด็น: Remote Access / SAML</span><span>สถานะ: Exploited in the Wild</span><span>การดำเนินการ: Patch เร่งด่วน</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>Citrix เปิดเผยช่องโหว่ CVE-2026-88779 ใน NetScaler ADC และ NetScaler Gateway ซึ่งเป็นปัญหา Memory Overflow ที่กระทบระบบที่ตั้งค่าเป็น SAML Service Provider หรือ SAML Identity Provider รุ่นที่ได้รับผลกระทบรวมถึง NetScaler 14.1 ก่อน 14.1-73.41 และ 13.1 ก่อน 13.1-64.28 ตามสาขาผลิตภัณฑ์ Citrix ระบุว่าพบการโจมตีระบบที่ยังไม่ได้รับการแก้ไข โดยผลกระทบที่ยืนยันคือ Denial of Service และยังไม่มีข้อมูลทางการยืนยันว่าใช้ทำ Remote Code Execution ได้</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>หากระบบที่ได้รับผลกระทบยังไม่ได้รับการแก้ไข ผู้โจมตีอาจทำให้บริการ NetScaler ไม่พร้อมใช้งานซ้ำ ๆ ส่งผลต่อระบบ Remote Access การยืนยันตัวตน หรือบริการที่พึ่งพา NetScaler ในการเชื่อมต่อจากภายนอก เหตุการณ์ดังกล่าวอาจกระทบต่อความต่อเนื่องในการปฏิบัติงานขององค์กร โดยเฉพาะระบบที่เป็นจุดเชื่อมต่อหลักจากอินเทอร์เน็ต</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้ตรวจสอบการตั้งค่า NetScaler ADC/Gateway ว่าตรงตามเงื่อนไข SAML ที่ได้รับผลกระทบหรือไม่ และอัปเดตเป็นรุ่นแก้ไขตาม Citrix Security Bulletin โดยเร็ว ควรตรวจสอบเหตุการณ์ Restart, Crash และ Log ที่ผิดปกติย้อนหลัง พร้อมจำกัดช่องทางบริหารจัดการให้เข้าถึงได้เฉพาะเครือข่ายที่ได้รับอนุญาต หากพบหลักฐานการโจมตีให้ดำเนินการตรวจสอบเพิ่มเติมก่อนนำระบบกลับมาใช้งานตามปกติ</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://support.citrix.com/external/article/CTX697174/citrix-netscaler-adc-and-citrix-netscale.html" target="_blank" rel="noopener noreferrer">Citrix Security Bulletin CTX697174</a><a href="https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/" target="_blank" rel="noopener noreferrer">SecurityWeek</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card high">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>3. เกาหลีใต้ยกระดับรับมือเหตุโจมตีไซเบอร์ต่อสถาบันการเงินหลายแห่ง</h3>
+        <p class="en-sub">South Korea orders sector-wide security reviews after multiple financial-sector intrusions</p>
+      </div>
+      <span class="severity high">HIGH</span>
+    </div>
+    <div class="tags"><span>South Korea</span><span>Financial Sector</span><span>Indo-Pacific</span></div>
+    <p class="executive">หน่วยงานกำกับดูแลด้านการเงินของเกาหลีใต้สั่งตรวจสอบระบบที่เปิดสู่ภายนอก การยืนยันตัวตน และการควบคุมสิทธิ์ทั่วทั้งภาคการเงิน หลังพบเหตุข้อมูลรั่วไหลและการโจมตีต่อสถาบันการเงินหลายแห่ง ขณะที่ประเด็นการใช้ AI ช่วยโจมตียังอยู่ระหว่างการตรวจสอบและยังไม่มีข้อยืนยันอย่างเป็นทางการ</p>
+    <div class="meta-row"><span>ประเด็น: Financial Sector</span><span>สถานะ: Ongoing Investigation</span><span>การดำเนินการ: Review External Exposure</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>Financial Services Commission (FSC) ของเกาหลีใต้เรียกประชุมฉุกเฉินร่วมกับหน่วยงานกำกับดูแลและสถาบันการเงิน หลังพบเหตุข้อมูลรั่วไหลและการโจมตีทางไซเบอร์ต่อสถาบันการเงินหลายแห่ง ทางการสั่งให้ตรวจสอบระบบและบริการที่เปิดสู่ภายนอก รวมถึง Authentication และ Access Control พร้อมแบ่งปันข้อมูลภัยคุกคามระหว่างหน่วยงาน ขณะเดียวกันมีรายงานจากสื่อและนักวิเคราะห์เกี่ยวกับความเป็นไปได้ที่เครื่องมือ AI อาจถูกใช้ช่วยโจมตี แต่หน่วยงานทางการยังไม่ได้ยืนยันประเด็นดังกล่าว</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>เหตุการณ์ที่เกิดขึ้นกับหลายสถาบันในช่วงเวลาใกล้เคียงกันสะท้อนความเสี่ยงจาก External-facing Systems หรือระบบสนับสนุนที่อาจได้รับการดูแลน้อยกว่าระบบหลัก หากข้อมูลลูกค้าถูกนำไปใช้ต่อ อาจเพิ่มความเสี่ยงต่อ Phishing, Smishing และการหลอกลวงแบบเจาะจง เหตุการณ์นี้มีความเกี่ยวข้องต่อภูมิภาค Indo-Pacific โดยตรงเนื่องจากเกิดกับโครงสร้างพื้นฐานทางการเงินในเอเชีย</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้หน่วยงานตรวจสอบรายการระบบและบริการที่เปิดให้เข้าถึงจากภายนอก รวมถึง Server หรือ Web Application ที่ใช้สนับสนุนงานภายใน ตรวจสอบ Authentication, Access Control และข้อมูลที่สามารถเรียกดูได้ให้เหลือเท่าที่จำเป็น ควรเพิ่มการเฝ้าระวังการสแกนและการเข้าถึงผิดปกติจากภายนอก พร้อมเตรียมมาตรการป้องกันการนำข้อมูลรั่วไหลไปใช้ใน Social Engineering หากพบเหตุผิดปกติ</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://fsc.go.kr/no010101/87876" target="_blank" rel="noopener noreferrer">Korea Financial Services Commission</a><a href="https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/" target="_blank" rel="noopener noreferrer">BleepingComputer</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card high">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>4. Midnight Blizzard กลับมาใช้ Captive Portal ส่งมัลแวร์และขโมยข้อมูลผู้เดินทาง</h3>
+        <p class="en-sub">Microsoft observes renewed CaptiveCrunch activity against hospitality networks and travelers</p>
+      </div>
+      <span class="severity high">HIGH</span>
+    </div>
+    <div class="tags"><span>Midnight Blizzard</span><span>Credential Theft</span><span>Hospitality Wi-Fi</span></div>
+    <p class="executive">Microsoft Threat Intelligence อัปเดตเมื่อ 5 ตุลาคมว่า Storm-2945 ซึ่งเป็นกลุ่มย่อยของ Midnight Blizzard กลับมาดำเนินแคมเปญ CaptiveCrunch โดยดัดแปลง Traffic และ Captive Portal ของเครือข่ายโรงแรมเพื่อส่งมัลแวร์และขโมยข้อมูลรับรองจากผู้เดินทาง</p>
+    <div class="meta-row"><span>ประเด็น: Public / Hospitality Wi-Fi</span><span>สถานะ: Renewed Campaign</span><span>การดำเนินการ: Treat Guest Wi-Fi as Untrusted</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>Microsoft Threat Intelligence ระบุว่าเมื่อวันที่ 29 กันยายนพบ Storm-2945 ซึ่งเป็นกลุ่มย่อยของ Midnight Blizzard กลับมาดำเนินแคมเปญ CaptiveCrunch โดยใช้การดัดแปลง DNS/HTTP Traffic และ Captive Portal ในภาค Hospitality เพื่อเปลี่ยนเส้นทางผู้ใช้ไปยังโครงสร้างพื้นฐานของผู้โจมตี แคมเปญนี้สามารถส่งมัลแวร์ที่ปลอมเป็น Browser หรือ OS Update รวมถึงใช้ Device Code Phishing เพื่อขโมย Session และเข้าถึง Microsoft 365 Microsoft ประเมินว่า Storm-2945 เชื่อมโยงกับ Midnight Blizzard และมีการใช้ AI สนับสนุนบางส่วนของปฏิบัติการ</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>ผู้ใช้งานที่เชื่อมต่อ Wi-Fi ของโรงแรม ศูนย์ประชุม หรือเครือข่ายสาธารณะอาจถูกหลอกให้ติดตั้งมัลแวร์หรือยืนยัน Device Code ให้กับ Session ของผู้โจมตี หากสำเร็จ ผู้โจมตีอาจขโมย Credential, Session Token และข้อมูลจากอุปกรณ์ รวมถึงเข้าถึงบริการ Cloud ขององค์กรโดยไม่ต้องรู้รหัสผ่านโดยตรง ความเสี่ยงมีความสำคัญต่อบุคลากรที่เดินทางและต้องเข้าถึงระบบงานจากเครือข่ายภายนอก</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้ถือเครือข่าย Wi-Fi สาธารณะและ Hospitality เป็นเครือข่ายที่ไม่น่าเชื่อถือ และหลีกเลี่ยงการติดตั้ง Software Update, Certificate หรือเครื่องมือแก้ไขระบบจากหน้า Captive Portal ควรใช้ Mobile Hotspot หรือการเชื่อมต่อที่องค์กรควบคุมเมื่อเข้าถึงข้อมูลสำคัญ พร้อมใช้ Passkey หรือ Phishing-resistant MFA และเฝ้าระวัง Device Code Authentication, Session Token และ Sign-in ที่ผิดปกติ</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/" target="_blank" rel="noopener noreferrer">Microsoft Threat Intelligence</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card critical">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>5. Dell System Update มีช่องโหว่ร้ายแรง อาจนำไปสู่การได้สิทธิ์ Root</h3>
+        <p class="en-sub">CVE-2026-86360 affects Dell System Update versions prior to 2.3.0.0</p>
+      </div>
+      <span class="severity critical">CRITICAL</span>
+    </div>
+    <div class="tags"><span>CVE-2026-86360</span><span>Dell System Update</span><span>Root Privilege</span></div>
+    <p class="executive">Dell แนะนำให้อัปเดต Dell System Update โดยเร่งด่วน หลังพบช่องโหว่ CVE-2026-86360 ที่อาจเปิดโอกาสให้ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนและสามารถเข้าถึงระบบจากระยะไกล รันโค้ดด้วยสิทธิ์ Root บนระบบที่ได้รับผลกระทบ</p>
+    <div class="meta-row"><span>ประเด็น: Server Infrastructure</span><span>สถานะ: No Exploitation Confirmed</span><span>การดำเนินการ: Upgrade ≥ 2.3.0.0</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>Dell เปิดเผยช่องโหว่ CVE-2026-86360 ใน Dell System Update (DSU) รุ่นก่อน 2.3.0.0 ซึ่งเป็นเครื่องมือสำหรับบริหารการอัปเดต BIOS, Firmware และ Software บนโครงสร้างพื้นฐาน Server ช่องโหว่เป็น Path Traversal และได้รับคะแนน CVSS 9.6 โดยผู้ผลิตระบุว่าผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนและมี Remote Access อาจใช้ช่องโหว่เพื่อเข้าถึง File System และรันโค้ดด้วยสิทธิ์ Root ได้ ปัจจุบันไม่พบข้อมูลยืนยันจาก Dell ว่ามีการนำช่องโหว่นี้ไปใช้โจมตีจริง</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>หากถูกโจมตีสำเร็จ ผู้โจมตีอาจเข้าควบคุม Application และระบบปฏิบัติการที่เกี่ยวข้องในระดับสูงสุด แก้ไขไฟล์สำคัญ ติดตั้งเครื่องมือเพิ่มเติม หรือนำ Server ไปใช้เป็นฐานสำหรับการโจมตีระบบอื่น ความเสี่ยงจะเพิ่มขึ้นในองค์กรที่ใช้ DSU บริหาร PowerEdge Server จำนวนมากหรือเปิดช่องทางบริหารจัดการจากเครือข่ายที่ไม่จำเป็น</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้ตรวจสอบ Dell System Update ที่ติดตั้งบนเครื่องแม่ข่ายทั้งหมด และอัปเดตเป็นรุ่น 2.3.0.0 หรือใหม่กว่าตามคำแนะนำของ Dell พร้อมจำกัดการเข้าถึงระบบบริหารจัดการจากเครือข่ายภายนอก ตรวจสอบการเปลี่ยนแปลงไฟล์และคำสั่งที่ใช้สิทธิ์สูงย้อนหลัง หากพบพฤติกรรมผิดปกติให้ดำเนินการตรวจสอบเครื่องแม่ข่ายก่อนนำกลับเข้าสู่การใช้งานปกติ</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://www.dell.com/support/kbdoc/en-us/000515843/dsa-2026-324-security-update-for-dell-system-update-dsu-vulnerabilities" target="_blank" rel="noopener noreferrer">Dell Security Advisory DSA-2026-324</a><a href="https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/" target="_blank" rel="noopener noreferrer">BleepingComputer</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card high">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>6. Microsoft Exchange ช่องโหว่สิทธิ์ อาจเปิดให้อ่าน Mailbox ของผู้ใช้อื่น</h3>
+        <p class="en-sub">CVE-2026-96940 affects supported on-premises Microsoft Exchange Server deployments</p>
+      </div>
+      <span class="severity high">HIGH</span>
+    </div>
+    <div class="tags"><span>CVE-2026-96940</span><span>Microsoft Exchange</span><span>Email Security</span></div>
+    <p class="executive">Microsoft ออก Security Update เพื่อแก้ CVE-2026-96940 ซึ่งอาจทำให้ผู้โจมตีที่มีบัญชีอยู่แล้วเข้าถึง Mailbox ของผู้ใช้อื่นภายในองค์กรและอ่านข้อความหรือไฟล์แนบได้ Microsoft ยังไม่พบหลักฐานการนำช่องโหว่นี้ไปใช้โจมตีจริง แต่จัดระดับว่า Exploitation More Likely</p>
+    <div class="meta-row"><span>ประเด็น: On-prem Exchange</span><span>สถานะ: Exploitation More Likely</span><span>การดำเนินการ: Install Security Update</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>Microsoft เปิดเผยช่องโหว่ CVE-2026-96940 ใน Microsoft Exchange Server ซึ่งเกิดจากการควบคุมสิทธิ์ที่ไม่เพียงพอ และเพิ่มการแก้ไขไว้ใน Security Update รุ่น V2 สำหรับ Exchange Server ที่ได้รับผลกระทบ ผู้โจมตีจำเป็นต้องมีการยืนยันตัวตนก่อนจึงจะใช้ช่องโหว่ได้ และอาจเข้าถึง Mailbox ของผู้ใช้อื่นภายในองค์กรเดียวกันเพื่ออ่านข้อความและไฟล์แนบได้ Microsoft ระบุว่ายังไม่พบการโจมตีจริงในขณะเผยแพร่</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>หากผู้โจมตีมีบัญชีในระบบอยู่แล้ว การใช้ช่องโหว่อาจทำให้ขอบเขตการเข้าถึงข้อมูลขยายไปยัง Mailbox ของบุคลากรรายอื่น ส่งผลต่อความลับของอีเมล เอกสารแนบ และข้อมูลภายในองค์กร ช่องโหว่นี้อาจถูกใช้ร่วมกับบัญชีที่ถูกขโมยเพื่อรวบรวมข้อมูลสำหรับ Phishing แบบเจาะจงหรือ Business Email Compromise</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>สำหรับ Exchange Server แบบ On-premises ให้ตรวจสอบรุ่นที่ใช้งานและติดตั้ง Security Update V2 ที่ Microsoft กำหนดโดยเร็ว พร้อมตรวจสอบ Audit Log และ Account ที่มีพฤติกรรมเข้าถึง Mailbox ผิดปกติ Exchange Online ได้รับการแก้ไขฝั่งบริการแล้ว แต่หน่วยงานที่ยังมี Exchange Server หรือ Exchange Management Tools ภายในองค์กรควรตรวจสอบสถานะการอัปเดตให้ครบถ้วน</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://support.microsoft.com/en-us/servicing/exchange/server/update/2026/5129955" target="_blank" rel="noopener noreferrer">Microsoft Support KB5129955</a><a href="https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card high">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>7. เดนมาร์กพบการเข้าถึงข้อมูลทะเบียนประชาชนประมาณ 8.8 ล้านรายการโดยไม่ได้รับอนุญาต</h3>
+        <p class="en-sub">Unauthorized access abused a company&#39;s legitimate connection to Denmark&#39;s national CPR register</p>
+      </div>
+      <span class="severity high">HIGH</span>
+    </div>
+    <div class="tags"><span>Data Breach</span><span>Government</span><span>Identity Data</span></div>
+    <p class="executive">หน่วยงานทะเบียนประชาชนของเดนมาร์กยืนยันเหตุด้านความปลอดภัยที่มีการใช้สิทธิ์ของบริษัทเอกชนซึ่งได้รับอนุญาตอย่างถูกต้องเพื่อเข้าถึงชื่อ ที่อยู่ และหมายเลข CPR ของผู้ลงทะเบียนประมาณ 8.8 ล้านรายการ โดยสิทธิ์ของบริษัทถูกระงับและเหตุการณ์อยู่ระหว่างการสอบสวน</p>
+    <div class="meta-row"><span>ประเด็น: National Population Register</span><span>สถานะ: Under Investigation</span><span>การดำเนินการ: Review Third-party Access</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>Central Population Register (CPR) ของเดนมาร์กประกาศเมื่อวันที่ 5 ตุลาคมว่าพบการเข้าถึงข้อมูลโดยไม่ได้รับอนุญาตในระบบทะเบียนประชาชน โดยมีการใช้สิทธิ์ที่บริษัทเอกชนแห่งหนึ่งได้รับอนุญาตอย่างถูกต้องเพื่อค้นข้อมูลใน CPR และเข้าถึงชื่อ ที่อยู่ หมายเลข CPR และข้อมูลที่เกี่ยวข้องของผู้ลงทะเบียนประมาณ 8.8 ล้านรายการ CPR ได้ระงับสิทธิ์ของบริษัทดังกล่าวและประสานหน่วยงานคุ้มครองข้อมูลกับตำรวจเพื่อสอบสวนเหตุการณ์</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>ข้อมูลประจำตัวจำนวนมากที่ถูกเข้าถึงอาจถูกนำไปใช้ประกอบการหลอกลวงแบบเจาะจง การสวมรอย หรือ Social Engineering แม้เหตุการณ์นี้ไม่ได้เป็นการเจาะฐานข้อมูลโดยตรง แต่สะท้อนความเสี่ยงจาก Trusted Third-party Access และสิทธิ์ที่ถูกใช้งานเกินวัตถุประสงค์ในระบบที่เก็บข้อมูลสำคัญระดับประเทศ</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้หน่วยงานที่มีระบบแลกเปลี่ยนข้อมูลกับบุคคลภายนอกทบทวนสิทธิ์ของ Third Party และตรวจสอบว่าข้อมูลที่คู่สัญญาสามารถเข้าถึงได้ถูกจำกัดตามหลัก Least Privilege ควรกำหนดการตรวจจับ Automated Query หรือปริมาณการเรียกข้อมูลที่ผิดปกติ และมีขั้นตอนระงับสิทธิ์ได้อย่างรวดเร็ว หากพบเหตุผิดปกติให้เก็บ Log และหลักฐานเพื่อใช้ในการสืบสวน</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger" target="_blank" rel="noopener noreferrer">Denmark Central Population Register (CPR)</a><a href="https://www.datatilsynet.dk/presse-og-nyheder/nyhedsarkiv/2026/okt/datatilsynet-er-opmaerksom-paa-sag-om-opslag-i-cpr" target="_blank" rel="noopener noreferrer">Danish Data Protection Agency</a></div>
+    </div>
+  </details>
+</article>
+
+<article class="incident-card high">
+  <div class="incident-head">
+    <div class="headline-row">
+      <div>
+        <h3>8. ClingSTUN ใช้อุปกรณ์ Linux/IoT ที่ไม่ได้อัปเดตเป็น Proxy ของผู้โจมตี</h3>
+        <p class="en-sub">Linux backdoor exploits known flaws and abuses STUN for resilient proxy communications</p>
+      </div>
+      <span class="severity high">HIGH</span>
+    </div>
+    <div class="tags"><span>ClingSTUN</span><span>Linux / IoT</span><span>Back-connect Proxy</span></div>
+    <p class="executive">FortiGuard Labs เปิดเผยมัลแวร์ ClingSTUN ซึ่งโจมตีอุปกรณ์ Linux และ IoT ที่เปิดสู่ภายนอกผ่านช่องโหว่ที่ทราบอยู่แล้ว จากนั้นเปลี่ยนอุปกรณ์ที่ถูกยึดให้เป็น Proxy Node และใช้ Public STUN Infrastructure ช่วยรักษาการเชื่อมต่อกับผู้ควบคุม</p>
+    <div class="meta-row"><span>ประเด็น: Internet-facing IoT</span><span>สถานะ: Active Malware Campaign</span><span>การดำเนินการ: Patch + Reduce Exposure</span></div>
+  </div>
+  <details>
+    <summary>ดูรายละเอียดสถานการณ์ ผลกระทบ และข้อเสนอแนะ</summary>
+    <div class="incident-details">
+      <section class="detail-block situation"><h4><b>01</b> สถานการณ์</h4><p>FortiGuard Labs รายงานมัลแวร์ ClingSTUN ซึ่งทำงานเป็น Back-connect Proxy Backdoor และมุ่งโจมตีอุปกรณ์ Linux/IoT ที่เปิดให้เข้าถึงจากอินเทอร์เน็ตผ่านช่องโหว่ที่ทราบอยู่แล้ว แคมเปญมีการใช้ช่องโหว่หลายรายการใน Router, IoT, VPN และอุปกรณ์เครือข่าย เมื่อเข้าควบคุมอุปกรณ์ได้ มัลแวร์จะสร้าง Persistence และใช้บริการ STUN สาธารณะเพื่อค้นหา Public IP/Port Mapping และรักษาการเชื่อมต่อผ่าน NAT</p></section>
+      <section class="detail-block impact"><h4><b>02</b> ผลกระทบ</h4><p>อุปกรณ์ที่ถูกยึดอาจถูกนำไปใช้เป็น Proxy เพื่อปกปิดต้นทางของผู้โจมตีหรือสนับสนุนการโจมตีต่อระบบอื่น ทำให้องค์กรตรวจสอบต้นทางของ Traffic ที่ผิดปกติได้ยากขึ้น การใช้ STUN ซึ่งเป็น Protocol ที่มีการใช้งานตามปกติใน VoIP และ WebRTC ยังเพิ่มความยากในการแยก Traffic ที่เป็นอันตรายออกจากการใช้งานที่ถูกต้อง</p></section>
+      <section class="detail-block recommendation"><h4><b>03</b> ข้อเสนอแนะ</h4><p>ให้จัดทำบัญชีอุปกรณ์ Linux/IoT ที่เปิดให้เข้าถึงจากอินเทอร์เน็ต ตรวจสอบ Firmware และช่องโหว่ที่ยังไม่ได้รับการแก้ไข พร้อมปิดบริการที่ไม่จำเป็นและลด Internet Exposure ควรตรวจสอบ STUN/UDP Traffic ร่วมกับ Process และ Outbound Connection ที่ผิดปกติ โดยไม่ควร Block STUN ทั้งหมดจากชื่อ Protocol เพียงอย่างเดียว หากพบอุปกรณ์ต้องสงสัยให้แยกออกจากเครือข่ายและตรวจสอบ Persistence ก่อนนำกลับมาใช้งาน</p></section>
+      <div class="sources"><strong>แหล่งข้อมูล:</strong><a href="https://www.fortinet.com/lat/blog/threat-research/clingstun-linux-backdoor-abuses-public-stun-infrastructure" target="_blank" rel="noopener noreferrer">FortiGuard Labs</a><a href="https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html" target="_blank" rel="noopener noreferrer">The Hacker News</a></div>
+    </div>
+  </details>
+</article></section>
+<div class="footer-note"><b>หมายเหตุ:</b> ระดับ Critical / High เป็นการจัดลำดับความสำคัญภายในของ Cyber Intel Daily Brief โดยพิจารณาความรุนแรง สถานะการโจมตี ตำแหน่งของระบบ ความกว้างของผลกระทบ และความเกี่ยวข้องกับบริบทองค์กร/ภูมิภาค ไม่ใช่คะแนนของผู้ผลิต เว้นแต่มีการระบุ CVSS ไว้ในเนื้อหาโดยตรง</div>
+<div class="footer">Cyber Intel Daily Brief · Generated 6 Oct 2026 · Asia/Bangkok</div>
+</main>
+</body></html>
