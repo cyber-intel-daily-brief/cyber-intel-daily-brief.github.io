@@ -1,4 +1,4 @@
-name: Publish Dashboard and Broadcast LINE
+name: Publish Dashboard and Send LINE
 
 on:
   push:
@@ -14,7 +14,7 @@ env:
   DASHBOARD_URL: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/
 
 jobs:
-  verify-and-broadcast:
+  verify-and-send:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -50,38 +50,61 @@ jobs:
           echo "Timed out waiting for GitHub Pages deployment."
           exit 1
 
-      - name: Prepare LINE request
+      - name: Prepare LINE requests
+        env:
+          LINE_GROUP_ID: ${{ secrets.LINE_GROUP_ID }}
         shell: bash
         run: |
           set -euo pipefail
+
+          if [ -z "${LINE_GROUP_ID:-}" ]; then
+            echo "Missing repository secret: LINE_GROUP_ID"
+            exit 1
+          fi
+
           jq '.broadcast' line-payload.json > /tmp/line-broadcast.json
           jq -e '.messages | type == "array" and length > 0' /tmp/line-broadcast.json >/dev/null
 
-      - name: Broadcast to LINE
+          jq --arg to "$LINE_GROUP_ID"             '{to: $to, messages: .broadcast.messages}'             line-payload.json > /tmp/line-group-push.json
+
+          jq -e '.to | type == "string" and length > 0' /tmp/line-group-push.json >/dev/null
+          jq -e '.messages | type == "array" and length > 0' /tmp/line-group-push.json >/dev/null
+
+      - name: Send to LINE OA and group
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
         shell: bash
         run: |
           set -euo pipefail
+
           if [ -z "${LINE_CHANNEL_ACCESS_TOKEN:-}" ]; then
             echo "Missing repository secret: LINE_CHANNEL_ACCESS_TOKEN"
             exit 1
           fi
 
-          HTTP_CODE="$(
-            curl -sS -o /tmp/line-response.txt -w "%{http_code}" \
-              -X POST "https://api.line.me/v2/bot/message/broadcast" \
-              -H "Authorization: Bearer ${LINE_CHANNEL_ACCESS_TOKEN}" \
-              -H "Content-Type: application/json" \
-              --data-binary @/tmp/line-broadcast.json
+          BROADCAST_HTTP="$(
+            curl -sS -o /tmp/line-broadcast-response.txt -w "%{http_code}"               -X POST "https://api.line.me/v2/bot/message/broadcast"               -H "Authorization: Bearer ${LINE_CHANNEL_ACCESS_TOKEN}"               -H "Content-Type: application/json"               --data-binary @/tmp/line-broadcast.json
           )"
 
-          cat /tmp/line-response.txt || true
-          echo
-          echo "LINE HTTP status: ${HTTP_CODE}"
+          GROUP_HTTP="$(
+            curl -sS -o /tmp/line-group-response.txt -w "%{http_code}"               -X POST "https://api.line.me/v2/bot/message/push"               -H "Authorization: Bearer ${LINE_CHANNEL_ACCESS_TOKEN}"               -H "Content-Type: application/json"               --data-binary @/tmp/line-group-push.json
+          )"
 
-          if [ "${HTTP_CODE}" != "200" ]; then
+          echo "LINE OA broadcast HTTP status: ${BROADCAST_HTTP}"
+          echo "LINE group push HTTP status: ${GROUP_HTTP}"
+
+          if [ "${BROADCAST_HTTP}" != "200" ]; then
+            echo "LINE OA broadcast failed:"
+            cat /tmp/line-broadcast-response.txt || true
+          fi
+
+          if [ "${GROUP_HTTP}" != "200" ]; then
+            echo "LINE group push failed:"
+            cat /tmp/line-group-response.txt || true
+          fi
+
+          if [ "${BROADCAST_HTTP}" != "200" ] || [ "${GROUP_HTTP}" != "200" ]; then
             exit 1
           fi
 
-          echo "LINE broadcast completed successfully."
+          echo "LINE OA broadcast and group push completed successfully."
