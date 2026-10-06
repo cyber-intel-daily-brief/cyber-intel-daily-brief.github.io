@@ -16,6 +16,7 @@
 details{border-top:1px solid #edf2f7;background:#fbfdff}summary{cursor:pointer;list-style:none;padding:12px 20px;font-size:15px;font-weight:800;color:var(--teal);display:flex;align-items:center;gap:8px}summary::-webkit-details-marker{display:none}summary:before{content:"›";display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#e5fafa;color:var(--teal);font-size:20px;transition:.18s transform}details[open] summary:before{transform:rotate(90deg)}
 .incident-details{padding:0 20px 18px;display:grid;gap:11px}.detail-block{background:#fff;border:1px solid #e2e9f2;border-radius:12px;padding:14px 15px}.detail-block h4{margin:0 0 7px;font-size:15px;display:flex;gap:8px;align-items:center}.detail-block h4 b{width:28px;height:27px;display:grid;place-items:center;border-radius:7px;font-size:13px}.situation h4 b{background:var(--bluesoft);color:var(--blue)}.impact h4 b{background:var(--redsoft);color:var(--red)}.recommendation h4 b{background:var(--greensoft);color:var(--green)}.detail-block p{margin:0;font-size:16px;color:#344256}
 .sources{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-top:13px;border-top:1px dashed #d6e0ea}.sources strong{font-size:14px;color:#64748b}.sources a{font-size:14px;color:#26364d;text-decoration:none;background:#fff;border:1px solid #ccd8e5;border-radius:8px;padding:5px 9px}.sources a:hover{text-decoration:underline;border-color:#94a3b8;background:#f8fafc}
+.dashboard-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.dashboard-nav a{display:inline-flex;align-items:center;text-decoration:none;color:#fff;font-size:14px;font-weight:700;padding:8px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.09);border-radius:9px}.dashboard-nav a:hover{background:rgba(255,255,255,.16)}.dashboard-nav a.primary{background:#fff;color:var(--navy);border-color:#fff}
 .footer-note{margin-top:26px;background:#eef5ff;border:1px solid #cfe1ff;border-radius:13px;padding:14px 16px;font-size:14px;color:#40516a}.footer{text-align:center;color:#8290a3;font-size:13px;padding:28px 0 5px}
 @media(max-width:860px){.stats{grid-template-columns:1fr 1fr}.top3{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.top-card p{-webkit-line-clamp:unset}}
 @media(max-width:620px){.inner,.wrap{padding-left:14px;padding-right:14px}.hero h1{font-size:30px}.headline-row{grid-template-columns:1fr}.severity{justify-self:start}.stats{gap:9px}.stat{padding:13px}.incident-head{padding:16px}.incident-details{padding-left:14px;padding-right:14px}}
@@ -27,6 +28,7 @@ details{border-top:1px solid #edf2f7;background:#fbfdff}summary{cursor:pointer;l
 <h1>Cyber Intel Daily Brief</h1>
 <p class="subtitle">สรุปสถานการณ์ภัยคุกคามทางไซเบอร์ที่ควรเฝ้าระวังประจำวัน</p>
 <div class="hero-meta"><span>ประจำวันที่ 6 ตุลาคม 2569</span><span>Coverage: 00:00 วันนี้ + ย้อนหลัง 24 ชม.</span><span>Asia/Bangkok</span><span>Report ID: CIB-20261006-1224</span></div>
+<nav class="dashboard-nav" aria-label="Dashboard navigation"><a class="primary" href="./archive/">ข่าวย้อนหลัง</a></nav>
 </div></header>
 <main class="wrap">
 <section class="stats">
