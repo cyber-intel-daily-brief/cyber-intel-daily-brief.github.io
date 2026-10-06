@@ -547,7 +547,7 @@ Daily Brief ที่เสร็จสมบูรณ์ควรทำให�
 ### LINE Link
 
 - ปุ่ม **“ดูรายละเอียดเต็ม”** ใน Flex Message ของแต่ละวันต้องชี้ไปยัง Archive URL ของวันนั้น เช่น:
-  `https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/archive/2026-10-07/`
+  `https://cyber-intel-daily-brief.github.io/archive/2026-10-07/`
 - ห้ามให้ปุ่มของข้อความ LINE ชี้ไปหน้าแรก `/` เพราะหน้าแรกจะถูกเปลี่ยนเป็นข่าวของวันถัดไป
 - Text Summary ยังห้ามแสดง Raw URL ตามกฎเดิม
 
