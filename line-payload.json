@@ -1,48 +1,361 @@
 {
-  "report_id": "TEST-20261006-0920",
+  "report_id": "CIB-20261006-1024",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "[TEST] Cyber Intel Manual Test — GitHub Pages\nทดสอบ GitHub → GitHub Pages → GitHub Actions → LINE\nDashboard: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+        "text": "Cyber Intel Daily Brief — 6 ต.ค. 2569\nคัดเลือก 7 เหตุการณ์สำคัญ | Critical 2 | High 5\nTop 3: Rejetto HFS, Citrix NetScaler, เหตุโจมตีภาคการเงินเกาหลีใต้\nรายละเอียด: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Manual Test",
+        "altText": "Cyber Intel Daily Brief — 6 Oct 2026",
         "contents": {
-          "type": "bubble",
-          "body": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Cyber Intel Manual Test",
-                "weight": "bold",
-                "wrap": true
+          "type": "carousel",
+          "contents": [
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#C62828"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Rejetto HFS ถูกสแกนหาเป้าหมายเพื่อใช้ช่องโหว่ยึดสิทธิ์ผู้ดูแลระบบ",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "พบการสแกนหา Rejetto HTTP File Server ที่มีช่องโหว่ CVE-2026-61500 ซึ่งสามารถนำไปสู่การปลอม Session ผู้ดูแลระบบและสั่งการเครื่องแม่ข่ายจากระยะไกลได้ ระบบ HFS ที่เปิดให้เข้าถึงจากอินเทอร์เน็ตและยังไม่ได้อัปเดตควรได้รับการตรวจสอบโดยเร่งด่วน",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
               },
-              {
-                "type": "text",
-                "text": "หากได้รับข้อความนี้ แสดงว่าเส้นทาง GitHub → GitHub Pages → LINE ทำงานสำเร็จ",
-                "size": "sm",
-                "wrap": true
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
               }
-            ]
-          },
-          "footer": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "ดูรายละเอียดเต็ม",
-                  "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
-                }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Citrix NetScaler พบ Zero-Day ที่ถูกนำไปใช้โจมตีแบบเจาะจง",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Citrix เปิดเผยช่องโหว่ CVE-2026-88779 ใน NetScaler ADC และ NetScaler Gateway ที่ใช้งาน SAML โดยมีรายงานการโจมตีระบบที่ยังไม่ได้รับการแก้ไขและทำให้บริการหยุดชะงัก ผู้ดูแลระบบควรตรวจสอบเงื่อนไขการตั้งค่าและอัปเดตตาม Security Bulletin โดยเร็ว",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
               }
-            ]
-          }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "เกาหลีใต้ยกระดับรับมือเหตุเจาะระบบภาคการเงินหลายแห่ง",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "หน่วยงานกำกับดูแลด้านการเงินของเกาหลีใต้เรียกประชุมฉุกเฉินหลังเกิดเหตุโจมตีและข้อมูลรั่วไหลในสถาบันการเงินหลายแห่ง โดยสั่งตรวจสอบระบบที่เปิดให้เข้าถึงจากภายนอก การยืนยันตัวตน และการควบคุมสิทธิ์ พร้อมระบุว่ายังไม่สามารถตัดความเป็นไปได้ของการใช้ AI ในการโจมตี",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#C62828"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Dell System Update มีช่องโหว่ร้ายแรง อาจนำไปสู่สิทธิ์ Root",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Dell แนะนำให้อัปเดต Dell System Update โดยเร่งด่วน หลังพบช่องโหว่ CVE-2026-86360 ที่อาจเปิดโอกาสให้ผู้โจมตีจากระยะไกลรันโค้ดด้วยสิทธิ์ Root บนระบบที่ได้รับผลกระทบ ยังไม่พบข้อมูลยืนยันว่าช่องโหว่นี้ถูกนำไปใช้โจมตีจริง",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft Exchange ช่องโหว่สิทธิ์ อาจเปิดให้อ่าน Mailbox ของผู้ใช้อื่น",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft ออกอัปเดตนอกกำหนดเพื่อแก้ CVE-2026-96940 ซึ่งอาจทำให้ผู้โจมตีที่มีบัญชีอยู่แล้วเข้าถึง Mailbox ของผู้ใช้อื่นภายในองค์กรและอ่านข้อความหรือไฟล์แนบได้ Exchange Online ได้รับการแก้ไขฝั่งบริการแล้ว ส่วนระบบ On-premises ต้องติดตั้งอัปเดต",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "เดนมาร์กพบการเข้าถึงข้อมูลทะเบียนประชาชนประมาณ 8.8 ล้านรายการโดยไม่ได้รับอนุญาต",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "หน่วยงานทะเบียนประชาชนของเดนมาร์กยืนยันเหตุด้านความปลอดภัยที่มีการใช้สิทธิ์ของบริษัทเอกชนซึ่งได้รับอนุญาตอย่างถูกต้องเพื่อเข้าถึงชื่อ ที่อยู่ และหมายเลขประจำตัว CPR ของผู้ลงทะเบียนประมาณ 8.8 ล้านรายการ โดยหน่วยงานได้ระงับสิทธิ์ของบริษัทและอยู่ระหว่างการสอบสวน",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ClingSTUN ใช้อุปกรณ์ Linux/IoT ที่ไม่ได้อัปเดตเป็น Proxy ของผู้โจมตี",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "FortiGuard Labs เปิดเผยมัลแวร์ ClingSTUN ซึ่งโจมตีอุปกรณ์ Linux และ IoT ที่เปิดสู่ภายนอกผ่านช่องโหว่ที่ทราบอยู่แล้ว จากนั้นเปลี่ยนอุปกรณ์ที่ถูกยึดให้เป็น Proxy Node และใช้ STUN สาธารณะช่วยรักษาการเชื่อมต่อกับผู้ควบคุม",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 5
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         }
       }
     ]
