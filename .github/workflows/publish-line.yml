@@ -1,6 +1,10 @@
 name: Publish Dashboard and Broadcast LINE
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +33,7 @@ jobs:
           jq -e '.broadcast.messages | type == "array" and length > 0' line-payload.json >/dev/null
           echo "REPORT_ID=$REPORT_ID" >> "$GITHUB_ENV"
 
-      - name: Wait for Netlify production deployment
+      - name: Wait for GitHub Pages deployment
         shell: bash
         run: |
           set -euo pipefail
@@ -37,13 +41,13 @@ jobs:
           for i in $(seq 1 30); do
             BODY="$(curl -fsSL "${DASHBOARD_URL}?cb=${GITHUB_SHA}-${i}" || true)"
             if printf '%s' "$BODY" | grep -Fq "$REPORT_ID"; then
-              echo "Netlify production contains the expected report_id."
+              echo "GitHub Pages contains the expected report_id."
               exit 0
             fi
-            echo "Attempt ${i}/30: dashboard not updated yet."
+            echo "Attempt ${i}/30: GitHub Pages not updated yet."
             sleep 10
           done
-          echo "Timed out waiting for Netlify deployment."
+          echo "Timed out waiting for GitHub Pages deployment."
           exit 1
 
       - name: Prepare LINE request
