@@ -4,7 +4,7 @@
     "messages": [
       {
         "type": "text",
-        "text": "[TEST] Cyber Intel Manual Test\nทดสอบ Dashboard → Netlify → GitHub Actions → LINE\nDashboard: https://cyber-intel-chatgpt-deploy.netlify.app"
+        "text": "[TEST] Cyber Intel Manual Test\nทดสอบ Dashboard → GitHub Pages → GitHub Actions → LINE\nDashboard: https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
       },
       {
         "type": "flex",
@@ -23,7 +23,7 @@
               },
               {
                 "type": "text",
-                "text": "หากได้รับข้อความนี้ แสดงว่าเส้นทาง GitHub → Netlify → LINE ทำงานสำเร็จ",
+                "text": "หากได้รับข้อความนี้ แสดงว่าเส้นทาง GitHub → GitHub Pages → LINE ทำงานสำเร็จ",
                 "size": "sm",
                 "wrap": true
               }
@@ -38,7 +38,7 @@
                 "action": {
                   "type": "uri",
                   "label": "ดูรายละเอียดเต็ม",
-                  "uri": "https://cyber-intel-chatgpt-deploy.netlify.app"
+                  "uri": "https://khunthawee30-byte.github.io/cyber-intel-chatgpt-deploy/"
                 }
               }
             ]
