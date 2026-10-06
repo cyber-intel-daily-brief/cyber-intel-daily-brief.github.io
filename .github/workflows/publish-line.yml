@@ -1,10 +1,6 @@
 name: Publish Dashboard and Send LINE
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "index.html"
   workflow_dispatch:
 
 permissions:
