@@ -1,1 +1,50 @@
-{"report_id":"TEST-20260924-1928","broadcast":{"messages":[{"type":"text","text":"[TEST] Cyber Intel Scheduled Run 2\nReport ID: TEST-20260924-1928\nทดสอบ Scheduled Task → GitHub Plugin → Netlify → GitHub Actions → LINE"},{"type":"flex","altText":"[TEST] Cyber Intel Scheduled Run 2","contents":{"type":"bubble","body":{"type":"box","layout":"vertical","contents":[{"type":"text","text":"[TEST] Cyber Intel Scheduled Run 2","weight":"bold","size":"lg","wrap":true},{"type":"text","text":"Report ID: TEST-20260924-1928","size":"sm","margin":"md","wrap":true},{"type":"text","text":"Scheduled Task → GitHub → Netlify → GitHub Actions → LINE","size":"sm","margin":"md","wrap":true}]},"footer":{"type":"box","layout":"vertical","contents":[{"type":"button","style":"primary","action":{"type":"uri","label":"ดูรายละเอียดเต็ม","uri":"https://cyber-intel-chatgpt-deploy.netlify.app"}}]}}}]}}
+{
+  "report_id": "TEST-20261006-0810",
+  "broadcast": {
+    "messages": [
+      {
+        "type": "text",
+        "text": "[TEST] Cyber Intel Manual Test\nทดสอบ Dashboard → Netlify → GitHub Actions → LINE\nDashboard: https://cyber-intel-chatgpt-deploy.netlify.app"
+      },
+      {
+        "type": "flex",
+        "altText": "Cyber Intel Manual Test",
+        "contents": {
+          "type": "bubble",
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Cyber Intel Manual Test",
+                "weight": "bold",
+                "wrap": true
+              },
+              {
+                "type": "text",
+                "text": "หากได้รับข้อความนี้ แสดงว่าเส้นทาง GitHub → Netlify → LINE ทำงานสำเร็จ",
+                "size": "sm",
+                "wrap": true
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "ดูรายละเอียดเต็ม",
+                  "uri": "https://cyber-intel-chatgpt-deploy.netlify.app"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
