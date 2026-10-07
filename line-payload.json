@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261006-1224",
+  "report_id": "CIB-20261007-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 6 ต.ค. 2569 (รอบ 12:24 น.)\nคัดเลือก 8 เหตุการณ์สำคัญ | Critical 2 | High 6\nTop 3: Rejetto HFS, Citrix NetScaler, ภาคการเงินเกาหลีใต้"
+        "text": "Cyber Intel Daily Brief — 7 ต.ค. 2569 (รอบ 07:00 น.)\nคัดเลือก 7 เหตุการณ์สำคัญ | Critical 2 | High 5\nTop 3: FortiMail, Atlassian Data Center, ภาคการเงินเกาหลีใต้"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 6 Oct 2026",
+        "altText": "Cyber Intel Daily Brief — 7 Oct 2026",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Rejetto HFS ถูกนำไปใช้โจมตีเพื่อยึดสิทธิ์ผู้ดูแลระบบและสั่งการจากระยะไกล",
+                    "text": "FortiMail ถูกโจมตีผ่านช่องโหว่ Zero-Day ที่เปิดทางให้เขียนไฟล์ลงระบบ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "พบการนำช่องโหว่ CVE-2026-61500 ใน Rejetto HTTP File Server ไปใช้โจมตีจริง โดยผู้โจมตีสามารถสร้าง Administrator Session ปลอมและใช้สิทธิ์ดังกล่าวสั่งการระบบจากระยะไกลได้ ระบบ HFS ที่เปิดให้เข้าถึงจากอินเทอร์เน็ตและยังไม่ได้อัปเดตควรได้รับการตรวจสอบโดยเร่งด่วน",
+                    "text": "Fortinet ยืนยันการโจมตีช่องโหว่ CVE-2026-104286 ใน FortiMail ซึ่งผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนสามารถส่งคำขอ HTTP/HTTPS ที่สร้างขึ้นเฉพาะเพื่อเขียนไฟล์ลงระบบได้ ช่องโหว่มีระดับ Critical และมี Security Update พร้อมใช้งานแล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,154 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#B45309"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Citrix NetScaler พบ Zero-Day ที่ถูกนำไปใช้โจมตีระบบ SAML",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Citrix เปิดเผยช่องโหว่ CVE-2026-88779 ใน NetScaler ADC และ NetScaler Gateway ที่ใช้งาน SAML และยืนยันว่ามีการโจมตีระบบที่ยังไม่ได้รับการแก้ไขแล้ว ผลกระทบที่ผู้ผลิตยืนยันในขณะนี้คือการทำให้บริการหยุดชะงัก",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#B45309"
-                  },
-                  {
-                    "type": "text",
-                    "text": "เกาหลีใต้ยกระดับรับมือเหตุโจมตีไซเบอร์ต่อสถาบันการเงินหลายแห่ง",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "หน่วยงานกำกับดูแลด้านการเงินของเกาหลีใต้สั่งตรวจสอบระบบที่เปิดสู่ภายนอก การยืนยันตัวตน และการควบคุมสิทธิ์ทั่วทั้งภาคการเงิน หลังพบเหตุข้อมูลรั่วไหลและการโจมตีต่อสถาบันการเงินหลายแห่ง ขณะที่ประเด็นการใช้ AI ช่วยโจมตียังอยู่ระหว่างการตรวจสอบและยังไม่มีข้อยืนยันอย่างเป็นทางการ",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#B45309"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Midnight Blizzard กลับมาใช้ Captive Portal ส่งมัลแวร์และขโมยข้อมูลผู้เดินทาง",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Microsoft Threat Intelligence อัปเดตเมื่อ 5 ตุลาคมว่า Storm-2945 ซึ่งเป็นกลุ่มย่อยของ Midnight Blizzard กลับมาดำเนินแคมเปญ CaptiveCrunch โดยดัดแปลง Traffic และ Captive Portal ของเครือข่ายโรงแรมเพื่อส่งมัลแวร์และขโมยข้อมูลรับรองจากผู้เดินทาง",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
                     }
                   }
                 ]
@@ -224,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Dell System Update มีช่องโหว่ร้ายแรง อาจนำไปสู่การได้สิทธิ์ Root",
+                    "text": "Atlassian เปิดเผยช่องโหว่อ่านไฟล์โดยไม่ยืนยันตัวตนในผลิตภัณฑ์ Data Center หลายรายการ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Dell แนะนำให้อัปเดต Dell System Update โดยเร่งด่วน หลังพบช่องโหว่ CVE-2026-86360 ที่อาจเปิดโอกาสให้ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนและสามารถเข้าถึงระบบจากระยะไกล รันโค้ดด้วยสิทธิ์ Root บนระบบที่ได้รับผลกระทบ",
+                    "text": "Atlassian เปิดเผย CVE-2026-21589 ระดับ Critical ซึ่งกระทบ Bitbucket, Confluence, Jira, Bamboo, Crowd, Crucible และ Fisheye แบบ Data Center ผู้โจมตีจากภายนอกอาจอ่านไฟล์บางรายการภายใน Web Application Root ได้โดยไม่ต้องยืนยันตัวตน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
                     }
                   }
                 ]
@@ -273,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft Exchange ช่องโหว่สิทธิ์ อาจเปิดให้อ่าน Mailbox ของผู้ใช้อื่น",
+                    "text": "เหตุเจาะธนาคารเกาหลีใต้หลายแห่งอยู่ระหว่างสอบสวน โดยมีข้อบ่งชี้ว่าอาจใช้ AI ช่วยโจมตี",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft ออก Security Update เพื่อแก้ CVE-2026-96940 ซึ่งอาจทำให้ผู้โจมตีที่มีบัญชีอยู่แล้วเข้าถึง Mailbox ของผู้ใช้อื่นภายในองค์กรและอ่านข้อความหรือไฟล์แนบได้ Microsoft ยังไม่พบหลักฐานการนำช่องโหว่นี้ไปใช้โจมตีจริง แต่จัดระดับว่า Exploitation More Likely",
+                    "text": "ประธานาธิบดีเกาหลีใต้สั่งเร่งสอบสวนเหตุโจมตีต่อธนาคารพาณิชย์หลายแห่ง หลังมีข้อมูลลูกค้ารั่วไหลและพบข้อบ่งชี้ว่าอาจมีการใช้ AI ช่วยดำเนินการ อย่างไรก็ดี เครื่องมือที่ใช้และขอบเขตความเสียหายทั้งหมดยังไม่ได้รับการเปิดเผยอย่างเป็นทางการ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
                     }
                   }
                 ]
@@ -322,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "เดนมาร์กพบการเข้าถึงข้อมูลทะเบียนประชาชนประมาณ 8.8 ล้านรายการโดยไม่ได้รับอนุญาต",
+                    "text": "FBI ยืนยันเหตุข้อมูลบุคลากรรั่วไหลจากการไม่ติดตั้ง Security Patch บนระบบที่บุคคลภายนอกดูแล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -330,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "หน่วยงานทะเบียนประชาชนของเดนมาร์กยืนยันเหตุด้านความปลอดภัยที่มีการใช้สิทธิ์ของบริษัทเอกชนซึ่งได้รับอนุญาตอย่างถูกต้องเพื่อเข้าถึงชื่อ ที่อยู่ และหมายเลข CPR ของผู้ลงทะเบียนประมาณ 8.8 ล้านรายการ โดยสิทธิ์ของบริษัทถูกระงับและเหตุการณ์อยู่ระหว่างการสอบสวน",
+                    "text": "FBI ยืนยันต่อ Reuters ว่าเหตุข้อมูลบุคลากรจำนวนหลายพันรายรั่วไหลเกิดจากแพลตฟอร์มที่บริหารโดยบุคคลภายนอกไม่ได้รับการติดตั้ง Security Patch ตามที่กำหนด แหล่งข่าวของ Reuters ระบุว่าระบบดังกล่าวคือ Oracle PeopleSoft และผู้ให้บริการเกี่ยวข้องกับ Accenture",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -349,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
                     }
                   }
                 ]
@@ -371,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ClingSTUN ใช้อุปกรณ์ Linux/IoT ที่ไม่ได้อัปเดตเป็น Proxy ของผู้โจมตี",
+                    "text": "ASOS ยืนยันเหตุเข้าถึงแพลตฟอร์มสื่อสารลูกค้าโดยไม่ได้รับอนุญาตและอาจมีข้อมูลพื้นฐานรั่วไหล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -379,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FortiGuard Labs เปิดเผยมัลแวร์ ClingSTUN ซึ่งโจมตีอุปกรณ์ Linux และ IoT ที่เปิดสู่ภายนอกผ่านช่องโหว่ที่ทราบอยู่แล้ว จากนั้นเปลี่ยนอุปกรณ์ที่ถูกยึดให้เป็น Proxy Node และใช้ Public STUN Infrastructure ช่วยรักษาการเชื่อมต่อกับผู้ควบคุม",
+                    "text": "ASOS ยืนยันว่ามีการส่ง Push Notification โดยไม่ได้รับอนุญาตและกำลังสอบสวนกิจกรรมผิดปกติบนแพลตฟอร์มภายนอกที่ใช้สื่อสารกับลูกค้า บริษัทประเมินว่าชื่อและข้อมูลติดต่ออาจถูกเข้าถึง แต่ยังไม่พบว่าข้อมูลบัตรชำระเงินหรือรหัสผ่านได้รับผลกระทบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -398,7 +251,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-06/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "เว็บไซต์ AI ปลอมใช้หน้าต่าง Browser-in-the-Browser ขโมยรหัสผ่านและรหัส MFA",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "นักวิจัยของ Island พบแคมเปญที่ปลอมเป็น ChatGPT, Gemini, Claude, Perplexity และบริการ AI อื่น เพื่อหลอกผู้ดูแลบัญชีโฆษณาให้เชื่อมต่อ Google Account หน้าต่าง Login ที่เห็นเป็นเพียงหน้าต่างปลอมภายในเว็บไซต์และสามารถเก็บทั้งรหัสผ่านและรหัส MFA ได้",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#B45309"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Nikkei เปิดเผยบัญชี Google Workspace และ Microsoft 365 ถูกเข้าถึงและใช้ส่ง Phishing",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Nikkei เปิดเผยเหตุบัญชีอีเมลพนักงานสองบัญชีถูกเข้าถึงในคนละช่วงเวลา โดยบัญชี Microsoft 365 หนึ่งบัญชีถูกใช้ส่งอีเมล Phishing ประมาณ 9,000 ฉบับ ขณะที่เหตุ Google Workspace อาจเปิดเผยชื่อและอีเมลของบุคลากรและคู่ค้าจำนวน 1,646 ราย",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
                     }
                   }
                 ]
