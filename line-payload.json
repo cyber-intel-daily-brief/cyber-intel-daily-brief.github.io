@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261007-0700",
+  "report_id": "CIB-20261008-0801",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 7 ต.ค. 2569 (รอบ 07:00 น.)\nคัดเลือก 7 เหตุการณ์สำคัญ | Critical 2 | High 5\nTop 3: FortiMail, Atlassian Data Center, ภาคการเงินเกาหลีใต้"
+        "text": "Cyber Intel Daily Brief — 8 ต.ค. 2569 (รอบ 08:01 น.)\nคัดเลือก 6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: Atlassian CVE-2026-21589, FortiBleed, PoeLLM"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 7 Oct 2026",
+        "altText": "Cyber Intel Daily Brief — 8 Oct 2026",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FortiMail ถูกโจมตีผ่านช่องโหว่ Zero-Day ที่เปิดทางให้เขียนไฟล์ลงระบบ",
+                    "text": "Atlassian CVE-2026-21589 มีรายงานการพยายามใช้โจมตีหลังรายละเอียดเทคนิคเผยแพร่",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Fortinet ยืนยันการโจมตีช่องโหว่ CVE-2026-104286 ใน FortiMail ซึ่งผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนสามารถส่งคำขอ HTTP/HTTPS ที่สร้างขึ้นเฉพาะเพื่อเขียนไฟล์ลงระบบได้ ช่องโหว่มีระดับ Critical และมี Security Update พร้อมใช้งานแล้ว",
+                    "text": "Atlassian เปิดเผยช่องโหว่ระดับ Critical (CVSS 9.3) ที่กระทบผลิตภัณฑ์ Data Center 8 รายการ และเมื่อ 7 ต.ค. บริษัท Previdian รายงานว่าพบความพยายามใช้ช่องโหว่นี้กับ Honeypot หลังรายละเอียดเทคนิคถูกเผยแพร่ ขณะที่ Atlassian ระบุใน Advisory เดิมว่ายังไม่พบหลักฐานการโจมตีในช่วงที่เผยแพร่คำแนะนำ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Atlassian เปิดเผยช่องโหว่อ่านไฟล์โดยไม่ยืนยันตัวตนในผลิตภัณฑ์ Data Center หลายรายการ",
+                    "text": "FBI และ U.S. Secret Service เตือน FortiBleed ยังโจมตี FortiGate และ SSL VPN ต่อเนื่อง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Atlassian เปิดเผย CVE-2026-21589 ระดับ Critical ซึ่งกระทบ Bitbucket, Confluence, Jira, Bamboo, Crowd, Crucible และ Fisheye แบบ Data Center ผู้โจมตีจากภายนอกอาจอ่านไฟล์บางรายการภายใน Web Application Root ได้โดยไม่ต้องยืนยันตัวตน",
+                    "text": "FBI และ U.S. Secret Service เตือนว่าแคมเปญ FortiBleed ยังสแกนและเข้าถึง Fortinet FortiGate/SSL VPN ที่เปิดสู่อินเทอร์เน็ต โดยใช้รหัสผ่านที่รั่วไหลหรือใช้ซ้ำและข้อมูลรับรองที่ถูกขโมย ผู้โจมตีบางกรณีสร้างบัญชีใหม่ เปลี่ยนหรือลบบัญชีเดิมจนผู้ดูแลถูกล็อกออก และมีการเชื่อมโยงการเข้าถึงลักษณะนี้กับ Initial Access สำหรับ Ransomware",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
                     }
                   }
                 ]
@@ -122,11 +122,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#B45309"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "เหตุเจาะธนาคารเกาหลีใต้หลายแห่งอยู่ระหว่างสอบสวน โดยมีข้อบ่งชี้ว่าอาจใช้ AI ช่วยโจมตี",
+                    "text": "PoeLLM โจมตี AI/LLM Server ที่เปิดสู่อินเทอร์เน็ตและใช้เครื่องเหยื่อขยาย Botnet",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ประธานาธิบดีเกาหลีใต้สั่งเร่งสอบสวนเหตุโจมตีต่อธนาคารพาณิชย์หลายแห่ง หลังมีข้อมูลลูกค้ารั่วไหลและพบข้อบ่งชี้ว่าอาจมีการใช้ AI ช่วยดำเนินการ อย่างไรก็ดี เครื่องมือที่ใช้และขอบเขตความเสียหายทั้งหมดยังไม่ได้รับการเปิดเผยอย่างเป็นทางการ",
+                    "text": "Black Lotus Labs ของ Lumen เปิดเผยแคมเปญ PoeLLM ที่ทำงานมาตั้งแต่เดือนเมษายน 2569 และกระทบ Server มากกว่า 3,400 เครื่อง โดยมุ่งเป้า AI/LLM และ Open-source Service ที่เปิดสู่อินเทอร์เน็ต เช่น LiteLLM, Ollama, Gotenberg และ Gitea จากนั้นใช้เครื่องที่ยึดได้ทำ Cryptomining พร้อมเปลี่ยนเป็น Scanner/Exploit Server เพื่อขยาย Botnet ต่อ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +153,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#C62828"
+                  },
+                  {
+                    "type": "text",
+                    "text": "SonicWall แก้ CVE-2026-102255 ระดับ 10.0 ใน SMA1000 ที่โจมตีได้โดยไม่ต้องยืนยันตัวตน",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "SonicWall ออก Hotfix สำหรับ CVE-2026-102255 ซึ่งเป็น Pre-authentication SSRF ใน SMA1000 Appliance Work Place มีคะแนน CVSS 3.1 เท่ากับ 10.0 และอาจทำให้อุปกรณ์ส่งคำขอแทนผู้โจมตีเพื่อเข้าถึงฟังก์ชันภายในโดยไม่ได้รับอนุญาต ผู้ผลิตระบุว่ายังไม่พบหลักฐานการนำช่องโหว่นี้ไปใช้โจมตีจริง",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
                     }
                   }
                 ]
@@ -171,11 +220,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#B45309"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "FBI ยืนยันเหตุข้อมูลบุคลากรรั่วไหลจากการไม่ติดตั้ง Security Patch บนระบบที่บุคคลภายนอกดูแล",
+                    "text": "Chrome 155 แก้ช่องโหว่ 247 รายการ รวม 4 ช่องโหว่ Critical แบบ Use-after-Free",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FBI ยืนยันต่อ Reuters ว่าเหตุข้อมูลบุคลากรจำนวนหลายพันรายรั่วไหลเกิดจากแพลตฟอร์มที่บริหารโดยบุคคลภายนอกไม่ได้รับการติดตั้ง Security Patch ตามที่กำหนด แหล่งข่าวของ Reuters ระบุว่าระบบดังกล่าวคือ Oracle PeopleSoft และผู้ให้บริการเกี่ยวข้องกับ Accenture",
+                    "text": "Google ออก Chrome 155 สำหรับ Desktop พร้อมแก้ช่องโหว่ความปลอดภัย 247 รายการ รวม 4 ช่องโหว่ระดับ Critical แบบ Use-after-Free ใน Chromecast, Browser, Navigation และ Track โดยรอบข้อมูลนี้ไม่พบคำยืนยันจาก Google ว่าช่องโหว่ทั้ง 4 ถูกใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
                     }
                   }
                 ]
@@ -220,11 +269,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#B45309"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "ASOS ยืนยันเหตุเข้าถึงแพลตฟอร์มสื่อสารลูกค้าโดยไม่ได้รับอนุญาตและอาจมีข้อมูลพื้นฐานรั่วไหล",
+                    "text": "Southern Company แจ้งเหตุข้อมูลลูกค้ากลุ่มธุรกิจไฟฟ้าราว 400,000 บัญชีถูกเข้าถึง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ASOS ยืนยันว่ามีการส่ง Push Notification โดยไม่ได้รับอนุญาตและกำลังสอบสวนกิจกรรมผิดปกติบนแพลตฟอร์มภายนอกที่ใช้สื่อสารกับลูกค้า บริษัทประเมินว่าชื่อและข้อมูลติดต่ออาจถูกเข้าถึง แต่ยังไม่พบว่าข้อมูลบัตรชำระเงินหรือรหัสผ่านได้รับผลกระทบ",
+                    "text": "Southern Company แจ้งเหตุบุคคลที่ไม่ได้รับอนุญาตเข้าถึงข้อมูลบัญชีลูกค้าผ่าน Online Customer Portal กระทบราว 400,000 บัญชีของ Georgia Power, Alabama Power และ Mississippi Power ข้อมูลที่เกี่ยวข้องรวมถึงชื่อ ที่อยู่ เบอร์โทร อีเมล และเลข Social Security 4 หลักท้ายในบางบัญชี โดยบริษัทระบุว่า Bank Account, Payment Card และ Driver’s License ไม่ได้อยู่ในข้อมูลที่ถูกเข้าถึง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,105 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#B45309"
-                  },
-                  {
-                    "type": "text",
-                    "text": "เว็บไซต์ AI ปลอมใช้หน้าต่าง Browser-in-the-Browser ขโมยรหัสผ่านและรหัส MFA",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "นักวิจัยของ Island พบแคมเปญที่ปลอมเป็น ChatGPT, Gemini, Claude, Perplexity และบริการ AI อื่น เพื่อหลอกผู้ดูแลบัญชีโฆษณาให้เชื่อมต่อ Google Account หน้าต่าง Login ที่เห็นเป็นเพียงหน้าต่างปลอมภายในเว็บไซต์และสามารถเก็บทั้งรหัสผ่านและรหัส MFA ได้",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#B45309"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Nikkei เปิดเผยบัญชี Google Workspace และ Microsoft 365 ถูกเข้าถึงและใช้ส่ง Phishing",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Nikkei เปิดเผยเหตุบัญชีอีเมลพนักงานสองบัญชีถูกเข้าถึงในคนละช่วงเวลา โดยบัญชี Microsoft 365 หนึ่งบัญชีถูกใช้ส่งอีเมล Phishing ประมาณ 9,000 ฉบับ ขณะที่เหตุ Google Workspace อาจเปิดเผยชื่อและอีเมลของบุคลากรและคู่ค้าจำนวน 1,646 ราย",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-07/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
                     }
                   }
                 ]
