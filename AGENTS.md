@@ -552,3 +552,22 @@ Daily Brief ที่เสร็จสมบูรณ์ควรทำให�
 - Text Summary ยังห้ามแสดง Raw URL ตามกฎเดิม
 
 เป้าหมายคือข้อความ LINE ที่ส่งในแต่ละวันต้องสามารถเปิดกลับมาดูข่าวของวันนั้นได้เสมอ แม้ Dashboard หน้าแรกจะเปลี่ยนเป็นข่าวล่าสุดแล้ว
+
+
+---
+
+## 25. ความทนทานของ GitHub Publish และ Scheduled Task
+
+เพื่อป้องกันกรณี GitHub write ถูกบล็อกชั่วคราวหรือถูก Safety Check ปฏิเสธ ให้ใช้กฎดังนี้:
+
+- เขียน GitHub แบบ **ทีละไฟล์ และทีละ tool call เท่านั้น** ห้าม batch หรือรวมหลาย write actions ในคำสั่งเดียว
+- ก่อน update ไฟล์ที่มีอยู่ ต้อง fetch ไฟล์ล่าสุดและใช้ SHA ล่าสุดเสมอ
+- ลำดับ write คงเดิม: 1) `line-payload.json` → 2) `archive/YYYY-MM-DD/index.html` → 3) `archive/index.html` → 4) `index.html`
+- หลัง write แต่ละไฟล์ ให้ตรวจผลว่าสำเร็จก่อนดำเนินไฟล์ถัดไป
+- หาก write ใดถูกปฏิเสธด้วยข้อความลักษณะ `safety checks` หรือเป็น transient tool failure ให้ retry แบบ single-file direct write ได้อีก **1 ครั้ง** หลัง fetch ไฟล์/SHA ใหม่
+- ห้ามเปลี่ยนเนื้อหาเพื่อหลบหรือเลี่ยงระบบความปลอดภัย หาก retry ยังถูกปฏิเสธ ให้หยุดการ Publish ที่เหลือและรายงาน error ตามจริง
+- หาก `line-payload.json` ล้มเหลวหลัง retry ห้ามเขียน Archive หรือ `index.html` ต่อ
+- หาก Archive รายวันหรือ `archive/index.html` ล้มเหลวหลัง retry ห้ามเขียน `index.html` เพื่อป้องกันการ Trigger LINE ด้วยข้อมูลไม่ครบ
+- `index.html` ต้องเป็น write สุดท้ายเสมอ เพราะใช้ Trigger GitHub Actions และการส่ง LINE
+- **ห้าม Scheduled Task ปิด/Disable/Pause ตัวเองจากความล้มเหลวของรอบเดียว** และห้ามเปลี่ยน `is_enabled=false` เอง ให้คง Task เป็น Enabled เพื่อให้รอบวันถัดไปยังรันได้
+- หาก Publish ไม่สำเร็จ ให้สรุปสถานะว่า Research สำเร็จหรือไม่, ไฟล์ใดเขียนสำเร็จ/ไม่สำเร็จ, GitHub Pages ทำงานหรือไม่, และ LINE OA/LINE Group ส่งหรือไม่ โดยห้ามอ้างว่าสำเร็จหากไม่มีหลักฐาน
