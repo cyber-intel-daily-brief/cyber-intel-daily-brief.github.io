@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261008-0801",
+  "report_id": "CIB-20261009-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 8 ต.ค. 2569 (รอบ 08:01 น.)\nคัดเลือก 6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: Atlassian CVE-2026-21589, FortiBleed, PoeLLM"
+        "text": "Cyber Intel Daily Brief — 9 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3:\n1. Flax Typhoon — สหรัฐฯ ยึดเครื่องมือสนับสนุนการโจมตี\n2. IDCF Cloud — Ransomware กระทบ 495 องค์กร\n3. Cisco NX-OS — ช่องโหว่ NX-API อาจรันโค้ดด้วยสิทธิ์ root"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 8 Oct 2026",
+        "altText": "Cyber Intel Daily Brief — 9 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Atlassian CVE-2026-21589 มีรายงานการพยายามใช้โจมตีหลังรายละเอียดเทคนิคเผยแพร่",
+                    "text": "สหรัฐฯ ยึดเครื่องมือ Microscan และ FishHub ที่เชื่อมโยงกับ Flax Typhoon",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Atlassian เปิดเผยช่องโหว่ระดับ Critical (CVSS 9.3) ที่กระทบผลิตภัณฑ์ Data Center 8 รายการ และเมื่อ 7 ต.ค. บริษัท Previdian รายงานว่าพบความพยายามใช้ช่องโหว่นี้กับ Honeypot หลังรายละเอียดเทคนิคถูกเผยแพร่ ขณะที่ Atlassian ระบุใน Advisory เดิมว่ายังไม่พบหลักฐานการโจมตีในช่วงที่เผยแพร่คำแนะนำ",
+                    "text": "DOJ และ FBI ประกาศยึดเครื่องมือสแกนช่องโหว่และ Phishing เมื่อ 8 ต.ค. โดยระบุว่าผู้ปฏิบัติการที่เชื่อมโยงกับ Flax Typhoon ใช้โจมตีโครงสร้างพื้นฐานสำคัญในสหรัฐฯ และต่างประเทศ การยึดเครื่องมือช่วยลดความสามารถของผู้โจมตี แต่ไม่ได้ยืนยันว่าทุกเครือข่ายปลอดภัยแล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FBI และ U.S. Secret Service เตือน FortiBleed ยังโจมตี FortiGate และ SSL VPN ต่อเนื่อง",
+                    "text": "IDCF Cloud ถูก Ransomware กระทบ 495 องค์กรและหน่วยงานท้องถิ่น",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FBI และ U.S. Secret Service เตือนว่าแคมเปญ FortiBleed ยังสแกนและเข้าถึง Fortinet FortiGate/SSL VPN ที่เปิดสู่อินเทอร์เน็ต โดยใช้รหัสผ่านที่รั่วไหลหรือใช้ซ้ำและข้อมูลรับรองที่ถูกขโมย ผู้โจมตีบางกรณีสร้างบัญชีใหม่ เปลี่ยนหรือลบบัญชีเดิมจนผู้ดูแลถูกล็อกออก และมีการเชื่อมโยงการเข้าถึงลักษณะนี้กับ Initial Access สำหรับ Ransomware",
+                    "text": "IDC Frontier ยืนยันเหตุ Ransomware ในบางส่วนของ East Japan Region 1 กระทบผู้ใช้บริการ 495 องค์กรและหน่วยงานท้องถิ่น ประกาศวันที่ 8 ต.ค. ระบุว่าข้อมูลในระบบที่ได้รับผลกระทบอาจนำออกหรือกู้คืนได้ยาก และต้องพึ่งสำรองข้อมูลของลูกค้าเอง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,56 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "PoeLLM โจมตี AI/LLM Server ที่เปิดสู่อินเทอร์เน็ตและใช้เครื่องเหยื่อขยาย Botnet",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Black Lotus Labs ของ Lumen เปิดเผยแคมเปญ PoeLLM ที่ทำงานมาตั้งแต่เดือนเมษายน 2569 และกระทบ Server มากกว่า 3,400 เครื่อง โดยมุ่งเป้า AI/LLM และ Open-source Service ที่เปิดสู่อินเทอร์เน็ต เช่น LiteLLM, Ollama, Gotenberg และ Gitea จากนั้นใช้เครื่องที่ยึดได้ทำ Cryptomining พร้อมเปลี่ยนเป็น Scanner/Exploit Server เพื่อขยาย Botnet ต่อ",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
                     }
                   }
                 ]
@@ -175,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "SonicWall แก้ CVE-2026-102255 ระดับ 10.0 ใน SMA1000 ที่โจมตีได้โดยไม่ต้องยืนยันตัวตน",
+                    "text": "Cisco NX-OS พบ CVE-2026-76471 อาจรันโค้ดด้วยสิทธิ์ root ผ่าน NX-API",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "SonicWall ออก Hotfix สำหรับ CVE-2026-102255 ซึ่งเป็น Pre-authentication SSRF ใน SMA1000 Appliance Work Place มีคะแนน CVSS 3.1 เท่ากับ 10.0 และอาจทำให้อุปกรณ์ส่งคำขอแทนผู้โจมตีเพื่อเข้าถึงฟังก์ชันภายในโดยไม่ได้รับอนุญาต ผู้ผลิตระบุว่ายังไม่พบหลักฐานการนำช่องโหว่นี้ไปใช้โจมตีจริง",
+                    "text": "Cisco เปิดเผยช่องโหว่ใน NX-API ของ NX-OS ซึ่งอาจให้ผู้โจมตีรันโค้ดด้วยสิทธิ์ root หรือทำให้อุปกรณ์หยุดให้บริการบนรุ่นและการตั้งค่าที่ได้รับผลกระทบ Cisco อัปเดต Advisory เมื่อ 8 ต.ค. และระบุว่ายังไม่ทราบถึงการใช้ช่องโหว่นี้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
                     }
                   }
                 ]
@@ -224,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Chrome 155 แก้ช่องโหว่ 247 รายการ รวม 4 ช่องโหว่ Critical แบบ Use-after-Free",
+                    "text": "FakeGit ใช้ Repository ลวงบน GitHub แจก SmartLoader",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Google ออก Chrome 155 สำหรับ Desktop พร้อมแก้ช่องโหว่ความปลอดภัย 247 รายการ รวม 4 ช่องโหว่ระดับ Critical แบบ Use-after-Free ใน Chromecast, Browser, Navigation และ Track โดยรอบข้อมูลนี้ไม่พบคำยืนยันจาก Google ว่าช่องโหว่ทั้ง 4 ถูกใช้โจมตีจริง",
+                    "text": "ข่าววันที่ 8 ต.ค. รายงานงานวิจัยของ Apiiro ที่ตรวจพบ Repository ลวง 17,610 รายการแจก SmartLoader โดยเปลี่ยนปลายทางปุ่มดาวน์โหลดใน README งานวิจัยต้นทางเผยแพร่วันที่ 6 ต.ค. จึงเป็นข่าวติดตามผล ไม่ใช่เหตุที่เพิ่งเริ่มวันนี้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
                     }
                   }
                 ]
@@ -273,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Southern Company แจ้งเหตุข้อมูลลูกค้ากลุ่มธุรกิจไฟฟ้าราว 400,000 บัญชีถูกเข้าถึง",
+                    "text": "Midnight Mimosa ฝังมัลแวร์ในเฟิร์มแวร์ Android บางรุ่น",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Southern Company แจ้งเหตุบุคคลที่ไม่ได้รับอนุญาตเข้าถึงข้อมูลบัญชีลูกค้าผ่าน Online Customer Portal กระทบราว 400,000 บัญชีของ Georgia Power, Alabama Power และ Mississippi Power ข้อมูลที่เกี่ยวข้องรวมถึงชื่อ ที่อยู่ เบอร์โทร อีเมล และเลข Social Security 4 หลักท้ายในบางบัญชี โดยบริษัทระบุว่า Bank Account, Payment Card และ Driver’s License ไม่ได้อยู่ในข้อมูลที่ถูกเข้าถึง",
+                    "text": "Bitdefender รายงานเมื่อ 8 ต.ค. ว่า Android ราคาประหยัดบางรุ่นที่ใช้แพลตฟอร์ม MediaTek มีมัลแวร์ฝังในเฟิร์มแวร์ก่อนถึงผู้ใช้ มัลแวร์มีสิทธิ์ระดับระบบและสามารถติดตั้งแอปหรือโหลดโค้ดจากระยะไกล โดยไม่หมายความว่าอุปกรณ์ MediaTek ทุกเครื่องติดเชื้อ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +251,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-08/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ASOS ยืนยันข้อมูลลูกค้าถูกเข้าถึงหลังบัญชีพนักงานถูกหลอกขโมย",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ASOS แจ้งลูกค้าว่าผู้โจมตีปลอมเป็นผู้ติดต่อที่ไว้ใจเพื่อขโมยข้อมูลเข้าสู่ระบบพนักงาน แล้วใช้เข้าถึงแพลตฟอร์มภายนอกที่บริษัทใช้ ข้อมูลที่เกี่ยวข้องรวมชื่อและข้อมูลติดต่อ โดยบริษัทระบุว่าข้อมูลบัตรชำระเงินและรหัสผ่านบัญชีลูกค้าไม่ถูกเข้าถึง",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
                     }
                   }
                 ]
