@@ -1,0 +1,18 @@
+name: Publication Preflight Check
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/validate_publication.py"
+      - ".github/workflows/publish-line.yml"
+      - ".github/workflows/validate-publication.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate publication without sending LINE
+        run: python3 scripts/validate_publication.py
