@@ -571,3 +571,19 @@ Daily Brief ที่เสร็จสมบูรณ์ควรทำให�
 - `index.html` ต้องเป็น write สุดท้ายเสมอ เพราะใช้ Trigger GitHub Actions และการส่ง LINE
 - **ห้าม Scheduled Task ปิด/Disable/Pause ตัวเองจากความล้มเหลวของรอบเดียว** และห้ามเปลี่ยน `is_enabled=false` เอง ให้คง Task เป็น Enabled เพื่อให้รอบวันถัดไปยังรันได้
 - หาก Publish ไม่สำเร็จ ให้สรุปสถานะว่า Research สำเร็จหรือไม่, ไฟล์ใดเขียนสำเร็จ/ไม่สำเร็จ, GitHub Pages ทำงานหรือไม่, และ LINE OA/LINE Group ส่งหรือไม่ โดยห้ามอ้างว่าสำเร็จหากไม่มีหลักฐาน
+
+
+---
+
+## 26. Publication Preflight และการวิเคราะห์ความล้มเหลว (9 ต.ค. 2569)
+
+- ตรวจ JSON ให้ parse ได้จริงก่อนเขียน GitHub พร้อม report_id, จำนวน messages และ URL ปุ่มของทุก bubble ห้ามทดสอบเขียน payload ที่ไม่ผ่านการตรวจ
+- อ่านผล GitHub tool ทั้ง isError และ structuredContent ต้องได้ commit_sha จึงถือว่าเขียนสำเร็จ อ่านไฟล์กลับเพื่อตรวจเนื้อหาก่อนดำเนินไฟล์ถัดไป
+- แยกผลลัพธ์เป็น VALIDATION_FAILED / WRITE_REJECTED / WRITE_FAILED / PAGES_FAILED / LINE_FAILED ไม่สรุปว่า JSON, ขนาดข้อมูล หรือข่าวเป็นสาเหตุของ safety checks หากไม่มีหลักฐาน
+- หากการเขียนถูกปฏิเสธ ให้บันทึก report_id, เวลา Asia/Bangkok, ชื่อ tool, path, SHA ที่อ่านก่อนเขียน, ข้อความ error ตามจริง และผล retry ที่อนุญาตในข้อ 25 ห้ามใส่ token, secret หรือข้อมูลลับลงบันทึก
+- ห้ามเปลี่ยนเนื้อหา เปลี่ยนช่องทางเขียน หรือใช้เครื่องมืออื่นเพื่อหลบการปฏิเสธด้านความปลอดภัย
+- การหยุดรอบเผยแพร่ที่ล้มเหลวไม่ใช่การยกเลิกงานประจำวัน Agent ห้ามเรียก update/delete automation เพื่อปิดหรือพักงานจากความล้มเหลว หากพบสถานะปิดโดยไม่ได้ร้องขอ ให้รายงานสถานะที่ตรวจพบ และอย่าอ้างว่า Agent หรือแพลตฟอร์มเป็นผู้ปิดหากไม่มี audit log
+- workflow ใช้ scripts/validate_publication.py ตรวจ report_id ให้ตรงกันใน line-payload.json, index.html และ Archive รายวัน ตรวจรายการ Archive และปุ่ม LINE ก่อนส่ง
+- การรัน workflow_dispatch เพื่อทดสอบต้องใช้ dry_run=true ซึ่งเป็นค่าเริ่มต้น โหมดนี้ไม่เรียก LINE และไม่ต้องอ่าน repository secrets ของ LINE
+- ก่อนกู้คืนรายงานที่ส่งแล้ว ให้ตรวจ workflow run และ HTTP status ของ LINE ทั้งสองช่องทาง ห้ามแก้ index.html หรือ replay workflow เพื่อทดสอบ เพราะอาจส่งซ้ำ หากช่องทางใดสำเร็จแล้ว ห้าม retry ทั้งสองช่องทางโดยไม่ตรวจสถานะก่อน
+- สรุป failure พร้อมหลักฐานเท่าที่ตรวจได้และคงกำหนดการ 07:00 Asia/Bangkok เดิม ข้อกำหนดนี้ไม่สามารถบังคับระบบภายนอกให้ข้าม safety checks หรือรับรองว่ารอบถัดไปจะสำเร็จ
