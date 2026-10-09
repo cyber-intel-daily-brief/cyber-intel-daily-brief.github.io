@@ -6,6 +6,12 @@ on:
     paths:
       - "index.html"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Validate only; do not send LINE'
+        type: boolean
+        required: true
+        default: true
 
 permissions:
   contents: read
@@ -20,18 +26,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Validate LINE payload
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -f line-payload.json
-          REPORT_ID="$(jq -r '.report_id // empty' line-payload.json)"
-          if [ -z "$REPORT_ID" ]; then
-            echo "line-payload.json does not contain report_id"
-            exit 1
-          fi
-          jq -e '.broadcast.messages | type == "array" and length > 0' line-payload.json >/dev/null
-          echo "REPORT_ID=$REPORT_ID" >> "$GITHUB_ENV"
+      - name: Validate publication consistency
+        run: python3 scripts/validate_publication.py
 
       - name: Wait for GitHub Pages deployment
         shell: bash
@@ -50,7 +46,12 @@ jobs:
           echo "Timed out waiting for GitHub Pages deployment."
           exit 1
 
+      - name: Dry run result
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: echo 'DRY RUN PASSED - no LINE request sent'
+
       - name: Prepare LINE requests
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run == false }}
         env:
           LINE_GROUP_ID: ${{ secrets.LINE_GROUP_ID }}
         shell: bash
@@ -71,6 +72,7 @@ jobs:
           jq -e '.messages | type == "array" and length > 0' /tmp/line-group-push.json >/dev/null
 
       - name: Send to LINE OA and group
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run == false }}
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
         shell: bash
