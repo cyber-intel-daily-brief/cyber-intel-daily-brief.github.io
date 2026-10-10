@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261009-0700",
+  "report_id": "CIB-20261010-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 9 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3:\n1. Flax Typhoon — สหรัฐฯ ยึดเครื่องมือสนับสนุนการโจมตี\n2. IDCF Cloud — Ransomware กระทบ 495 องค์กร\n3. Cisco NX-OS — ช่องโหว่ NX-API อาจรันโค้ดด้วยสิทธิ์ root"
+        "text": "Cyber Intel Daily Brief — 10 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 1 | High 4\nTop 3:\n1. เกาหลีใต้–ญี่ปุ่น — เร่งรับมือการโจมตีที่อาจใช้ AI ช่วย\n2. GhostAction — Workflow ปลอมโจมตี 345 Repository\n3. สำนักงานกฎหมายสหรัฐฯ — เปิดเผยเหตุข้อมูลรั่วไหล"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 9 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 10 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สหรัฐฯ ยึดเครื่องมือ Microscan และ FishHub ที่เชื่อมโยงกับ Flax Typhoon",
+                    "text": "เกาหลีใต้และญี่ปุ่นเร่งรับมือการโจมตีไซเบอร์ที่อาจใช้ AI ช่วย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "DOJ และ FBI ประกาศยึดเครื่องมือสแกนช่องโหว่และ Phishing เมื่อ 8 ต.ค. โดยระบุว่าผู้ปฏิบัติการที่เชื่อมโยงกับ Flax Typhoon ใช้โจมตีโครงสร้างพื้นฐานสำคัญในสหรัฐฯ และต่างประเทศ การยึดเครื่องมือช่วยลดความสามารถของผู้โจมตี แต่ไม่ได้ยืนยันว่าทุกเครือข่ายปลอดภัยแล้ว",
+                    "text": "ธนาคารเกาหลีใต้ 9 แห่งและโบสถ์ขนาดใหญ่ 2 แห่งกำลังสอบสวนการโจมตีที่อาจมี AI เกี่ยวข้อง ขณะที่บริษัทญี่ปุ่นหลายแห่งเผชิญเหตุเพิ่มขึ้น หน่วยงานยังอยู่ระหว่างยืนยันบทบาทของ AI ในแต่ละเหตุการณ์ จึงไม่ควรถือว่าทุกกรณีใช้ AI โดยแน่ชัด",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,105 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#C62828"
-                  },
-                  {
-                    "type": "text",
-                    "text": "IDCF Cloud ถูก Ransomware กระทบ 495 องค์กรและหน่วยงานท้องถิ่น",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "IDC Frontier ยืนยันเหตุ Ransomware ในบางส่วนของ East Japan Region 1 กระทบผู้ใช้บริการ 495 องค์กรและหน่วยงานท้องถิ่น ประกาศวันที่ 8 ต.ค. ระบุว่าข้อมูลในระบบที่ได้รับผลกระทบอาจนำออกหรือกู้คืนได้ยาก และต้องพึ่งสำรองข้อมูลของลูกค้าเอง",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#C62828"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Cisco NX-OS พบ CVE-2026-76471 อาจรันโค้ดด้วยสิทธิ์ root ผ่าน NX-API",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Cisco เปิดเผยช่องโหว่ใน NX-API ของ NX-OS ซึ่งอาจให้ผู้โจมตีรันโค้ดด้วยสิทธิ์ root หรือทำให้อุปกรณ์หยุดให้บริการบนรุ่นและการตั้งค่าที่ได้รับผลกระทบ Cisco อัปเดต Advisory เมื่อ 8 ต.ค. และระบุว่ายังไม่ทราบถึงการใช้ช่องโหว่นี้โจมตีจริง",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-10/"
                     }
                   }
                 ]
@@ -175,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FakeGit ใช้ Repository ลวงบน GitHub แจก SmartLoader",
+                    "text": "GhostAction กลับมาโจมตี GitHub Actions และขโมยความลับจากประวัติ Git",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข่าววันที่ 8 ต.ค. รายงานงานวิจัยของ Apiiro ที่ตรวจพบ Repository ลวง 17,610 รายการแจก SmartLoader โดยเปลี่ยนปลายทางปุ่มดาวน์โหลดใน README งานวิจัยต้นทางเผยแพร่วันที่ 6 ต.ค. จึงเป็นข่าวติดตามผล ไม่ใช่เหตุที่เพิ่งเริ่มวันนี้",
+                    "text": "StepSecurity พบผู้โจมตีใช้บัญชีผู้ดูแลโอเพนซอร์ส 2 บัญชีผลัก Workflow ปลอมเข้า 345 Repository เมื่อ 8 ต.ค. Workflow มุ่งขโมย GitHub Actions secrets รวมถึงข้อมูลรับรอง Cloud, AI และ SaaS ที่พบใน Working Tree และประวัติ Git",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-10/"
                     }
                   }
                 ]
@@ -224,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Midnight Mimosa ฝังมัลแวร์ในเฟิร์มแวร์ Android บางรุ่น",
+                    "text": "สำนักงานกฎหมายสหรัฐฯ เปิดเผยเหตุข้อมูลส่วนบุคคลรั่วไหล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Bitdefender รายงานเมื่อ 8 ต.ค. ว่า Android ราคาประหยัดบางรุ่นที่ใช้แพลตฟอร์ม MediaTek มีมัลแวร์ฝังในเฟิร์มแวร์ก่อนถึงผู้ใช้ มัลแวร์มีสิทธิ์ระดับระบบและสามารถติดตั้งแอปหรือโหลดโค้ดจากระยะไกล โดยไม่หมายความว่าอุปกรณ์ MediaTek ทุกเครื่องติดเชื้อ",
+                    "text": "Holland & Knight และ Squire Patton Boggs แจ้งหน่วยงานกำกับในรัฐเวอร์มอนต์ว่ามีหมายเลขประกันสังคมถูกเปิดเผย โดย Holland & Knight ระบุว่าผู้โจมตีใช้ Social Engineering เพื่อเข้าถึงคอมพิวเตอร์จากระยะไกล ทั้งสองแห่งระบุว่าไม่กระทบการให้บริการลูกค้า",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-10/"
                     }
                   }
                 ]
@@ -273,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ASOS ยืนยันข้อมูลลูกค้าถูกเข้าถึงหลังบัญชีพนักงานถูกหลอกขโมย",
+                    "text": "กองทุนบำนาญรัฐบาลกลางสวิสได้รับผลกระทบจากเหตุโจมตีผู้ให้บริการซอฟต์แวร์",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ASOS แจ้งลูกค้าว่าผู้โจมตีปลอมเป็นผู้ติดต่อที่ไว้ใจเพื่อขโมยข้อมูลเข้าสู่ระบบพนักงาน แล้วใช้เข้าถึงแพลตฟอร์มภายนอกที่บริษัทใช้ ข้อมูลที่เกี่ยวข้องรวมชื่อและข้อมูลติดต่อ โดยบริษัทระบุว่าข้อมูลบัตรชำระเงินและรหัสผ่านบัญชีลูกค้าไม่ถูกเข้าถึง",
+                    "text": "Publica กองทุนบำนาญรัฐบาลกลางสวิส ระบุว่าข้อมูลได้รับผลกระทบหลังผู้ให้บริการซอฟต์แวร์ภายนอกถูกโจมตีปลายเดือนกันยายน ขอบเขตข้อมูลยังอยู่ระหว่างการตรวจสอบ และอัยการสูงสุดสวิสได้เปิดการสอบสวน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +202,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-09/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-10/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "กระทรวงการต่างประเทศอิตาลียืนยันเว็บไซต์ถูกโจมตี แต่บริการไม่หยุดชะงัก",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "กระทรวงการต่างประเทศอิตาลียืนยันเมื่อ 8 ต.ค. ว่าเว็บไซต์ถูกโจมตี แต่ระบบรักษาความปลอดภัยลดผลกระทบได้และบริการไม่หยุดชะงัก หน่วยงานไม่ระบุผู้ต้องสงสัย และกำลังตรวจสอบว่าเว็บไซต์ของสถานทูตหรือกงสุลในต่างประเทศถูกพยายามโจมตีด้วยหรือไม่",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-10/"
                     }
                   }
                 ]
