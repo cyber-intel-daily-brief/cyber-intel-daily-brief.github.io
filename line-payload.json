@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261012-0700",
+  "report_id": "CIB-20261013-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 12 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 0 | High 4\nTop 3:\n1. Daiichi Kosho — ผู้รับจ้างติดมัลแวร์ ข้อมูลประมาณ 8.72 ล้านรายการอาจได้รับผลกระทบ\n2. กล้อง IP — ถูกใช้เป็นเครื่องมือข่าวกรองในพื้นที่ความขัดแย้ง\n3. P7 DarkSword — เพิ่มการขโมย Keychain และข้อมูลกระเป๋าสินทรัพย์ดิจิทัล"
+        "text": "Cyber Intel Daily Brief — 13 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 1 | High 4\nTop 3:\n1. GitLab — CVE-2026-85706 ถูกใช้โจมตีจริง\n2. ฝรั่งเศส — ระบบทำความเย็นซูเปอร์มาร์เก็ตถูกโจมตี\n3. Ahold Delhaize — ปิดบางระบบหลังเหตุไซเบอร์"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 12 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 13 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -21,14 +21,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH",
+                    "text": "CRITICAL",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#D75A0B"
+                    "color": "#D7263D"
                   },
                   {
                     "type": "text",
-                    "text": "ผู้รับจ้างของ Daiichi Kosho พบมัลแวร์ กระทบข้อมูลที่อาจรั่วไหลประมาณ 8.72 ล้านรายการ",
+                    "text": "GitLab เตือนช่องโหว่ CVE-2026-85706 ถูกใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Daiichi Kosho เปิดเผยว่าเครื่องพนักงานของ Nippon Columbia Group ซึ่งเป็นผู้รับจ้างติดมัลแวร์ และข้อมูลลูกค้าประมาณ 8.72 ล้านรายการอาจถูกเปิดเผย บริษัทยังไม่ยืนยันว่าข้อมูลรั่วไหลจริงหรือถูกนำไปใช้ในทางมิชอบ และระบบของ Daiichi Kosho ไม่ได้รับผลกระทบ",
+                    "text": "GitLab ยืนยันว่าช่องโหว่ Path Traversal ระดับ CVSS 10.0 ถูกเพิ่มในบัญชี CISA KEV และพบการใช้โจมตีระบบจริง ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนอาจอ่านไฟล์บนเซิร์ฟเวอร์ GitLab แบบติดตั้งเองได้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-12/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-13/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "กล้องเชื่อมต่ออินเทอร์เน็ตถูกใช้เป็นเครื่องมือข่าวกรองในพื้นที่ความขัดแย้ง",
+                    "text": "การโจมตีระบบทำความเย็นกระทบซูเปอร์มาร์เก็ตหลายร้อยแห่งในฝรั่งเศส",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "รายงานใหม่รวบรวมกรณีที่กล้องพลเรือนถูกยึดควบคุมเพื่อสังเกตการเคลื่อนกำลัง ประเมินความเสียหาย และสนับสนุนการเลือกเป้าหมายในยูเครนและตะวันออกกลาง ความเสี่ยงสูงเป็นพิเศษเมื่อกล้องมองเห็นพื้นที่ทหาร โครงสร้างพื้นฐาน หรือเส้นทางลำเลียง",
+                    "text": "การโจมตีระบบควบคุมตู้เย็นและตู้แช่ทำให้อุณหภูมิสูงขึ้น เกิดความเสียหายต่ออาหารและมีรายงานเพลิงไหม้ในหลายแห่ง สำนักงานอัยการปารีสเปิดการสอบสวนเหตุที่กระทบผู้ค้าปลีกหลายราย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-12/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-13/"
                     }
                   }
                 ]
@@ -126,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "P7 DarkSword เพิ่มความสามารถขโมย Keychain และข้อมูลกระเป๋าสินทรัพย์ดิจิทัลบน iPhone",
+                    "text": "Ahold Delhaize ปิดบางระบบเชิงป้องกันหลังพบเหตุความมั่นคงไซเบอร์",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "iVerify เปิดเผย P7 DarkSword ซึ่งเป็นสายพันธุ์ที่พบจากการสอบสวนเครื่องของพนักงานสถาบันการเงิน มัลแวร์ลดร่องรอยบนอุปกรณ์ เพิ่มการขโมยข้อมูล Keychain และกระเป๋าสินทรัพย์ดิจิทัล รวมทั้งรองรับคำสั่งแบบสองทาง",
+                    "text": "Ahold Delhaize ยืนยันปัญหาความมั่นคงในเครือข่ายและนำบางระบบออกจากการให้บริการเพื่อป้องกันความเสียหาย บริษัทยังไม่เปิดเผยสาเหตุ ขอบเขต หรือข้อมูลที่ได้รับผลกระทบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-12/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-13/"
                     }
                   }
                 ]
@@ -175,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Calendar Phishing ใช้คำเชิญประชุมแทรกลิงก์หลอกขโมยข้อมูลรับรอง",
+                    "text": "Ledger ยืนยันพบอุปกรณ์กระเป๋าสินทรัพย์ดิจิทัลที่ถูกฝังฮาร์ดแวร์ไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีส่งคำเชิญประชุมหรือรายการต่ออายุบริการเพื่อให้เหตุการณ์ปรากฏในปฏิทินโดยอัตโนมัติ แล้วล่อให้ผู้ใช้เปิดลิงก์หรือโทรหาศูนย์ช่วยเหลือปลอม รายงานของ Sublime Security ระบุว่าปริมาณการโจมตีผ่านไฟล์ ICS เพิ่มขึ้นอย่างมากในช่วงหลายเดือนที่ผ่านมา",
+                    "text": "Ledger ยืนยันว่าอุปกรณ์ของผู้ได้รับผลกระทบอย่างน้อยหนึ่งรายมีชิ้นส่วนฮาร์ดแวร์ที่ไม่ได้รับอนุญาต โดยเหตุเชื่อมโยงกับสินค้าที่จำหน่ายผ่านผู้ค้าปลีกภายนอก และยังไม่มีหลักฐานว่าระบบของ Ledger หรืออุปกรณ์ที่ซื้อโดยตรงถูกเจาะ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +202,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-12/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-13/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Telegram Desktop ก่อน 7.2.9 เสี่ยงส่งไฟล์ออกเมื่อคลิกลิงก์ที่สร้างขึ้นเฉพาะ",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "CVE-2026-107181 เป็นช่องโหว่การแทรกคำสั่งผ่าน IPC ใน Telegram Desktop ก่อนรุ่น 7.2.9 ผู้โจมตีอาจล่อให้ผู้ใช้คลิกลิงก์ tg:// ที่สร้างขึ้นเฉพาะเพื่อส่งไฟล์ในเครื่องออกไปโดยไม่ต้องยืนยันเพิ่มเติม",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-13/"
                     }
                   }
                 ]
@@ -224,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้บริหารบริษัทตอบสนอง Ransomware ถูกจับในคดีสมคบคิดกรรโชกทรัพย์",
+                    "text": "AvisLoader ใช้ Tox แบบ Peer-to-Peer เพื่อลดผลจากการยึดโดเมนควบคุม",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Edward Dubrovsky ผู้บริหารชาวแคนาดาที่เคยทำงานด้านเจรจาเหตุ Ransomware ถูกจับในสหรัฐฯ โดยบันทึกคดีระบุข้อหาสมคบคิดและกรรโชกทรัพย์ ข้อร้องเรียนยังถูกปิดผนึก และ FBI ยังไม่ยืนยันต่อสาธารณะว่าคดีนี้เชื่อมโยงกับ ShinyHunters หรือเหตุข้อมูล FBI รั่วไหล",
+                    "text": "Varonis Threat Labs วิเคราะห์ AvisLoader ซึ่งเป็นมัลแวร์โหลดเดอร์บน Windows ที่ใช้เครือข่าย Tox แบบ Peer-to-Peer เป็นช่องทางสั่งการ และพบเครื่องมือ ClickFix ในโครงสร้างพื้นฐานที่ตรวจพบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-12/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-13/"
                     }
                   }
                 ]
