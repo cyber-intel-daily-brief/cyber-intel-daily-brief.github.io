@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261014-0700",
+  "report_id": "CIB-20261015-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 14 ต.ค. 2569 (รอบ 07:00 น.)\nฉบับกู้คืน | 5 เหตุการณ์ | Critical 2 | High 3\nTop 3:\n1. Ivanti Connect Secure — พบการโจมตี Zero-Day\n2. Windows Shell — ช่องโหว่ถูกใช้โจมตีจริง\n3. GitLab — แพตช์ RCE ใน CI/CD"
+        "text": "Cyber Intel Daily Brief — 15 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 1 | High 4\nTop 3:\n1. Cisco Secure Email Gateway — CVE-2026-76519 ถูกใช้โจมตีจริง\n2. PAN-OS — พบการโจมตี Management Interface แบบจำกัดวง\n3. Microsoft — ทลายโครงสร้างพื้นฐาน Phishing ขนาดใหญ่"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 14 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 15 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Ivanti Connect Secure ถูกโจมตีผ่านชุดช่องโหว่ Zero-Day",
+                    "text": "Cisco Secure Email Gateway ถูกโจมตีผ่านช่องโหว่เขียนไฟล์และรันคำสั่งระดับ root",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Volexity พบการเชื่อมช่องโหว่เพื่อเข้าถึง VPN โดยไม่ยืนยันตัวตนและขโมยข้อมูลรับรอง ควรอัปเดตพร้อมตรวจสอบร่องรอยการบุกรุก",
+                    "text": "Cisco ยืนยันการใช้ CVE-2026-76519 โจมตีจริง ช่องโหว่ในฟังก์ชัน Advanced Malware Protection อาจเปิดทางให้ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนส่งไฟล์แนบที่สร้างขึ้นเฉพาะและรันคำสั่งระดับ root บนอุปกรณ์ได้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Windows Shell มีช่องโหว่ข้ามการป้องกันที่ถูกใช้โจมตีจริง",
+                    "text": "Palo Alto Networks พบการโจมตี PAN-OS Management Interface แบบจำกัดวง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft ออกอัปเดต Windows Shell สำหรับ CVE-2026-96951 และ CISA ระบุว่ามีการใช้โจมตีจริง ให้เร่งตรวจการติดตั้งอัปเดต",
+                    "text": "Palo Alto Networks ระบุว่า CVE-2026-0322 เป็นช่องโหว่ RCE ระดับ High และพบการโจมตีแบบจำกัดวง ผู้โจมตีต้องมีบัญชีสิทธิ์สูงและเข้าถึง Management Interface ผ่านเครือข่ายจึงจะรันโค้ดระดับ root ได้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,56 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-14/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "GitLab แก้ช่องโหว่ RCE ใน CI/CD Regular Expression Compiler",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "GitLab CE/EE แบบติดตั้งเองมีช่องโหว่ CVSS 10.0 ที่อาจให้ผู้ไม่ยืนยันตัวตนรันโค้ดบนเซิร์ฟเวอร์ได้ ผู้ผลิตออกแพตช์แล้ว",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
                     }
                   }
                 ]
@@ -175,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Ghostscript เสี่ยงรันโค้ดจาก PDF ที่สร้างขึ้นเฉพาะ",
+                    "text": "Microsoft และพันธมิตรทลายโครงสร้างพื้นฐาน Phishing ที่ส่งข้อความมากกว่าหนึ่งพันล้านครั้ง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข่าววันที่ 13 ตุลาคมทบทวนความเสี่ยงจาก PDF ที่ผ่าน Ghostscript ช่องโหว่เดิมมีแพตช์ใน 10.08.0 แล้ว ต้องตรวจระบบแปลงเอกสารและสร้างภาพตัวอย่าง",
+                    "text": "Microsoft เปิดเผยเครือข่าย YAM Store และชุดเครื่องมือ CoGUI, Haozi และ Iron Man System ซึ่งสนับสนุนการส่งอีเมลและ SMS หลอกลวงมากกว่าหนึ่งพันล้านข้อความไปยังองค์กรกว่า 75,000 แห่งทั่วโลกตั้งแต่ต้นปี 2569",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
                     }
                   }
                 ]
@@ -224,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Docker Hub แก้การโอน PAT ที่เสี่ยงต่อ Container Supply Chain",
+                    "text": "Hirudo มัลแวร์ Android เลียนแบบแอปธนาคารและมีเป้าหมายที่ระบุชื่อในไทย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Docker เปิดเผยปัญหาการโอน Personal Access Token ระหว่างแปลงบัญชีเป็นองค์กร แก้ระบบแล้วและไม่พบหลักฐานการใช้โจมตีจากการตรวจสอบ",
+                    "text": "ThreatFabric พบ Hirudo ซึ่งขโมยข้อมูลรับรอง ควบคุมอุปกรณ์ บันทึกหน้าจอ/กล้อง และขโมย SMS โดยใช้แอปล่อหลากหลายรูปแบบ โค้ดที่วิเคราะห์ระบุเป้าหมายด้านข้อมูลรับรองในหลายประเทศรวมถึงประเทศไทย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +202,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "curl แก้ช่องโหว่ Use-After-Free ระหว่างอัปโหลดผ่าน HTTP/2",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "โครงการ curl จัดระดับ CVE-2026-92392 เป็น High ช่องโหว่อาจทำให้เซิร์ฟเวอร์ปลายทางที่เป็นอันตรายกระตุ้น Memory Corruption บนเครื่อง Client ระหว่างอัปโหลดข้อมูลผ่าน HTTP/2 และมีการสาธิตการรันโค้ดภายใต้เงื่อนไขเฉพาะ",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "MEDIUM",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#315BE8"
+                  },
+                  {
+                    "type": "text",
+                    "text": "สหรัฐฯ ดำเนินคดีเครือข่ายแรงงานไอทีเกาหลีเหนือและยึดอุปกรณ์เกือบ 190 เครื่อง",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "กระทรวงยุติธรรมสหรัฐฯ ประกาศการดำเนินคดีกับผู้เกี่ยวข้อง 14 ราย จับกุม 2 ราย และยึดอุปกรณ์ประมาณ 187 เครื่องจากเครือข่าย Laptop Farm ที่ถูกกล่าวหาว่าช่วยแรงงานไอทีเกาหลีเหนือแฝงตัวทำงานในบริษัทกว่า 70 แห่ง",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
                     }
                   }
                 ]
