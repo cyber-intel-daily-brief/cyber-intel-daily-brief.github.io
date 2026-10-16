@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261015-0700",
+  "report_id": "CIB-20261016-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 15 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 1 | High 4\nTop 3:\n1. Cisco Secure Email Gateway — CVE-2026-76519 ถูกใช้โจมตีจริง\n2. PAN-OS — พบการโจมตี Management Interface แบบจำกัดวง\n3. Microsoft — ทลายโครงสร้างพื้นฐาน Phishing ขนาดใหญ่"
+        "text": "Cyber Intel Daily Brief — 16 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 4 | High 1\nTop 3:\n1. BeyondTrust Remote Support — Zero-day CVE-2026-102764\n2. Atlassian Data Center — CISA เพิ่ม CVE-2026-21589 เข้า KEV\n3. Next.js — อัปเดตฉุกเฉินแก้ RCE สองเส้นทาง"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 15 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 16 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Cisco Secure Email Gateway ถูกโจมตีผ่านช่องโหว่เขียนไฟล์และรันคำสั่งระดับ root",
+                    "text": "BeyondTrust Remote Support ถูกใช้เป็น Zero-day โดยกลุ่มจารกรรม ARMORY CASTLE",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Cisco ยืนยันการใช้ CVE-2026-76519 โจมตีจริง ช่องโหว่ในฟังก์ชัน Advanced Malware Protection อาจเปิดทางให้ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนส่งไฟล์แนบที่สร้างขึ้นเฉพาะและรันคำสั่งระดับ root บนอุปกรณ์ได้",
+                    "text": "BeyondTrust และ Mandiant เปิดเผย CVE-2026-102764 ระดับ Critical ซึ่งผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนอาจใช้ดำเนินการกับไฟล์บนอุปกรณ์ Remote Support และมีหลักฐานว่าถูกใช้โจมตีจริงก่อนเปิดเผยช่องโหว่",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,154 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "CISA เพิ่มช่องโหว่ Atlassian Data Center เข้าบัญชี KEV หลังพบการใช้โจมตีจริง",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "CISA เพิ่ม CVE-2026-21589 เข้าบัญชี Known Exploited Vulnerabilities เมื่อ 15 ตุลาคม ยกระดับความเร่งด่วนของช่องโหว่อ่านไฟล์โดยไม่ต้องยืนยันตัวตนในผลิตภัณฑ์ Atlassian Data Center หลายรายการ",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Next.js ออกอัปเดตฉุกเฉินแก้ช่องโหว่ RCE สองเส้นทางและ DoS",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "โครงการ Next.js ออกเวอร์ชัน 16.4.1 และ 15.5.28 เพื่อแก้ช่องโหว่ RCE แบบไม่ต้องยืนยันตัวตนใน Cache Components และ Image Optimization API รวมทั้งช่องโหว่ DoS ใน Server Actions",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Drupal แก้ช่องโหว่ Remote Code Execution ใน Field UI ที่มีเส้นทางโจมตีไม่ต้องยืนยันตัวตน",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Drupal Security Team เปิดเผย CVE-2026-108097 ระดับ Critical ในโมดูล Field UI โดย Core เพียงอย่างเดียวไม่ถูกโจมตีโดยตรง แต่ Contributed Module หรือ Custom Code บางรูปแบบอาจเปิดเส้นทางสู่ RCE และอย่างน้อยหนึ่งเส้นทางไม่ต้องยืนยันตัวตน",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
                     }
                   }
                 ]
@@ -77,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Palo Alto Networks พบการโจมตี PAN-OS Management Interface แบบจำกัดวง",
+                    "text": "CISA เตือนช่องโหว่หลายรายการใน Eclipse Milo ที่ใช้กับระบบ OPC UA",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Palo Alto Networks ระบุว่า CVE-2026-0322 เป็นช่องโหว่ RCE ระดับ High และพบการโจมตีแบบจำกัดวง ผู้โจมตีต้องมีบัญชีสิทธิ์สูงและเข้าถึง Management Interface ผ่านเครือข่ายจึงจะรันโค้ดระดับ root ได้",
+                    "text": "CISA เผยแพร่ Advisory สำหรับ Eclipse Milo ซึ่งเป็นชุดไลบรารี OPC UA โดยช่องโหว่หลายรายการอาจทำให้ลบข้อมูลที่ได้รับการป้องกัน กู้คืนข้อมูลรับรอง สวมรอยผู้ใช้ หรือทำให้ Server ไม่ตอบสนอง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,154 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Microsoft และพันธมิตรทลายโครงสร้างพื้นฐาน Phishing ที่ส่งข้อความมากกว่าหนึ่งพันล้านครั้ง",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Microsoft เปิดเผยเครือข่าย YAM Store และชุดเครื่องมือ CoGUI, Haozi และ Iron Man System ซึ่งสนับสนุนการส่งอีเมลและ SMS หลอกลวงมากกว่าหนึ่งพันล้านข้อความไปยังองค์กรกว่า 75,000 แห่งทั่วโลกตั้งแต่ต้นปี 2569",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Hirudo มัลแวร์ Android เลียนแบบแอปธนาคารและมีเป้าหมายที่ระบุชื่อในไทย",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ThreatFabric พบ Hirudo ซึ่งขโมยข้อมูลรับรอง ควบคุมอุปกรณ์ บันทึกหน้าจอ/กล้อง และขโมย SMS โดยใช้แอปล่อหลากหลายรูปแบบ โค้ดที่วิเคราะห์ระบุเป้าหมายด้านข้อมูลรับรองในหลายประเทศรวมถึงประเทศไทย",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "curl แก้ช่องโหว่ Use-After-Free ระหว่างอัปโหลดผ่าน HTTP/2",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "โครงการ curl จัดระดับ CVE-2026-92392 เป็น High ช่องโหว่อาจทำให้เซิร์ฟเวอร์ปลายทางที่เป็นอันตรายกระตุ้น Memory Corruption บนเครื่อง Client ระหว่างอัปโหลดข้อมูลผ่าน HTTP/2 และมีการสาธิตการรันโค้ดภายใต้เงื่อนไขเฉพาะ",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
                     }
                   }
                 ]
@@ -273,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สหรัฐฯ ดำเนินคดีเครือข่ายแรงงานไอทีเกาหลีเหนือและยึดอุปกรณ์เกือบ 190 เครื่อง",
+                    "text": "NGINX แก้ช่องโหว่ห้ารายการในรุ่น 1.31.7 และ 1.30.6",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "กระทรวงยุติธรรมสหรัฐฯ ประกาศการดำเนินคดีกับผู้เกี่ยวข้อง 14 ราย จับกุม 2 ราย และยึดอุปกรณ์ประมาณ 187 เครื่องจากเครือข่าย Laptop Farm ที่ถูกกล่าวหาว่าช่วยแรงงานไอทีเกาหลีเหนือแฝงตัวทำงานในบริษัทกว่า 70 แห่ง",
+                    "text": "NGINX เผยแพร่สถานะแก้ไขช่องโหว่ระดับ Medium ห้ารายการ ครอบคลุม Buffer Overflow, HTTP/3 Request Body Injection, การปลอม TLS Session Ticket และ Use-after-free",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
                     }
                   }
                 ]
