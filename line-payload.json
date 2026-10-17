@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261016-0700",
+  "report_id": "CIB-20261017-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 16 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 4 | High 1\nTop 3:\n1. BeyondTrust Remote Support — Zero-day CVE-2026-102764\n2. Atlassian Data Center — CISA เพิ่ม CVE-2026-21589 เข้า KEV\n3. Next.js — อัปเดตฉุกเฉินแก้ RCE สองเส้นทาง"
+        "text": "Cyber Intel Daily Brief — 17 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3:\n1. Collabora/Nextcloud — CVE-2026-110447 ถูกใช้โจมตีจริง\n2. Magento/Adobe Commerce — BlockStrap CVSS 10.0\n3. AdFection — ส่ง Candiru Spyware ผ่านโฆษณาแบบ Zero-click"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 16 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 17 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "BeyondTrust Remote Support ถูกใช้เป็น Zero-day โดยกลุ่มจารกรรม ARMORY CASTLE",
+                    "text": "ผู้โจมตีใช้ช่องโหว่ Collabora Built-in CODE ฝัง Web shell บน Nextcloud",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "BeyondTrust และ Mandiant เปิดเผย CVE-2026-102764 ระดับ Critical ซึ่งผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนอาจใช้ดำเนินการกับไฟล์บนอุปกรณ์ Remote Support และมีหลักฐานว่าถูกใช้โจมตีจริงก่อนเปิดเผยช่องโหว่",
+                    "text": "มีรายงานการใช้ CVE-2026-110447 โจมตีจริงผ่านแอป Collabora Online - Built-in CODE Server สำหรับ Nextcloud โดยอาจรันคำสั่งบนระบบและติดตั้ง Web shell ได้โดยไม่ต้องยืนยันตัวตน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-17/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เพิ่มช่องโหว่ Atlassian Data Center เข้าบัญชี KEV หลังพบการใช้โจมตีจริง",
+                    "text": "BlockStrap เปิดทางรันโค้ดบน Magento และ Adobe Commerce โดยไม่ต้องมีบัญชี",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เพิ่ม CVE-2026-21589 เข้าบัญชี Known Exploited Vulnerabilities เมื่อ 15 ตุลาคม ยกระดับความเร่งด่วนของช่องโหว่อ่านไฟล์โดยไม่ต้องยืนยันตัวตนในผลิตภัณฑ์ Atlassian Data Center หลายรายการ",
+                    "text": "Adobe และ Sansec เปิดเผย CVE-2026-103849 หรือ BlockStrap ซึ่งเป็น Template Injection ระดับ CVSS 10.0 ผู้โจมตีจากระยะไกลอาจรัน PHP บน Server ได้โดยไม่ต้องยืนยันตัวตน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,105 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Next.js ออกอัปเดตฉุกเฉินแก้ช่องโหว่ RCE สองเส้นทางและ DoS",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "โครงการ Next.js ออกเวอร์ชัน 16.4.1 และ 15.5.28 เพื่อแก้ช่องโหว่ RCE แบบไม่ต้องยืนยันตัวตนใน Cache Components และ Image Optimization API รวมทั้งช่องโหว่ DoS ใน Server Actions",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Drupal แก้ช่องโหว่ Remote Code Execution ใน Field UI ที่มีเส้นทางโจมตีไม่ต้องยืนยันตัวตน",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Drupal Security Team เปิดเผย CVE-2026-108097 ระดับ Critical ในโมดูล Field UI โดย Core เพียงอย่างเดียวไม่ถูกโจมตีโดยตรง แต่ Contributed Module หรือ Custom Code บางรูปแบบอาจเปิดเส้นทางสู่ RCE และอย่างน้อยหนึ่งเส้นทางไม่ต้องยืนยันตัวตน",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-17/"
                     }
                   }
                 ]
@@ -224,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เตือนช่องโหว่หลายรายการใน Eclipse Milo ที่ใช้กับระบบ OPC UA",
+                    "text": "AdFection ใช้โฆษณาออนไลน์ส่ง Candiru Spyware แบบ Zero-click",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เผยแพร่ Advisory สำหรับ Eclipse Milo ซึ่งเป็นชุดไลบรารี OPC UA โดยช่องโหว่หลายรายการอาจทำให้ลบข้อมูลที่ได้รับการป้องกัน กู้คืนข้อมูลรับรอง สวมรอยผู้ใช้ หรือทำให้ Server ไม่ตอบสนอง",
+                    "text": "Citizen Lab เปิดเผยหลักฐานทางเทคนิคครั้งแรกของการส่ง Mercenary Spyware ผ่านโฆษณาแบบเจาะจงเป้าหมาย โดยเพียงแสดงโฆษณาก็อาจเริ่มกระบวนการติดเชื้อได้โดยผู้ใช้ไม่ต้องคลิก",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-17/"
                     }
                   }
                 ]
@@ -266,14 +168,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "MEDIUM",
+                    "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#315BE8"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "NGINX แก้ช่องโหว่ห้ารายการในรุ่น 1.31.7 และ 1.30.6",
+                    "text": "เหตุไซเบอร์ที่ผู้รับจ้าง BAE Systems กระทบบริการศาลล้มละลายสหรัฐฯ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "NGINX เผยแพร่สถานะแก้ไขช่องโหว่ระดับ Medium ห้ารายการ ครอบคลุม Buffer Overflow, HTTP/3 Request Body Injection, การปลอม TLS Session Ticket และ Use-after-free",
+                    "text": "สำนักงานบริหารศาลสหรัฐฯ ยืนยันว่าบริการออนไลน์หลายรายการของ Bankruptcy Noticing Center หยุดทำงานจากเหตุ Cybersecurity Incident ที่เกี่ยวข้องกับระบบซึ่ง BAE Systems Inc. ดำเนินการให้ศาลรัฐบาลกลาง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +202,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-17/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Burger King Japan เปิดเผยข้อมูลสมาชิกแอปประมาณ 11.18 ล้านรายการรั่วไหล",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ผู้ดำเนินงาน Burger King ในญี่ปุ่นเปิดเผยว่าผู้ไม่หวังดีเข้าถึง Server จัดการข้อมูลสมาชิกแอปโดยไม่ได้รับอนุญาต ส่งผลให้ข้อมูลประมาณ 11.18 ล้านรายการถูกเปิดเผย",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-17/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ผู้โจมตียึดอุปกรณ์ Edge ใน 34 ประเทศเพื่อขายต่อ Bandwidth เป็น Residential Proxy",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "GreyNoise พบแคมเปญ Proxyjacking ที่ติดตั้ง Pawns.app บนอุปกรณ์โดยเจ้าของไม่ยินยอม และยืนยันการยึดอุปกรณ์อย่างน้อย 143 เครื่องใน 34 ประเทศ",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-17/"
                     }
                   }
                 ]
