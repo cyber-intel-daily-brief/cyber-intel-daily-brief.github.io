@@ -17,6 +17,8 @@ permissions:
   contents: read
 
 env:
+  # Temporarily paused by user on 2026-10-18. Re-enable only on explicit request.
+  LINE_DELIVERY_ENABLED: 'false'
   DASHBOARD_URL: https://cyber-intel-daily-brief.github.io/
 
 jobs:
@@ -50,8 +52,12 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         run: echo 'DRY RUN PASSED - no LINE request sent'
 
+      - name: LINE delivery paused
+        if: ${{ env.LINE_DELIVERY_ENABLED != 'true' }}
+        run: echo 'LINE_PAUSED - OA Broadcast and Group Push intentionally skipped; website publication remains enabled.'
+
       - name: Prepare LINE requests
-        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run == false }}
+        if: ${{ env.LINE_DELIVERY_ENABLED == 'true' && (github.event_name != 'workflow_dispatch' || inputs.dry_run == false) }}
         env:
           LINE_GROUP_ID: ${{ secrets.LINE_GROUP_ID }}
         shell: bash
@@ -72,7 +78,7 @@ jobs:
           jq -e '.messages | type == "array" and length > 0' /tmp/line-group-push.json >/dev/null
 
       - name: Send to LINE OA and group
-        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run == false }}
+        if: ${{ env.LINE_DELIVERY_ENABLED == 'true' && (github.event_name != 'workflow_dispatch' || inputs.dry_run == false) }}
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
         shell: bash
