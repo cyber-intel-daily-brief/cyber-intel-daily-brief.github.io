@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261018-0700",
+  "report_id": "CIB-20261019-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 18 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3:\n1. ConnectWise — Credential ถูกใช้เข้าถึง Microsoft 365 หลายองค์กร\n2. Langflow — CVE-2026-105740 ถูกใช้โจมตีเพิ่มขึ้น\n3. WordPress — wp2shell ถูกโจมตีกว่า 4,300 ครั้ง"
+        "text": "Cyber Intel Daily Brief — 19 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3:\n1. SiteGuard — CVE-2026-106931 ถูกใช้โจมตีจริง\n2. AOMEI — ช่องทางอัปเดตถูกใช้ส่ง SHINYROAD Backdoor\n3. Fortinet — CVE-2025-61624 ถูกเพิ่มเข้า CISA KEV"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 18 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 19 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Credential ของ ConnectWise Cloud Backup ถูกใช้เข้าถึง Microsoft 365 หลายองค์กร",
+                    "text": "SiteGuard Server Edition ถูกใช้โจมตีเพื่อรันคำสั่งระดับ root หรือ SYSTEM",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ConnectWise ยืนยันการเข้าถึง Application Identity โดยไม่ได้รับอนุญาต ขณะที่ Huntress พบการ Sign-in สำเร็จมากกว่า 300 Tenant และพฤติกรรมเพิ่มสิทธิ์หรือสร้าง Credential เพื่อคงการเข้าถึงในบาง Tenant",
+                    "text": "JVN และ JPCERT/CC ยืนยันว่ามีการใช้ CVE-2026-106931 โจมตีจริง ช่องโหว่ OS Command Injection อยู่ในฟังก์ชันสถิติของ SiteGuard Server Edition ซึ่งเปิดใช้งานโดยค่าเริ่มต้นและอาจทำให้ผู้โจมตีรันคำสั่งด้วยสิทธิ์สูงสุดของระบบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-19/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "พบการโจมตี Langflow CVE-2026-105740 เพิ่มขึ้นอย่างรวดเร็ว",
+                    "text": "ผู้โจมตีแก้ไขช่องทางอัปเดต AOMEI ชั่วคราวเพื่อส่ง SHINYROAD Backdoor",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Previdian ตรวจพบความพยายามโจมตี CVE-2026-105740 จำนวน 2,039 ครั้งในช่วงเจ็ดวัน โดยเพิ่มขึ้น 2,005 ครั้งและยังพบกิจกรรมล่าสุดเมื่อ 17 ตุลาคม ช่องโหว่นี้มี CVSS 9.9 และเปิดให้ผู้ใช้ที่ผ่านการยืนยันตัวตนรันคำสั่งบน Server ได้",
+                    "text": "Google Threat Intelligence Group และ Mandiant เปิดเผยการโจมตี Supply Chain ที่แก้ไขไฟล์กำหนดค่าอัปเดตของ AOMEI Backupper เป็นช่วงสั้นเพียงไม่กี่นาที เพื่อส่งมัลแวร์ไปยังเครื่องที่ตรวจอัปเดตตรงกับช่วงเวลาโจมตี",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,56 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-18/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Sensor พบการโจมตี WordPress wp2shell มากกว่า 4,300 ครั้งในรอบเจ็ดวัน",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Previdian พบความพยายามโจมตี CVE-2026-63030 จำนวน 4,337 ครั้ง เพิ่มขึ้น 3,066 ครั้ง และยังพบกิจกรรมเมื่อ 17 ตุลาคม ช่องโหว่สามารถเชื่อมกับ SQL Injection เพื่อรันโค้ดบน WordPress โดยไม่ต้องมีบัญชี",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-19/"
                     }
                   }
                 ]
@@ -175,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ฝรั่งเศสประเมินร้านค้าราว 700 แห่งได้รับผลกระทบจากการยึดระบบทำความเย็น",
+                    "text": "CISA ยกระดับช่องโหว่ Path Traversal ในผลิตภัณฑ์ Fortinet หลังพบการใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลล่าสุดระบุว่าร้านค้าประมาณ 700 แห่งได้รับผลกระทบจากการควบคุมระบบทำความเย็นจากระยะไกล CERT-FR ยังเตือนว่าการโจมตีอาจดำเนินต่อและอุปกรณ์ End-of-Life ที่เปิดสู่อินเทอร์เน็ตมีโอกาสถูกยึดซ้ำสูง",
+                    "text": "CISA เพิ่ม CVE-2025-61624 เข้าบัญชี Known Exploited Vulnerabilities เมื่อ 16 ตุลาคม ยืนยันว่าช่องโหว่ Path Traversal ใน CLI ของผลิตภัณฑ์ Fortinet หลายรายการถูกใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-19/"
                     }
                   }
                 ]
@@ -224,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "การสแกนโจมตี Vite Development Server เพิ่มขึ้นและมุ่งอ่านไฟล์ที่ถูกจำกัด",
+                    "text": "CERT-In เตือน AI Agent เข้าถึงระบบจริงผ่าน Credential และสิทธิ์ Cloud ที่เปิดเกินจำเป็น",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Previdian พบความพยายามโจมตี CVE-2026-39364 จำนวน 4,209 ครั้งในรอบเจ็ดวัน เพิ่มขึ้น 1,245 ครั้ง ขณะที่ CSA Singapore ยืนยันว่ามีการใช้ช่องโหว่นี้โจมตี Vite Development Server ที่เปิดให้เข้าถึงจากเครือข่าย",
+                    "text": "คำแนะนำของ CERT-In ระบุเหตุการณ์ที่ AI Agent ภายใต้การประเมินเข้าถึงข้อมูลธุรกิจโดยไม่ได้รับอนุญาต และอีกกรณีที่ผู้โจมตีใช้ Framework แบบ Agentic เร่งขั้นตอนโจมตีจากหลายวันเหลือเพียงไม่กี่ชั่วโมง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-19/"
                     }
                   }
                 ]
@@ -273,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้ให้บริการซอฟต์แวร์ของ Laerdal ถูกโจมตีและข้อมูลพนักงานถูกเข้าถึง",
+                    "text": "ConnectWise เพิ่ม IOC และยังระงับ Cloud Backup, SaaS Security และ Cloud Management",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Laerdal Medical เปิดเผยว่าผู้ให้บริการซอฟต์แวร์ภายนอกถูกโจมตี ส่งผลให้มีการเข้าถึงข้อมูลส่วนบุคคลของพนักงานโดยไม่ได้รับอนุญาต ขอบเขตข้อมูลและจำนวนผู้ได้รับผลกระทบยังอยู่ระหว่างตรวจสอบ",
+                    "text": "ConnectWise อัปเดตเหตุ Cloud Backup เมื่อ 18 ตุลาคม โดยเพิ่ม IP สำหรับตรวจสอบอีกสองรายการ และยืนยันว่าบริการ Cloud Backup, SaaS Security และ Cloud Management ยังถูกระงับระหว่างสอบสวนและกู้คืน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-19/"
                     }
                   }
                 ]
