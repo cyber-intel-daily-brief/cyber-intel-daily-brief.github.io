@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261023-0700",
+  "report_id": "CIB-20261024-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 23 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3: Railway Secrets · Oracle October CPU · Siemens CVE-2026-110936"
+        "text": "Cyber Intel Daily Brief — 24 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 4 | High 2\nTop 3: LiteLLM Supply Chain · VeloCloud CVE-2026-114625 · PHP CVE-2026-115560"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 23 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 24 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Railway เตือนรีบหมุนเวียน Secrets หลังพบบุคคลที่ไม่ได้รับอนุญาตอาจอ่านตัวแปรระบบลูกค้า",
+                    "text": "LiteLLM รุ่น 1.107.0 ถูกฝังมัลแวร์ผ่านกระบวนการเผยแพร่ PyPI และ Container",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Railway ตรวจพบกิจกรรมผิดปกติในระบบที่เก็บตัวแปรสภาพแวดล้อม และระบุว่าบุคคลภายนอกอาจเข้าถึงค่าที่เข้ารหัส รวมถึงถอดรหัสบางส่วนได้ จึงแนะนำให้ลูกค้าทุกรายเปลี่ยน Secrets และตรวจ Log โดยทันที",
+                    "text": "LiteLLM ยืนยันว่า Release Pipeline ถูกยึดและเผยแพร่รุ่น 1.107.0 ที่มีมัลแวร์ขโมยข้อมูลรับรองและโหลดเครื่องมือรันโค้ดจากระยะไกล ทั้ง PyPI และ Container Image ในช่วงเวลาที่ระบุ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Oracle ออกชุดแก้ไข ต.ค. ครอบคลุม 1,209 CVE พร้อมช่องโหว่ร้ายแรงใน Fusion Middleware",
+                    "text": "CISA เพิ่ม VeloCloud CVE-2026-114625 เข้า KEV หลัง Arista ยืนยันการใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Oracle ออก Critical Patch Update เดือนตุลาคม ครอบคลุมผลิตภัณฑ์องค์กรจำนวนมาก โดยการวิเคราะห์ชุดอัปเดตพบ 1,209 CVE และ 95 รายการระดับ Critical รวมถึงหลายช่องโหว่เครือข่ายที่ไม่ต้องใช้ข้อมูลรับรอง",
+                    "text": "ช่องโหว่ SQL Injection ระดับ 9.9 ใน VeloCloud Orchestrator แบบ On-prem ถูกใช้โจมตีจริง และ CISA เพิ่มเข้า Known Exploited Vulnerabilities เมื่อ 23 ต.ค. ผู้ดูแลต้องอัปเดตระบบตามสายรุ่นที่ผู้ผลิตระบุ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "PHP แนะนำปิด Session Upload Progress ชั่วคราวสำหรับ CVE-2026-115560 ที่ยังไม่มีแพตช์",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "PHP เปิดเผยช่องทาง RCE เพิ่มเติมภายใต้การตั้งค่าที่พบไม่บ่อย และแนะนำตั้ง session.upload_progress.enabled=0 พร้อมเริ่ม Worker ใหม่จนกว่าจะออก Bugfix รุ่นถัดไป",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "HPE แก้ช่องโหว่ ArubaOS 72 รายการ รวม 8 รายการระดับสูงสุด",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "HPE ออกอัปเดต ArubaOS แก้ 72 ช่องโหว่ โดย 8 รายการระดับสูงสุดเกี่ยวข้องกับ Authentication Bypass, Command Injection และ RCE จากระยะไกล พร้อมแนะนำจำกัด Management Interface",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
                     }
                   }
                 ]
@@ -126,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Siemens ยืนยัน CVE-2026-110936 ถูกใช้โจมตีผ่าน DLL Side-loading",
+                    "text": "Quest Diagnostics ยืนยันระบบ Quanum LSM ถูกเข้าถึงและเชื่อว่ามีข้อมูลผู้ป่วยเกี่ยวข้อง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Siemens ยืนยันการใช้ช่องโหว่ DLL Side-loading ใน Siemens Software Center โจมตีจริง ผู้โจมตีใช้โปรแกรมแท้ที่มีลายเซ็นร่วมกับ DLL อันตราย โดยผู้ผลิตแก้ไขแล้วในรุ่น 4.0.9.8",
+                    "text": "Quest Diagnostics แจ้ง SEC ว่าพบการเข้าถึง Quanum LSM โดยไม่ได้รับอนุญาต ซึ่งเป็นระบบสำหรับสั่งตรวจและรับผลตรวจ บริษัทเชื่อว่ามีข้อมูลผู้ป่วยบางส่วนถูกเข้าถึง แต่ขอบเขตยังอยู่ระหว่างสอบสวน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
                     }
                   }
                 ]
@@ -175,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "91APP ไต้หวันเผยผลสอบสวนเหตุข้อมูลคำสั่งซื้อถูกเข้าถึงโดยไม่ได้รับอนุญาต",
+                    "text": "Capcom แจ้งข้อมูล CAPCOM ID 11.77 ล้านรายการถูกเข้าถึงโดยไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "91APP ระบุว่าฐานข้อมูลคำสั่งซื้อหนึ่งชุดใน Commerce Cloud ถูกเข้าถึงโดยไม่ได้รับอนุญาตจากการโจมตีอัตโนมัติ ช่องทางเข้าคือเครื่องมือบุคคลที่สามซึ่งไม่ได้อัปเดต และการบุกรุกถูกปิดกั้นเมื่อ 14 ต.ค.",
+                    "text": "Capcom ยืนยันข้อมูลอีเมลและตัวระบุระบบ 11,774,247 รายการได้รับผลกระทบ พร้อมพบบัญชี 196 รายการถูกเปลี่ยนรหัสผ่านโดยไม่ได้รับอนุญาต และข้อมูล e-Capcom เพิ่มเติมใน 19 บัญชี",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,56 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Operation Serengeti III สกัด 10,909 เครือข่ายอาชญากรรมไซเบอร์ในแอฟริกา",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "INTERPOL และพันธมิตรรายงานผลปฏิบัติการข้ามชาติ จับกุมผู้ต้องสงสัย 1,462 ราย สกัดเครือข่ายอันตราย 10,909 เครือข่าย และกู้เงินผิดกฎหมายมากกว่า 105 ล้านดอลลาร์สหรัฐ",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
                     }
                   }
                 ]
