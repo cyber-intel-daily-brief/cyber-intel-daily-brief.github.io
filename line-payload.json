@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261022-0700",
+  "report_id": "CIB-20261023-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 22 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: PHP2Shell · GitLab CVE-2026-110264 · GlobalProtect CVE-2026-0257"
+        "text": "Cyber Intel Daily Brief — 23 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3: Railway Secrets · Oracle October CPU · Siemens CVE-2026-110936"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 22 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 23 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "PHP ออกแพตช์ฉุกเฉิน PHP2Shell เสี่ยงรันโค้ดโดยไม่ต้องเข้าสู่ระบบ",
+                    "text": "Railway เตือนรีบหมุนเวียน Secrets หลังพบบุคคลที่ไม่ได้รับอนุญาตอาจอ่านตัวแปรระบบลูกค้า",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "PHP เผยแพร่แพตช์วันที่ 21 ต.ค. แก้ช่องโหว่ร้ายแรงสองรายการที่อาจนำไปสู่การรันโค้ดจากระยะไกลโดยไม่ต้องยืนยันตัวตน ผู้ดูแลต้องอัปเดตตัว PHP ที่ใช้งานจริง ไม่ใช่เพียงอัปเดต CMS หรือปลั๊กอิน",
+                    "text": "Railway ตรวจพบกิจกรรมผิดปกติในระบบที่เก็บตัวแปรสภาพแวดล้อม และระบุว่าบุคคลภายนอกอาจเข้าถึงค่าที่เข้ารหัส รวมถึงถอดรหัสบางส่วนได้ จึงแนะนำให้ลูกค้าทุกรายเปลี่ยน Secrets และตรวจ Log โดยทันที",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-22/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "GitLab แก้ CVE-2026-110264 ระดับ 10.0 กระทบระบบติดตั้งเองหลายรุ่น",
+                    "text": "Oracle ออกชุดแก้ไข ต.ค. ครอบคลุม 1,209 CVE พร้อมช่องโหว่ร้ายแรงใน Fusion Middleware",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "GitLab ออก Critical Patch วันที่ 21 ต.ค. แก้ Integer Overflow ที่อาจทำให้ผู้โจมตีซึ่งไม่ได้เข้าสู่ระบบรันโค้ดบนเซิร์ฟเวอร์ได้ภายใต้เงื่อนไขบางประการ ต้องตรวจรุ่นที่ติดตั้งเองแม้เคยอัปเดตในรอบก่อนแล้ว",
+                    "text": "Oracle ออก Critical Patch Update เดือนตุลาคม ครอบคลุมผลิตภัณฑ์องค์กรจำนวนมาก โดยการวิเคราะห์ชุดอัปเดตพบ 1,209 CVE และ 95 รายการระดับ Critical รวมถึงหลายช่องโหว่เครือข่ายที่ไม่ต้องใช้ข้อมูลรับรอง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,56 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-22/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ติดตาม GlobalProtect CVE-2026-0257 หลัง Unit 42 อัปเดตคำแนะนำรับมือ Ransomware",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Unit 42 อัปเดตคำแนะนำวันที่ 20 ต.ค. หลังพบการใช้ช่องโหว่ GlobalProtect เพื่อเปิดทางเข้าระบบโดยกลุ่ม Ransomware เป็นข่าวติดตามช่องโหว่เดิม ไม่ใช่ช่องโหว่เพิ่งค้นพบวันนี้",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-22/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
                     }
                   }
                 ]
@@ -171,11 +122,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#D7263D"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "Onamae Desktop Cloud ญี่ปุ่นหยุดบริการหลังพบโปรแกรมไม่พึงประสงค์",
+                    "text": "Siemens ยืนยัน CVE-2026-110936 ถูกใช้โจมตีผ่าน DLL Side-loading",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Onamae.com แจ้งการเข้าถึงโดยไม่ได้รับอนุญาตและติดตั้งโปรแกรมอันตรายในสภาพแวดล้อมลูกค้าบางส่วน พร้อมระบุเซิร์ฟเวอร์ที่อาจได้รับผลกระทบ 26,739 เครื่อง การหยุดบริการเป็นมาตรการควบคุมเหตุ ไม่ใช่หลักฐานว่าเครื่องทั้งหมดติดเชื้อ",
+                    "text": "Siemens ยืนยันการใช้ช่องโหว่ DLL Side-loading ใน Siemens Software Center โจมตีจริง ผู้โจมตีใช้โปรแกรมแท้ที่มีลายเซ็นร่วมกับ DLL อันตราย โดยผู้ผลิตแก้ไขแล้วในรุ่น 4.0.9.8",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-22/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
                     }
                   }
                 ]
@@ -220,11 +171,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#D7263D"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "OVHcloud เตือน CLI บางไฟล์ถูกแทนด้วยมัลแวร์ขโมย Secrets",
+                    "text": "91APP ไต้หวันเผยผลสอบสวนเหตุข้อมูลคำสั่งซื้อถูกเข้าถึงโดยไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข่าวติดตามวันที่ 21 ต.ค. รายงานเหตุผู้โจมตีใช้บัญชีนักพัฒนาแทนไฟล์แจกจ่าย CLI ด้วยมัลแวร์ เหตุเกิดวันที่ 19 ต.ค. และประกาศต้นทางวันที่ 20 ต.ค. ขอบเขตจำกัดตามช่วงดาวน์โหลดและไฟล์ที่ได้รับผลกระทบ",
+                    "text": "91APP ระบุว่าฐานข้อมูลคำสั่งซื้อหนึ่งชุดใน Commerce Cloud ถูกเข้าถึงโดยไม่ได้รับอนุญาตจากการโจมตีอัตโนมัติ ช่องทางเข้าคือเครื่องมือบุคคลที่สามซึ่งไม่ได้อัปเดต และการบุกรุกถูกปิดกั้นเมื่อ 14 ต.ค.",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +202,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-22/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Operation Serengeti III สกัด 10,909 เครือข่ายอาชญากรรมไซเบอร์ในแอฟริกา",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "INTERPOL และพันธมิตรรายงานผลปฏิบัติการข้ามชาติ จับกุมผู้ต้องสงสัย 1,462 ราย สกัดเครือข่ายอันตราย 10,909 เครือข่าย และกู้เงินผิดกฎหมายมากกว่า 105 ล้านดอลลาร์สหรัฐ",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-23/"
                     }
                   }
                 ]
