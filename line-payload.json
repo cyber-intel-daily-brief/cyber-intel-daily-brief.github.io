@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261024-0700",
+  "report_id": "CIB-20261025-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 24 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 4 | High 2\nTop 3: LiteLLM Supply Chain · VeloCloud CVE-2026-114625 · PHP CVE-2026-115560"
+        "text": "Cyber Intel Daily Brief — 25 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: BlackX UEFI Bootkit · PingCAP Security Incident · Tenable Security Center"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 24 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 25 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "LiteLLM รุ่น 1.107.0 ถูกฝังมัลแวร์ผ่านกระบวนการเผยแพร่ PyPI และ Container",
+                    "text": "BlackX UEFI Bootkit หลบ Secure Boot ในปฏิบัติการจารกรรมที่มุ่งเป้าหน่วยงานการทูตเอเชียกลาง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "LiteLLM ยืนยันว่า Release Pipeline ถูกยึดและเผยแพร่รุ่น 1.107.0 ที่มีมัลแวร์ขโมยข้อมูลรับรองและโหลดเครื่องมือรันโค้ดจากระยะไกล ทั้ง PyPI และ Container Image ในช่วงเวลาที่ระบุ",
+                    "text": "Kaspersky เปิดเผย BlackX UEFI Bootkit ซึ่งใช้ช่องโหว่ Baton Drop (CVE-2022-21894) เพื่อหลบ Secure Boot และติดตั้งไดรเวอร์ระดับ Kernel ในการโจมตีหน่วยงานการทูตในเอเชียกลางช่วงต้นปี 2569",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เพิ่ม VeloCloud CVE-2026-114625 เข้า KEV หลัง Arista ยืนยันการใช้โจมตีจริง",
+                    "text": "PingCAP ยืนยันผู้โจมตีใช้ข้อมูลรับรองที่ถูกเปิดเผยเข้าถึงระบบภายในและคัดลอกข้อมูลลูกค้า",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่ SQL Injection ระดับ 9.9 ใน VeloCloud Orchestrator แบบ On-prem ถูกใช้โจมตีจริง และ CISA เพิ่มเข้า Known Exploited Vulnerabilities เมื่อ 23 ต.ค. ผู้ดูแลต้องอัปเดตระบบตามสายรุ่นที่ผู้ผลิตระบุ",
+                    "text": "PingCAP ยืนยันว่าผู้โจมตีใช้บัญชี GitHub และข้อมูลรับรองที่ถูกเปิดเผยเข้าถึงระบบภายใน ได้ Source Code และคัดลอกข้อมูลจากระบบ Analytics, Storage และ Support ระหว่าง 9 ก.ย.–7 ต.ค. 2569",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
                     }
                   }
                 ]
@@ -126,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "PHP แนะนำปิด Session Upload Progress ชั่วคราวสำหรับ CVE-2026-115560 ที่ยังไม่มีแพตช์",
+                    "text": "Tenable ออกแพตช์ฉุกเฉินให้ Security Center สำหรับช่องโหว่ PHP2Shell สองรายการ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "PHP เปิดเผยช่องทาง RCE เพิ่มเติมภายใต้การตั้งค่าที่พบไม่บ่อย และแนะนำตั้ง session.upload_progress.enabled=0 พร้อมเริ่ม Worker ใหม่จนกว่าจะออก Bugfix รุ่นถัดไป",
+                    "text": "Tenable จัดระดับ Critical และออก Security Center Patch SC-202610.2 สำหรับ CVE-2026-109618 และ CVE-2026-109619 โดยอัปเดต PHP เป็น 8.2.35; รุ่น 6.9.1 และก่อนหน้าอยู่ในขอบเขต Advisory",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,56 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "HPE แก้ช่องโหว่ ArubaOS 72 รายการ รวม 8 รายการระดับสูงสุด",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "HPE ออกอัปเดต ArubaOS แก้ 72 ช่องโหว่ โดย 8 รายการระดับสูงสุดเกี่ยวข้องกับ Authentication Bypass, Command Injection และ RCE จากระยะไกล พร้อมแนะนำจำกัด Management Interface",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
                     }
                   }
                 ]
@@ -224,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Quest Diagnostics ยืนยันระบบ Quanum LSM ถูกเข้าถึงและเชื่อว่ามีข้อมูลผู้ป่วยเกี่ยวข้อง",
+                    "text": "Genesys ยืนยันเหตุเข้าถึงระบบ LMS และ CRM ภายในถูกควบคุมแล้ว แต่ยังประเมินข้อมูลที่ถูกดาวน์โหลด",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Quest Diagnostics แจ้ง SEC ว่าพบการเข้าถึง Quanum LSM โดยไม่ได้รับอนุญาต ซึ่งเป็นระบบสำหรับสั่งตรวจและรับผลตรวจ บริษัทเชื่อว่ามีข้อมูลผู้ป่วยบางส่วนถูกเข้าถึง แต่ขอบเขตยังอยู่ระหว่างสอบสวน",
+                    "text": "Genesys อัปเดตวันที่ 23 ต.ค. ว่าควบคุมการบุกรุกระบบธุรกิจภายในได้แล้ว และระงับ LMS ที่เกี่ยวข้อง ขณะที่การตรวจสอบข้อมูลจาก LMS และ CRM ซึ่งถูกเข้าถึงหรือดาวน์โหลดยังดำเนินต่อไป",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
                     }
                   }
                 ]
@@ -273,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Capcom แจ้งข้อมูล CAPCOM ID 11.77 ล้านรายการถูกเข้าถึงโดยไม่ได้รับอนุญาต",
+                    "text": "Time4Popcorn รุ่นเก่ามีกลไกอัปเดตที่เปิดทางรันโค้ดระดับ SYSTEM หรือ root",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Capcom ยืนยันข้อมูลอีเมลและตัวระบุระบบ 11,774,247 รายการได้รับผลกระทบ พร้อมพบบัญชี 196 รายการถูกเปลี่ยนรหัสผ่านโดยไม่ได้รับอนุญาต และข้อมูล e-Capcom เพิ่มเติมใน 19 บัญชี",
+                    "text": "Eye Research เปิดเผยว่า Time4Popcorn ติดต่อโดเมนอัปเดตที่ถูกทิ้งผ่าน HTTP และไม่ตรวจลายเซ็น ทำให้ผู้ควบคุมเส้นทางหรือโดเมนสามารถส่งโค้ดรันเป็น SYSTEM บน Windows หรือ root บน macOS",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
                     }
                   }
                 ]
