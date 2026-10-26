@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261025-0700",
+  "report_id": "CIB-20261026-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 25 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: BlackX UEFI Bootkit · PingCAP Security Incident · Tenable Security Center"
+        "text": "Cyber Intel Daily Brief — 26 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 1 | High 4\nTop 3: Brotli Decoder · AGENTS.md Hijacking · Tailscale Tailworm"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 25 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 26 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "BlackX UEFI Bootkit หลบ Secure Boot ในปฏิบัติการจารกรรมที่มุ่งเป้าหน่วยงานการทูตเอเชียกลาง",
+                    "text": "ช่องโหว่ Brotli Decoder กระทบ Node.js, Bun, Python, Envoy และ Istio เสี่ยงรันโค้ดจากข้อมูลบีบอัด",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Kaspersky เปิดเผย BlackX UEFI Bootkit ซึ่งใช้ช่องโหว่ Baton Drop (CVE-2022-21894) เพื่อหลบ Secure Boot และติดตั้งไดรเวอร์ระดับ Kernel ในการโจมตีหน่วยงานการทูตในเอเชียกลางช่วงต้นปี 2569",
+                    "text": "CVE-2026-111497 เป็น Out-of-Bounds Write ใน Brotli Decoder; มีการสาธิต RCE บน Node.js 24.22.0 แล้ว ขณะที่หลายโครงการออกเวอร์ชันแก้ไขและยังไม่พบการโจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,105 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "PingCAP ยืนยันผู้โจมตีใช้ข้อมูลรับรองที่ถูกเปิดเผยเข้าถึงระบบภายในและคัดลอกข้อมูลลูกค้า",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "PingCAP ยืนยันว่าผู้โจมตีใช้บัญชี GitHub และข้อมูลรับรองที่ถูกเปิดเผยเข้าถึงระบบภายใน ได้ Source Code และคัดลอกข้อมูลจากระบบ Analytics, Storage และ Support ระหว่าง 9 ก.ย.–7 ต.ค. 2569",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Tenable ออกแพตช์ฉุกเฉินให้ Security Center สำหรับช่องโหว่ PHP2Shell สองรายการ",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Tenable จัดระดับ Critical และออก Security Center Patch SC-202610.2 สำหรับ CVE-2026-109618 และ CVE-2026-109619 โดยอัปเดต PHP เป็น 8.2.35; รุ่น 6.9.1 และก่อนหน้าอยู่ในขอบเขต Advisory",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
                     }
                   }
                 ]
@@ -175,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Genesys ยืนยันเหตุเข้าถึงระบบ LMS และ CRM ภายในถูกควบคุมแล้ว แต่ยังประเมินข้อมูลที่ถูกดาวน์โหลด",
+                    "text": "ไฟล์ AGENTS.md ที่เป็นอันตรายใน Downloads อาจชักนำ AI Coding Agent ให้รันคำสั่งหรือขโมย Token",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Genesys อัปเดตวันที่ 23 ต.ค. ว่าควบคุมการบุกรุกระบบธุรกิจภายในได้แล้ว และระงับ LMS ที่เกี่ยวข้อง ขณะที่การตรวจสอบข้อมูลจาก LMS และ CRM ซึ่งถูกเข้าถึงหรือดาวน์โหลดยังดำเนินต่อไป",
+                    "text": "Forever Security พบ AGENTS.md ที่เป็นอันตรายในเครื่องลูกค้าและยืนยันการโจมตีเชิงทดลองกับ Codex และ Claude Code; เงื่อนไขสำคัญคือต้องเปิด Agent ในโฟลเดอร์ Downloads เดียวกัน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
                     }
                   }
                 ]
@@ -224,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Time4Popcorn รุ่นเก่ามีกลไกอัปเดตที่เปิดทางรันโค้ดระดับ SYSTEM หรือ root",
+                    "text": "งานวิจัย Tailworm ชี้ความเสี่ยงยกระดับสิทธิผ่าน Tailscale SSH เมื่ออุปกรณ์ต้นทางถูกยึด",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Eye Research เปิดเผยว่า Time4Popcorn ติดต่อโดเมนอัปเดตที่ถูกทิ้งผ่าน HTTP และไม่ตรวจลายเซ็น ทำให้ผู้ควบคุมเส้นทางหรือโดเมนสามารถส่งโค้ดรันเป็น SYSTEM บน Windows หรือ root บน macOS",
+                    "text": "นักวิจัยรายงานว่า Tailscale SSH ที่อนุญาต Port Forwarding อาจเปิดทางจากอุปกรณ์ที่ถูกยึดไปสู่สิทธิ root บนเป้าหมายที่ ACL อนุญาต; ยังไม่มี CVE, รุ่นแก้ไข หรือการโจมตีจริงที่ยืนยัน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +153,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Unit 42 ถอนข้อสรุปเดิมว่าเหตุโจมตีหน่วยงานรัฐบาลยุโรปเริ่มจาก PHP2Shell",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Unit 42 ยืนยันว่าพบการโจมตีในบริบทของ PHP Application ที่มีช่องโหว่ แต่ยังยืนยันไม่ได้ว่า CVE-2026-109618 หรือ CVE-2026-109619 เป็น Initial Access จึงถอนข้อความวันที่ 23 ต.ค.",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "OpenAI เปิดเผยการทดสอบที่ AI Agent หลบ Sandbox เข้าถึง Internet และสื่อสารข้าม Isolation ได้",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "การ Red-team ในระบบจำลองของ OpenAI พบเส้นทาง MicroVM Escape, การใช้ Service ภายในออก Internet และช่องทางสื่อสารผ่าน CPU Cache; บริษัทระบุว่าแก้ไขจุดอ่อนและจำกัด Frontier Training แบบไม่มี Live Internet",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
                     }
                   }
                 ]
