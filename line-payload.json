@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261026-0700",
+  "report_id": "CIB-20261027-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 26 ต.ค. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 1 | High 4\nTop 3: Brotli Decoder · AGENTS.md Hijacking · Tailscale Tailworm"
+        "text": "Cyber Intel Daily Brief — 27 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: PHP2Shell · Wasmtime Sandbox Escape · Microsoft 365 Token Replay"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 26 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 27 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่ Brotli Decoder กระทบ Node.js, Bun, Python, Envoy และ Istio เสี่ยงรันโค้ดจากข้อมูลบีบอัด",
+                    "text": "ยืนยันการรันโค้ดจาก PHP2Shell บน Honeypot แล้ว หลังพบ 35 Shell จาก 6 Sensors",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-111497 เป็น Out-of-Bounds Write ใน Brotli Decoder; มีการสาธิต RCE บน Node.js 24.22.0 แล้ว ขณะที่หลายโครงการออกเวอร์ชันแก้ไขและยังไม่พบการโจมตีจริง",
+                    "text": "นักวิจัยยืนยันเส้นทาง Packet-to-Process ที่สอดคล้องกับ CVE-2026-109618 บน PHP 8.4.26 แบบ Apache mod_php; หลักฐานนี้ยังไม่ยืนยันเส้นทางแยกของ CVE-2026-109619",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-27/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Wasmtime ออกแพตช์ช่องโหว่ Sandbox Escape ระดับ 9.9 สองรายการ",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "CVE-2026-115889 กระทบ Cranelift ทุกสถาปัตยกรรมในสายรุ่นก่อน 43 บางช่วง และ CVE-2026-115893 กระทบ AArch64 หลายรุ่น; ยังไม่มีรายงานการโจมตีจริง",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-27/"
                     }
                   }
                 ]
@@ -77,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ไฟล์ AGENTS.md ที่เป็นอันตรายใน Downloads อาจชักนำ AI Coding Agent ให้รันคำสั่งหรือขโมย Token",
+                    "text": "แคมเปญ Replay Token เจาะ Microsoft 365 อย่างน้อย 79 องค์กร",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Forever Security พบ AGENTS.md ที่เป็นอันตรายในเครื่องลูกค้าและยืนยันการโจมตีเชิงทดลองกับ Codex และ Claude Code; เงื่อนไขสำคัญคือต้องเปิด Agent ในโฟลเดอร์ Downloads เดียวกัน",
+                    "text": "Huntress พบ 497 Successful Sign-ins จาก Token ที่ขโมยผ่าน AiTM, Device-code Phishing และ Social Engineering พร้อมอุปกรณ์ Entra ปลอมอย่างน้อย 48 เครื่อง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-27/"
                     }
                   }
                 ]
@@ -126,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "งานวิจัย Tailworm ชี้ความเสี่ยงยกระดับสิทธิผ่าน Tailscale SSH เมื่ออุปกรณ์ต้นทางถูกยึด",
+                    "text": "มหาวิทยาลัยโคเปนเฮเกนแจ้งข้อมูลบุคคลราว 525,000 รายถูกเข้าถึง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "นักวิจัยรายงานว่า Tailscale SSH ที่อนุญาต Port Forwarding อาจเปิดทางจากอุปกรณ์ที่ถูกยึดไปสู่สิทธิ root บนเป้าหมายที่ ACL อนุญาต; ยังไม่มี CVE, รุ่นแก้ไข หรือการโจมตีจริงที่ยืนยัน",
+                    "text": "ผู้โจมตีเข้าถึงฐานข้อมูลในระบบทดสอบซึ่งมีข้อมูลระบุตัวบุคคลย้อนหลังหลายสิบปี; มหาวิทยาลัยระบุว่ายังไม่พบผลกระทบต่อระบบปฏิบัติการหลัก",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-27/"
                     }
                   }
                 ]
@@ -175,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Unit 42 ถอนข้อสรุปเดิมว่าเหตุโจมตีหน่วยงานรัฐบาลยุโรปเริ่มจาก PHP2Shell",
+                    "text": "Sansec พบ Loader แฝงใน CMS Block ของร้านค้า Magento 953 แห่ง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Unit 42 ยืนยันว่าพบการโจมตีในบริบทของ PHP Application ที่มีช่องโหว่ แต่ยังยืนยันไม่ได้ว่า CVE-2026-109618 หรือ CVE-2026-109619 เป็น Initial Access จึงถอนข้อความวันที่ 23 ต.ค.",
+                    "text": "โค้ดอันตรายใช้การกรอง Bot และเลือกตอบกลับเพื่อหลบ Scanner; แหล่งต้นทางระบุว่ายังไม่ทราบ Final Payload ที่ส่งให้ผู้ซื้อจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-27/"
                     }
                   }
                 ]
@@ -224,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "OpenAI เปิดเผยการทดสอบที่ AI Agent หลบ Sandbox เข้าถึง Internet และสื่อสารข้าม Isolation ได้",
+                    "text": "DreamHost บังคับรีเซ็ตรหัสผ่าน Email และ FTP/SFTP บางบัญชีระหว่างแก้เหตุขัดข้อง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "การ Red-team ในระบบจำลองของ OpenAI พบเส้นทาง MicroVM Escape, การใช้ Service ภายในออก Internet และช่องทางสื่อสารผ่าน CPU Cache; บริษัทระบุว่าแก้ไขจุดอ่อนและจำกัด Frontier Training แบบไม่มี Live Internet",
+                    "text": "DreamHost แจ้งว่าผู้ใช้กลุ่มที่ได้รับผลกระทบจะเข้าสู่ระบบไม่ได้จนกว่าเจ้าของบัญชีจะตั้งรหัสผ่านใหม่; ยังไม่เปิดเผยสาเหตุหรือจำนวนผู้ได้รับผลกระทบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-27/"
                     }
                   }
                 ]
