@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261028-0700",
+  "report_id": "CIB-20261029-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 28 ต.ค. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 2 | High 5\nTop 3: CISA KEV Update · Apple CoreGraphics Zero-Day · Convertr Magecart"
+        "text": "Cyber Intel Daily Brief — 29 ต.ค. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 4 | High 3\nTop 3: Volt Typhoon Silent Train · Veeam CVE-2026-108142 · Oracle EBS CVE-2026-101767"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 28 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 29 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เพิ่มช่องโหว่ Brotli และ Adobe Commerce/Magento เข้า KEV หลังพบการโจมตีจริง",
+                    "text": "Volt Typhoon ใช้โครงสร้าง Silent Train ซ่อนปฏิบัติการ Zero-Day ต่อโครงสร้างพื้นฐานสำคัญ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-111497 และ CVE-2026-48356 ถูกเพิ่มเข้า Known Exploited Vulnerabilities Catalog เมื่อ 27 ต.ค. โดยกำหนดเส้นตายหน่วยงานรัฐบาลกลางสหรัฐฯ วันที่ 10 พ.ย. 2569",
+                    "text": "Black Lotus Labs ระบุว่า Silent Train ใช้สายโซ่อุปกรณ์ SOHO, IoT และระบบองค์กรที่ถูกยึดแบบหมุนเวียน เพื่อพรางการโจมตี Zero-Day และการเข้าถึงเป้าหมายเชิงยุทธศาสตร์",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Apple ขยายแพตช์ช่องโหว่ CoreGraphics ที่เคยถูกใช้โจมตีไปยัง iPhone และ iPad รุ่นเก่า",
+                    "text": "Veeam แก้ช่องโหว่ข้ามการอนุญาตใน Backup & Replication ที่ผู้โจมตีไม่ต้องยืนยันตัวตน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-86950 เป็น Out-of-Bounds Write ที่อาจนำไปสู่การรันโค้ดเมื่อประมวลผลไฟล์อันตราย; Apple ระบุว่าอาจถูกใช้ในปฏิบัติการที่ซับซ้อนต่อบุคคลเป้าหมาย",
+                    "text": "CVE-2026-108142 ระดับ CVSS 9.1 กระทบ CDP Coordinator Service; Veeam แก้ไขในรุ่น 13.1.2 และ 13.0.3",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ตรวจพบการสแกนหา Oracle E-Business Suite หลังเผยแพร่แพตช์ช่องโหว่ RCE",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "CVE-2026-101767 เป็น SQL Injection ที่ไม่ต้องยืนยันตัวตนและอาจต่อยอดเป็น Remote Code Execution; ผู้วิจัยรายงานการสแกนเชิงสำรวจต่อระบบล่อ",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "GoAhead Web Server มีข้อบกพร่อง TLS ที่อาจยอมรับ Certificate ถูกเพิกถอนหรือทำให้ Session ถูกถอดรหัส",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ช่องโหว่สามรายการขึ้นกับ TLS Backend และการตั้งค่า โดยรุ่นที่ได้รับผลกระทบควรอัปเดตเป็น GoAhead 6.1.1 หรือใหม่กว่า",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
                     }
                   }
                 ]
@@ -126,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Convertr ยืนยันกำจัด Card Skimmer ที่แพร่ผ่าน Analytics Script ร่วมของหน้า Checkout",
+                    "text": "Sony Network Communications ยืนยันข้อมูลสมาชิก So-net รั่วไหลกว่า 2.58 ล้านระเบียน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Sansec พบ Script ที่ดึงหมายเลขบัตร วันหมดอายุ CVV ชื่อผู้ถือบัตร และ CPF ตั้งแต่ 24 ต.ค.; Convertr ลบโค้ดและอัปเดต Plausible เมื่อ 27 ต.ค.",
+                    "text": "ผู้ไม่หวังดีเข้าถึงฐานข้อมูลสมาชิกเมื่อ 19 ต.ค.; บริษัทระบุข้อมูล So-net และ plala รวม 2,585,481 ระเบียน พร้อมข้อมูลบัญชีอีเมลบางส่วน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
                     }
                   }
                 ]
@@ -175,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่ Microsoft Authenticator บน Android เปิดทางให้แอปไม่มี Permission ขอ Token บัญชีงาน",
+                    "text": "SingCERT เตือนมัลแวร์แพร่ผ่านไฟล์แนบจากบัญชี WhatsApp ที่ถูกยึด",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-80097 ระดับ 8.6 ทำให้แอปอันตรายเลียนแบบแอป Microsoft และขอ Token ของบัญชีงานได้; แก้ไขแล้วในรุ่น 6.2606.4246",
+                    "text": "ผู้ใช้ที่เปิดไฟล์อันตรายอาจถูกขโมยข้อมูลและ Session ของ WhatsApp Web ก่อนบัญชีจะถูกใช้ส่งไฟล์ต่อไปยังรายชื่อผู้ติดต่อ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
                     }
                   }
                 ]
@@ -224,7 +322,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft ออก OOB Update เพิกถอนความเชื่อถือ Certificate Hierarchy ของ eMudhra",
+                    "text": "GMO ยืนยันข้อมูลที่ผู้โจมตีอ้างว่าเป็นของลูกค้าถูกเผยแพร่ และเว็บไซต์ดังกล่าวถูกระงับแล้ว",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +330,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Private Key ของ Intermediate CA แปดชุดสามารถกู้คืนได้จากข้อผิดพลาดการสร้างกุญแจ; Microsoft ปิดกั้น Key ที่ได้รับผลกระทบและนำ Root เจ็ดรายการออกจาก Trust List",
+                    "text": "GMO ตรวจพบการเผยแพร่ข้อมูลที่ผู้โจมตีอ้างว่าได้มาเมื่อ 27 ต.ค. และยืนยันเมื่อ 28 ต.ค. ว่า Domain ของเว็บไซต์ผู้โจมตีถูกนำลง แต่ยังตรวจสอบเนื้อหาและขอบเขต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,105 +349,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Keystone ทำลาย Hardware Wallet 18,835 เครื่อง หลัง Device Verification Key ถูกขโมย",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ผู้โจมตีเว็บไซต์ได้ Key ที่ใช้ยืนยันว่าอุปกรณ์เป็นของแท้ แต่ Keystone ระบุว่า Recovery Phrase, Private Key และ Signing Key ของผู้ใช้ไม่ได้รับผลกระทบ",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ASD ตัดการเชื่อมต่อ Amadey Controller จากเครื่องติดเชื้อทั่วโลก 180,000 เครื่อง",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Australian Signals Directorate ระบุว่าเข้าถึง Backend ของผู้ให้บริการมัลแวร์รายหนึ่งและตัดช่องทางควบคุมเครื่องเหยื่อได้ แต่ไม่ได้ระบุว่ามัลแวร์ถูกลบหรือข้อมูลเดิมถูกเรียกคืน",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-28/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
                     }
                   }
                 ]
