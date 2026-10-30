@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261029-0700",
+  "report_id": "CIB-20261030-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 29 ต.ค. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 4 | High 3\nTop 3: Volt Typhoon Silent Train · Veeam CVE-2026-108142 · Oracle EBS CVE-2026-101767"
+        "text": "Cyber Intel Daily Brief — 30 ต.ค. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: Cisco ASA/FTD CVE-2026-76418 · Alpine GitLab Incident · Juniper Session Smart"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 29 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 30 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Volt Typhoon ใช้โครงสร้าง Silent Train ซ่อนปฏิบัติการ Zero-Day ต่อโครงสร้างพื้นฐานสำคัญ",
+                    "text": "Cisco ยืนยันการโจมตีช่องโหว่ SSL VPN ที่ทำให้ ASA และ FTD รีโหลดจากระยะไกล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Black Lotus Labs ระบุว่า Silent Train ใช้สายโซ่อุปกรณ์ SOHO, IoT และระบบองค์กรที่ถูกยึดแบบหมุนเวียน เพื่อพรางการโจมตี Zero-Day และการเข้าถึงเป้าหมายเชิงยุทธศาสตร์",
+                    "text": "CVE-2026-76418 ระดับ 8.6 ถูกใช้โจมตีจริง ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนอาจส่งคำขอที่สร้างขึ้นเฉพาะเพื่อทำให้อุปกรณ์รีโหลดและเกิด Denial of Service",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Veeam แก้ช่องโหว่ข้ามการอนุญาตใน Backup & Replication ที่ผู้โจมตีไม่ต้องยืนยันตัวตน",
+                    "text": "Alpine Linux สร้าง GitLab ใหม่ทั้งระบบหลังพบความพยายามโจมตีช่องโหว่ CVSS 10.0",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-108142 ระดับ CVSS 9.1 กระทบ CDP Coordinator Service; Veeam แก้ไขในรุ่น 13.1.2 และ 13.0.3",
+                    "text": "ผู้โจมตีส่ง CI Configuration ที่สร้างขึ้นเฉพาะและทำให้ Worker ล่มหลายครั้ง Alpine ไม่พบหลักฐานว่ารันโค้ดสำเร็จ แต่ไม่สามารถตัดความเป็นไปได้จึง Rebuild ระบบและ Reset รหัสผ่าน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
                     }
                   }
                 ]
@@ -126,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ตรวจพบการสแกนหา Oracle E-Business Suite หลังเผยแพร่แพตช์ช่องโหว่ RCE",
+                    "text": "Juniper แก้ช่องโหว่หลายรายการใน Session Smart Router และ Conductor โดยไม่มี Workaround ครบถ้วน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-101767 เป็น SQL Injection ที่ไม่ต้องยืนยันตัวตนและอาจต่อยอดเป็น Remote Code Execution; ผู้วิจัยรายงานการสแกนเชิงสำรวจต่อระบบล่อ",
+                    "text": "ช่องโหว่สำคัญรวมการยกระดับสิทธิผ่านการแก้ไข YANG Configuration; รุ่นก่อน 7.0.5, 7.1.7 และ 7.2.3 ได้รับผลกระทบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,56 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "GoAhead Web Server มีข้อบกพร่อง TLS ที่อาจยอมรับ Certificate ถูกเพิกถอนหรือทำให้ Session ถูกถอดรหัส",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ช่องโหว่สามรายการขึ้นกับ TLS Backend และการตั้งค่า โดยรุ่นที่ได้รับผลกระทบควรอัปเดตเป็น GoAhead 6.1.1 หรือใหม่กว่า",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
                     }
                   }
                 ]
@@ -224,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Sony Network Communications ยืนยันข้อมูลสมาชิก So-net รั่วไหลกว่า 2.58 ล้านระเบียน",
+                    "text": "กระทรวงกลาโหมสหรัฐฯ ตรวจสอบเหตุระบบทำความเย็นในฐานทัพขัดข้องว่าอาจเป็นการโจมตีไซเบอร์",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้ไม่หวังดีเข้าถึงฐานข้อมูลสมาชิกเมื่อ 19 ต.ค.; บริษัทระบุข้อมูล So-net และ plala รวม 2,585,481 ระเบียน พร้อมข้อมูลบัญชีอีเมลบางส่วน",
+                    "text": "เหตุเดือนสิงหาคมกระทบร้านค้าภายในฐานทัพอย่างน้อย 6 แห่งและทำให้อาหารเสีย แต่การสอบสวนยังไม่สรุปสาเหตุหรือผู้รับผิดชอบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
                     }
                   }
                 ]
@@ -273,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "SingCERT เตือนมัลแวร์แพร่ผ่านไฟล์แนบจากบัญชี WhatsApp ที่ถูกยึด",
+                    "text": "Telegram for Android แก้ข้อบกพร่องที่ผู้วิจัยระบุว่าอาจรันโค้ดเมื่อผู้ใช้รับสาย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้ใช้ที่เปิดไฟล์อันตรายอาจถูกขโมยข้อมูลและ Session ของ WhatsApp Web ก่อนบัญชีจะถูกใช้ส่งไฟล์ต่อไปยังรายชื่อผู้ติดต่อ",
+                    "text": "NebuSec ระบุว่ารุ่น 8.6.2–12.10.3 ได้รับผลกระทบและแก้ไขใน 12.10.4; ยังไม่มี CVE หรือหลักฐานการโจมตีจริงที่เผยแพร่",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
                     }
                   }
                 ]
@@ -322,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "GMO ยืนยันข้อมูลที่ผู้โจมตีอ้างว่าเป็นของลูกค้าถูกเผยแพร่ และเว็บไซต์ดังกล่าวถูกระงับแล้ว",
+                    "text": "n8n ออกชุดอัปเดตแก้ช่องโหว่ Code Execution และ Isolation Escape หลายรายการ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -330,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "GMO ตรวจพบการเผยแพร่ข้อมูลที่ผู้โจมตีอ้างว่าได้มาเมื่อ 27 ต.ค. และยืนยันเมื่อ 28 ต.ค. ว่า Domain ของเว็บไซต์ผู้โจมตีถูกนำลง แต่ยังตรวจสอบเนื้อหาและขอบเขต",
+                    "text": "ช่องโหว่ระดับ High รวมการ Escape จาก Workflow Expression Isolation และรันโค้ดใน Main Process; Self-hosted Instance ต้องอัปเดตตาม Release Branch",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -349,7 +300,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-29/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Mattermost Agents Plugin มีช่องโหว่ที่อาจทำให้ผู้ดูแลติดตั้ง Plugin ทดแทนและเกิด Code Execution",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ผู้ใช้ที่ผ่านการยืนยันตัวตนอาจสร้าง Mention Reminder ปลอมให้ผู้ดูแลคลิก ส่งผลให้ Browser เรียก API โดยไม่ตั้งใจและแทนที่ Plugin บน Server",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
                     }
                   }
                 ]
