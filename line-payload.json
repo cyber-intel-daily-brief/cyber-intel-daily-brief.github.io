@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261030-0700",
+  "report_id": "CIB-20261031-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 30 ต.ค. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: Cisco ASA/FTD CVE-2026-76418 · Alpine GitLab Incident · Juniper Session Smart"
+        "text": "Cyber Intel Daily Brief — 31 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: Binance Hot Wallet · Ivanti Connect Secure KEV · Drupal Commerce"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 30 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 31 ตุลาคม 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Cisco ยืนยันการโจมตีช่องโหว่ SSL VPN ที่ทำให้ ASA และ FTD รีโหลดจากระยะไกล",
+                    "text": "Binance ยืนยัน Hot Wallet ถูกโจมตี สูญสินทรัพย์ดิจิทัลประมาณ 6.3 พันล้านดอลลาร์สหรัฐ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-76418 ระดับ 8.6 ถูกใช้โจมตีจริง ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนอาจส่งคำขอที่สร้างขึ้นเฉพาะเพื่อทำให้อุปกรณ์รีโหลดและเกิด Denial of Service",
+                    "text": "Binance ระบุว่า Hot Wallet ถูกโจมตีเมื่อ 30 ต.ค. และพักการถอนชั่วคราว ขณะสอบสวนพบจุดที่ถูกละเมิดมากกว่าหนึ่งแห่ง แต่ยังไม่พบหลักฐาน Private Key รั่วไหล",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Alpine Linux สร้าง GitLab ใหม่ทั้งระบบหลังพบความพยายามโจมตีช่องโหว่ CVSS 10.0",
+                    "text": "CISA เพิ่มช่องโหว่ Ivanti Connect Secure อีก 2 รายการเข้า KEV หลังยืนยันการใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีส่ง CI Configuration ที่สร้างขึ้นเฉพาะและทำให้ Worker ล่มหลายครั้ง Alpine ไม่พบหลักฐานว่ารันโค้ดสำเร็จ แต่ไม่สามารถตัดความเป็นไปได้จึง Rebuild ระบบและ Reset รหัสผ่าน",
+                    "text": "ช่องโหว่ทั้งสองสามารถเชื่อมกับ CVE-2026-104935 ในสายโซ่โจมตี; ระบบก่อน 25.1.1.3, 25.1.3.1 และ 22.8R2.6 ต้องอัปเดตตามคำแนะนำผู้ผลิต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
                     }
                   }
                 ]
@@ -126,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Juniper แก้ช่องโหว่หลายรายการใน Session Smart Router และ Conductor โดยไม่มี Workaround ครบถ้วน",
+                    "text": "Drupal Commerce Core มีช่องโหว่ Access Bypass ที่ถูกใช้ทำธุรกรรมผิดปกติบนเว็บไซต์จริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่สำคัญรวมการยกระดับสิทธิผ่านการแก้ไข YANG Configuration; รุ่นก่อน 7.0.5, 7.1.7 และ 7.2.3 ได้รับผลกระทบ",
+                    "text": "Drupal Security Team ระบุช่องโหว่ระดับ Highly Critical และพบความพยายามสั่งซื้อฉ้อโกง; ต้องอัปเดตเป็น 3.3.13 หรือ 8.x-2.41",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
                     }
                   }
                 ]
@@ -175,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "กระทรวงกลาโหมสหรัฐฯ ตรวจสอบเหตุระบบทำความเย็นในฐานทัพขัดข้องว่าอาจเป็นการโจมตีไซเบอร์",
+                    "text": "Chainalysis เปิดเผยเหตุผู้โจมตีใช้ Offensive Agentic Techniques เข้าถึงระบบและเครื่องมือภายใน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "เหตุเดือนสิงหาคมกระทบร้านค้าภายในฐานทัพอย่างน้อย 6 แห่งและทำให้อาหารเสีย แต่การสอบสวนยังไม่สรุปสาเหตุหรือผู้รับผิดชอบ",
+                    "text": "ข้อมูลผู้ใช้บางส่วน เช่น ชื่อ อีเมล และบทบาทองค์กรถูกเข้าถึง แต่บริษัทไม่พบหลักฐานเข้าถึง Investigation Content, Credential หรือ Session Token",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
                     }
                   }
                 ]
@@ -224,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Telegram for Android แก้ข้อบกพร่องที่ผู้วิจัยระบุว่าอาจรันโค้ดเมื่อผู้ใช้รับสาย",
+                    "text": "กระทรวงศึกษาธิการรัฐฟลอริดายืนยันข้อมูลของหน่วยงานถูกเข้าถึงโดยไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "NebuSec ระบุว่ารุ่น 8.6.2–12.10.3 ได้รับผลกระทบและแก้ไขใน 12.10.4; ยังไม่มี CVE หรือหลักฐานการโจมตีจริงที่เผยแพร่",
+                    "text": "หน่วยงานยืนยัน Unauthorized Criminal Access และประสานหน่วยงานรัฐเพื่อควบคุมเหตุ แต่ยังไม่เปิดเผยชนิดข้อมูล จำนวนผู้ได้รับผลกระทบ หรือผู้ก่อเหตุ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
                     }
                   }
                 ]
@@ -273,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "n8n ออกชุดอัปเดตแก้ช่องโหว่ Code Execution และ Isolation Escape หลายรายการ",
+                    "text": "Linux Kernel แก้ Use-After-Free ใน Logitech HIDPP ที่อาจยกระดับสิทธิเป็น Kernel",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่ระดับ High รวมการ Escape จาก Workflow Expression Isolation และรันโค้ดใน Main Process; Self-hosted Instance ต้องอัปเดตตาม Release Branch",
+                    "text": "ช่องโหว่ CVSS 7.8 ต้องอาศัยการรันโค้ดสิทธิต่ำในเครื่องก่อน และอาจใช้รันโค้ดในบริบท Kernel; มี Upstream Fix แล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,56 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Mattermost Agents Plugin มีช่องโหว่ที่อาจทำให้ผู้ดูแลติดตั้ง Plugin ทดแทนและเกิด Code Execution",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ผู้ใช้ที่ผ่านการยืนยันตัวตนอาจสร้าง Mention Reminder ปลอมให้ผู้ดูแลคลิก ส่งผลให้ Browser เรียก API โดยไม่ตั้งใจและแทนที่ Plugin บน Server",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-30/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
                     }
                   }
                 ]
