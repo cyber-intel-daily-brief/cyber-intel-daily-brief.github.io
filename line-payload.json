@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261031-0700",
+  "report_id": "CIB-20261101-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 31 ต.ค. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: Binance Hot Wallet · Ivanti Connect Secure KEV · Drupal Commerce"
+        "text": "Cyber Intel Daily Brief — 1 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 1 | High 5\nTop 3: Linux MPTCP RCE · TeamViewer Client · Cathay Pacific/Amadeus"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 31 ตุลาคม 2569",
+        "altText": "Cyber Intel Daily Brief — 1 พฤศจิกายน 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Binance ยืนยัน Hot Wallet ถูกโจมตี สูญสินทรัพย์ดิจิทัลประมาณ 6.3 พันล้านดอลลาร์สหรัฐ",
+                    "text": "Linux Kernel CVE-2026-98432 เปิดทาง Zero-click Remote Code Execution บน MPTCP Server",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Binance ระบุว่า Hot Wallet ถูกโจมตีเมื่อ 30 ต.ค. และพักการถอนชั่วคราว ขณะสอบสวนพบจุดที่ถูกละเมิดมากกว่าหนึ่งแห่ง แต่ยังไม่พบหลักฐาน Private Key รั่วไหล",
+                    "text": "Anthropic สาธิตการส่ง Packet ไปยัง MPTCP Listener เพื่อรันคำสั่งเป็น Root โดยไม่ต้องมี Credential หรือ User Interaction; ช่องโหว่ถูกแก้และ Backport แล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,105 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "CISA เพิ่มช่องโหว่ Ivanti Connect Secure อีก 2 รายการเข้า KEV หลังยืนยันการใช้โจมตีจริง",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ช่องโหว่ทั้งสองสามารถเชื่อมกับ CVE-2026-104935 ในสายโซ่โจมตี; ระบบก่อน 25.1.1.3, 25.1.3.1 และ 22.8R2.6 ต้องอัปเดตตามคำแนะนำผู้ผลิต",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Drupal Commerce Core มีช่องโหว่ Access Bypass ที่ถูกใช้ทำธุรกรรมผิดปกติบนเว็บไซต์จริง",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Drupal Security Team ระบุช่องโหว่ระดับ Highly Critical และพบความพยายามสั่งซื้อฉ้อโกง; ต้องอัปเดตเป็น 3.3.13 หรือ 8.x-2.41",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
                     }
                   }
                 ]
@@ -175,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Chainalysis เปิดเผยเหตุผู้โจมตีใช้ Offensive Agentic Techniques เข้าถึงระบบและเครื่องมือภายใน",
+                    "text": "TeamViewer แก้ช่องโหว่ Client หลายรายการที่อาจนำไปสู่ Remote Code Execution",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลผู้ใช้บางส่วน เช่น ชื่อ อีเมล และบทบาทองค์กรถูกเข้าถึง แต่บริษัทไม่พบหลักฐานเข้าถึง Investigation Content, Credential หรือ Session Token",
+                    "text": "TeamViewer รุ่นก่อน 15.83 บางแพลตฟอร์มอาจถูกโจมตีผ่านข้อมูลภาพหน้าจอหรือ Session Recording ที่สร้างขึ้นเฉพาะ; ผู้ผลิตไม่พบ Active Exploitation",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +104,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
                     }
                   }
                 ]
@@ -224,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "กระทรวงศึกษาธิการรัฐฟลอริดายืนยันข้อมูลของหน่วยงานถูกเข้าถึงโดยไม่ได้รับอนุญาต",
+                    "text": "Cathay Pacific ยืนยันข้อมูลการจองประมาณ 53,000 รายการถูกเข้าถึงผ่านระบบ Amadeus",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "หน่วยงานยืนยัน Unauthorized Criminal Access และประสานหน่วยงานรัฐเพื่อควบคุมเหตุ แต่ยังไม่เปิดเผยชนิดข้อมูล จำนวนผู้ได้รับผลกระทบ หรือผู้ก่อเหตุ",
+                    "text": "ข้อมูลส่วนใหญ่รวม Booking Reference ชื่อผู้โดยสาร และเที่ยวบิน; บางรายการมีข้อมูลติดต่อหรือเลขเอกสารเดินทาง แต่ไม่พบหลักฐานข้อมูลชำระเงินถูกเข้าถึง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
                     }
                   }
                 ]
@@ -273,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Linux Kernel แก้ Use-After-Free ใน Logitech HIDPP ที่อาจยกระดับสิทธิเป็น Kernel",
+                    "text": "LifeCard พักบริการ V-Preca บางส่วนหลังพบการเข้าถึงระบบของผู้รับจ้างโดยไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -281,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่ CVSS 7.8 ต้องอาศัยการรันโค้ดสิทธิต่ำในเครื่องก่อน และอาจใช้รันโค้ดในบริบท Kernel; มี Upstream Fix แล้ว",
+                    "text": "ข้อมูลส่วนบุคคลของลูกค้าอาจรั่วไหล แต่ประเภทข้อมูลและจำนวนผู้ได้รับผลกระทบยังอยู่ระหว่างสอบสวน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -300,7 +202,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-10-31/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "KDDI และ Lifenet ระบุข้อมูลลูกค้าสูงสุด 22,541 รายการอาจรั่วไหลผ่านระบบเชื่อมต่อ",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ข้อมูลอาจรวมชื่อ ที่อยู่ โทรศัพท์ อีเมล และ Member Identifier; ไม่รวม Password, Card, Bank Account หรือเอกสารยืนยันตัวตน",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D75A0B"
+                  },
+                  {
+                    "type": "text",
+                    "text": "NTT DATA หยุด STdirectServices หลังผู้รับจ้าง SaaS ถูกเข้าถึงและข้อมูลผู้ลงทุนอาจรั่วไหล",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "บริการที่ใช้สนับสนุนสิทธิประโยชน์ผู้ซื้อหุ้นกู้ถูกพัก โดยหลักฐานจากบริษัทหลักทรัพย์ระบุข้อมูลที่อาจรั่วไหลรวมชื่อและยอดซื้อ แต่ไม่รวมเลขบัญชีหรือ Password",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
                     }
                   }
                 ]
