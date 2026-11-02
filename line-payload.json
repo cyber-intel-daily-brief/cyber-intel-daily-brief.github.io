@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261102-0700",
+  "report_id": "CIB-20261103-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 2 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Northflank Secrets · FBI/Binance Attribution · Club Tourism"
+        "text": "Cyber Intel Daily Brief — 3 พ.ย. 2569 (รอบ 07:00 น.)\n8 เหตุการณ์สำคัญ | Critical 5 | High 3\nTop 3: GitLab RCE · Teams/AD CS · SysGoRAT Government Linux"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 2 พฤศจิกายน 2569",
+        "altText": "Cyber Intel Daily Brief — 3 พฤศจิกายน 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Northflank เตือนให้ถือว่า Environment Variables ถูกถอดรหัสและหมุนเวียน Secrets ทั้งหมด",
+                    "text": "GitLab ที่ยังไม่ติดแพตช์กว่า 1,000 เครื่องถูกเปิดเผยท่ามกลางการโจมตี RCE ที่ดำเนินอยู่",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Northflank ระบุให้ลูกค้าถือว่า Environment Variables ถูกเปิดเผย พร้อมยืนยันรายงานการใช้ AI API Keys โดยไม่ได้รับอนุญาต",
+                    "text": "CVE-2026-97229 ระดับ CVSS 10.0 ถูกใช้โจมตีจริงและเปิดทางให้รันโค้ดโดยไม่ต้องยืนยันตัวตนผ่าน CI/CD configuration",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
                     }
                   }
                 ]
@@ -77,7 +77,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FBI ระบุเกาหลีเหนืออยู่เบื้องหลังการขโมยสินทรัพย์ดิจิทัลจาก Binance มากกว่า 6 พันล้านดอลลาร์",
+                    "text": "ผู้โจมตีปลอมเป็นฝ่าย IT ผ่าน Microsoft Teams และใช้ AD CS เข้าถึงบัญชีสิทธิสูง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "FBI ระบุปฏิบัติการ TraderTraitor ของเกาหลีเหนือรับผิดชอบเหตุ Binance และพบการแปลงสินทรัพย์ที่ขโมยเป็น Ethereum เพื่อเตรียมฟอกเงิน",
+                    "text": "Microsoft ตรวจสอบสองเหตุการณ์ที่เริ่มจาก Teams และ Quick Assist ก่อนยกระดับสู่ Certificate-based Access และการขโมยข้อมูล",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +104,105 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Unit 42 เปิดเผยปฏิบัติการ SysGoRAT ต่อระบบ Linux ของหน่วยงานรัฐและโครงสร้างพื้นฐานภาครัฐ",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "กลุ่ม CL-UNK-1211 ใช้ Web Shell, Custom RAT และ Script ที่มีลักษณะ AI-generated เพื่อสอดแนมฐานข้อมูลและกล่องจดหมาย",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "IBM แจ้งช่องโหว่ร้ายแรงใน Langflow OSS ที่อาจเปิดทาง Authentication Bypass และ Remote Code Execution",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Langflow รุ่น 1.0.0–1.12.8 ได้รับผลกระทบจากหลายช่องโหว่ รวมถึง RCE ที่ไม่ต้องยืนยันตัวตน; ต้องอัปเดตเป็น 1.13.0",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
                     }
                   }
                 ]
@@ -126,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Club Tourism ระบุข้อมูลสมาชิกประมาณ 4.32 ล้านรายการอาจรั่วไหลหลังถูกเข้าถึงโดยไม่ได้รับอนุญาต",
+                    "text": "Synology เตือน C3RB3R Ransomware โจมตี NAS ที่ใช้ DSM รุ่นล้าสมัย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลอาจรวมชื่อ ที่อยู่ โทรศัพท์ อีเมล Member ID และผู้ติดต่อฉุกเฉิน แต่ไม่รวม Password, Passport, Card หรือ Bank Account",
+                    "text": "ผู้โจมตีใช้ช่องโหว่ที่ได้รับการแก้ไขตั้งแต่ธันวาคม 2567 เพื่อเข้ารหัสข้อมูลและเรียกค่าไถ่บนอุปกรณ์ที่ยังไม่อัปเดต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +251,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Canonical แก้ CVE-2026-112816 ใน LXD และ MicroCloud ที่อาจทำให้ปลอมเป็น Trusted Client",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ผู้โจมตีที่เข้าถึง HTTPS API และมี Public Certificate ของ Client ที่เชื่อถือได้ อาจเข้าถึง Cluster และ Host ในสิทธิสูง",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
                     }
                   }
                 ]
@@ -175,7 +322,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Parameter เปิดเผยช่องโหว่ Share Link ที่เคยทำให้โค้ดทำงานใน Session ของผู้ใช้ ChatGPT",
+                    "text": "Polymarket คืนเงิน 3.9 ล้านดอลลาร์หลัง Third-party Script ถูกแทนที่เพื่อย้ายสินทรัพย์ผู้ใช้",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +330,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "งานวิจัยสาธิตการอ่าน Private Conversation ผ่าน Public Share Link; OpenAI แก้ไขแล้วเมื่อ 26 ต.ค. และจัดระดับรายงานเป็น P1",
+                    "text": "Script ด้าน Performance Monitoring ถูกเจาะและใช้ Active Session ของผู้ใช้ขาย Position และย้ายเงิน โดยเหตุการณ์ได้รับการแก้ไขแล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +349,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
                     }
                   }
                 ]
@@ -224,7 +371,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Malaysia Airlines แจ้งข้อมูลลูกค้าบางส่วนอาจได้รับผลกระทบจากเหตุ Amadeus",
+                    "text": "Cisco Talos พบ VOLTA Infostealer ใช้ AI จัดลำดับมูลค่าของข้อมูลผู้เสียหาย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +379,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลที่ Amadeus ประมวลผลระหว่างสิงหาคม 2566 ถึงกันยายน 2569 อาจได้รับผลกระทบ โดยไม่พบหลักฐานระบบของสายการบินหรือข้อมูลการเงินถูกเข้าถึง",
+                    "text": "มัลแวร์ขโมย Credential, Session และ Wallet ก่อนส่งข้อมูลให้ LLM สร้าง Target Assessment และจัดลำดับทรัพย์สินที่ทำเงินได้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,56 +398,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "World ระบุข้อมูลสมาชิกประมาณ 1.2 ล้านรายการอาจรั่วไหลจาก Server ของ Tin Pan Alley",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "บุคคลภายนอกเข้าถึง Server และดำเนินการดึงข้อมูล; รายการที่อาจได้รับผลกระทบรวมชื่อ ที่อยู่ โทรศัพท์ วันเกิด เพศ และอีเมล",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-03/"
                     }
                   }
                 ]
