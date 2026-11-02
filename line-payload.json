@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261101-0700",
+  "report_id": "CIB-20261102-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 1 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 1 | High 5\nTop 3: Linux MPTCP RCE · TeamViewer Client · Cathay Pacific/Amadeus"
+        "text": "Cyber Intel Daily Brief — 2 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Northflank Secrets · FBI/Binance Attribution · Club Tourism"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 1 พฤศจิกายน 2569",
+        "altText": "Cyber Intel Daily Brief — 2 พฤศจิกายน 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Linux Kernel CVE-2026-98432 เปิดทาง Zero-click Remote Code Execution บน MPTCP Server",
+                    "text": "Northflank เตือนให้ถือว่า Environment Variables ถูกถอดรหัสและหมุนเวียน Secrets ทั้งหมด",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Anthropic สาธิตการส่ง Packet ไปยัง MPTCP Listener เพื่อรันคำสั่งเป็น Root โดยไม่ต้องมี Credential หรือ User Interaction; ช่องโหว่ถูกแก้และ Backport แล้ว",
+                    "text": "Northflank ระบุให้ลูกค้าถือว่า Environment Variables ถูกเปิดเผย พร้อมยืนยันรายงานการใช้ AI API Keys โดยไม่ได้รับอนุญาต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -55,7 +55,56 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL",
+                    "weight": "bold",
+                    "size": "xs",
+                    "color": "#D7263D"
+                  },
+                  {
+                    "type": "text",
+                    "text": "FBI ระบุเกาหลีเหนืออยู่เบื้องหลังการขโมยสินทรัพย์ดิจิทัลจาก Binance มากกว่า 6 พันล้านดอลลาร์",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true,
+                    "margin": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "text": "FBI ระบุปฏิบัติการ TraderTraitor ของเกาหลีเหนือรับผิดชอบเหตุ Binance และพบการแปลงสินทรัพย์ที่ขโมยเป็น Ethereum เพื่อเตรียมฟอกเงิน",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md",
+                    "maxLines": 6
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
                     }
                   }
                 ]
@@ -77,7 +126,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "TeamViewer แก้ช่องโหว่ Client หลายรายการที่อาจนำไปสู่ Remote Code Execution",
+                    "text": "Club Tourism ระบุข้อมูลสมาชิกประมาณ 4.32 ล้านรายการอาจรั่วไหลหลังถูกเข้าถึงโดยไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -85,7 +134,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "TeamViewer รุ่นก่อน 15.83 บางแพลตฟอร์มอาจถูกโจมตีผ่านข้อมูลภาพหน้าจอหรือ Session Recording ที่สร้างขึ้นเฉพาะ; ผู้ผลิตไม่พบ Active Exploitation",
+                    "text": "ข้อมูลอาจรวมชื่อ ที่อยู่ โทรศัพท์ อีเมล Member ID และผู้ติดต่อฉุกเฉิน แต่ไม่รวม Password, Passport, Card หรือ Bank Account",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -104,7 +153,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
                     }
                   }
                 ]
@@ -126,7 +175,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Cathay Pacific ยืนยันข้อมูลการจองประมาณ 53,000 รายการถูกเข้าถึงผ่านระบบ Amadeus",
+                    "text": "Parameter เปิดเผยช่องโหว่ Share Link ที่เคยทำให้โค้ดทำงานใน Session ของผู้ใช้ ChatGPT",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -134,7 +183,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลส่วนใหญ่รวม Booking Reference ชื่อผู้โดยสาร และเที่ยวบิน; บางรายการมีข้อมูลติดต่อหรือเลขเอกสารเดินทาง แต่ไม่พบหลักฐานข้อมูลชำระเงินถูกเข้าถึง",
+                    "text": "งานวิจัยสาธิตการอ่าน Private Conversation ผ่าน Public Share Link; OpenAI แก้ไขแล้วเมื่อ 26 ต.ค. และจัดระดับรายงานเป็น P1",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -153,7 +202,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
                     }
                   }
                 ]
@@ -175,7 +224,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "LifeCard พักบริการ V-Preca บางส่วนหลังพบการเข้าถึงระบบของผู้รับจ้างโดยไม่ได้รับอนุญาต",
+                    "text": "Malaysia Airlines แจ้งข้อมูลลูกค้าบางส่วนอาจได้รับผลกระทบจากเหตุ Amadeus",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -183,7 +232,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลส่วนบุคคลของลูกค้าอาจรั่วไหล แต่ประเภทข้อมูลและจำนวนผู้ได้รับผลกระทบยังอยู่ระหว่างสอบสวน",
+                    "text": "ข้อมูลที่ Amadeus ประมวลผลระหว่างสิงหาคม 2566 ถึงกันยายน 2569 อาจได้รับผลกระทบ โดยไม่พบหลักฐานระบบของสายการบินหรือข้อมูลการเงินถูกเข้าถึง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -202,7 +251,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
                     }
                   }
                 ]
@@ -224,7 +273,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "KDDI และ Lifenet ระบุข้อมูลลูกค้าสูงสุด 22,541 รายการอาจรั่วไหลผ่านระบบเชื่อมต่อ",
+                    "text": "World ระบุข้อมูลสมาชิกประมาณ 1.2 ล้านรายการอาจรั่วไหลจาก Server ของ Tin Pan Alley",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -232,7 +281,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลอาจรวมชื่อ ที่อยู่ โทรศัพท์ อีเมล และ Member Identifier; ไม่รวม Password, Card, Bank Account หรือเอกสารยืนยันตัวตน",
+                    "text": "บุคคลภายนอกเข้าถึง Server และดำเนินการดึงข้อมูล; รายการที่อาจได้รับผลกระทบรวมชื่อ ที่อยู่ โทรศัพท์ วันเกิด เพศ และอีเมล",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -251,56 +300,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "NTT DATA หยุด STdirectServices หลังผู้รับจ้าง SaaS ถูกเข้าถึงและข้อมูลผู้ลงทุนอาจรั่วไหล",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "บริการที่ใช้สนับสนุนสิทธิประโยชน์ผู้ซื้อหุ้นกู้ถูกพัก โดยหลักฐานจากบริษัทหลักทรัพย์ระบุข้อมูลที่อาจรั่วไหลรวมชื่อและยอดซื้อ แต่ไม่รวมเลขบัญชีหรือ Password",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md",
-                    "maxLines": 6
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-01/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-02/"
                     }
                   }
                 ]
