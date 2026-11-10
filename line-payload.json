@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261105-0700",
+  "report_id": "CIB-20261110-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 5 พ.ย. 2569 (รอบ 07:00 น.)\n8 เหตุการณ์สำคัญ | Critical 4 | High 4\nTop 3: cPGuard Supply Chain · Zyxel GS1900 · WordPress KEV"
+        "text": "Cyber Intel Daily Brief — 10 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 4 | High 3\nTop 3: N-able Able2Shell · OpenSSH CVE-2026-123158 · Plex2Shell"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 5 พฤศจิกายน 2569",
+        "altText": "Cyber Intel Daily Brief — 10 พฤศจิกายน 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "cPGuard Update Channel ถูกยึดเพื่อส่ง Malicious Update ไปยัง Linux Server",
+                    "text": "N-able ปิด N-central Hosted ชั่วคราวหลังมีการเปิดเผยช่องโหว่ Able2Shell",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีใช้โครงสร้าง Update ของ OPSSHIELD แจก Script ที่ทำงานด้วยสิทธิ Root ใน cPGuard 5.88.12–5.88.19 และมีข้อมูลบางส่วนถูกดึงออกไป",
+                    "text": "มีการเผยแพร่ช่องโหว่ที่รายงานว่าเชื่อมต่อกันเป็น Exploit Chain เพื่อ Remote Code Execution และยกระดับสิทธิ Root; N-able ปิด Hosted Environment ชั่วคราวและสั่งลูกค้า On-premises ให้ปิดระบบระหว่างจัดทำ Hotfix",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -44,7 +44,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1/8 · เร่งกู้คืนและหมุนเวียน Credential",
+                    "text": "1/7 · เร่งตรวจคำแนะนำล่าสุดก่อนเปิดระบบ",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -63,7 +63,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Zyxel แก้ CVE-2026-107441 หลังพบการยึด GS1900 Switch เกือบ 1,000 เครื่อง",
+                    "text": "พบความพยายามโจมตี CVE-2026-123158 เพื่อข้ามการยืนยันตัวตน OpenSSH",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -93,7 +93,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Out-of-bounds Write ใน Web Management CGI เปิดให้ผู้โจมตีที่ไม่ต้องยืนยันตัวตนและเข้าถึงเครือข่ายรัน OS Command ได้",
+                    "text": "Previdian ยืนยันการตรวจพบความพยายามโจมตี OpenSSH บน Linux ที่ใช้ musl โดยไม่ใช้ PAM; ช่องโหว่อาจทำให้บัญชีบางรูปแบบยอมรับรหัสผ่านที่ยาวผิดปกติ",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -101,7 +101,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2/8 · เร่งอัปเดตและตรวจสอบ",
+                    "text": "2/7 · พบ Exploitation Attempts; เร่งอัปเดต",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -120,7 +120,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
@@ -142,7 +142,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CISA เพิ่ม WordPress Core CVE-2026-119977 เข้า KEV หลังพบการโจมตีจริง",
+                    "text": "Plex2Shell ถูกใช้โจมตี Plex Media Server บน QNAP NAS อย่างกว้างขวาง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -150,7 +150,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "TOCTOU Race Condition อาจเปิดให้ผู้โจมตีที่ไม่ต้องยืนยันตัวตนรันโค้ดบน Server ระหว่างช่วง Upgrade; WordPress 7.1.4 มีการแก้ไขแล้ว",
+                    "text": "ช่องโหว่สี่รายการใน Plex Media Server 1.43.2 และเก่ากว่าสามารถเชื่อมต่อเป็น unauthenticated RCE; QNAP ยืนยันว่ามีผู้ใช้บางรายถูกกระทบและแนะนำให้อัปเดตพร้อมตรวจการยึดระบบ",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -158,7 +158,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "3/8 · เร่งอัปเดต",
+                    "text": "3/7 · Active and widespread exploitation ตาม QNAP/Plex",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -177,7 +177,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
@@ -199,7 +199,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Rails แก้ช่องโหว่ Active Storage ที่อาจอ่านและเขียนไฟล์ผ่าน Crafted Upload",
+                    "text": "ฝรั่งเศสระบุ IRGC-linked Unit อยู่เบื้องหลังการโจมตีระบบตู้แช่ซูเปอร์มาร์เก็ต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -207,7 +207,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Application ที่ใช้ ImageMagick อาจถูกผู้โจมตีที่ไม่ต้องยืนยันตัวตนเขียนไฟล์ และในบางกรณีอ่าน Secret จนนำไปสู่ RCE หรือ Lateral Movement",
+                    "text": "ทางการฝรั่งเศสระบุว่าการโจมตีเดือนตุลาคมกระทบระบบควบคุมอุณหภูมิในซูเปอร์มาร์เก็ตราว 700 แห่ง ทำให้อาหารเสียหายและเกิดเพลิงไหม้อย่างน้อย 15 จุด",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -215,7 +215,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "4/8 · เร่งอัปเดต",
+                    "text": "4/7 · Attribution โดยทางการฝรั่งเศส; อยู่ระหว่างดำเนินคดี",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -234,7 +234,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
@@ -252,11 +252,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#E67E22"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "Sekoia รายงาน Poisoned Source ใช้ Analytics Script ส่ง Mobile Exploit Chain",
+                    "text": "Beget กู้ระบบ Cloud ใหม่หลัง Data Wiper ลบข้อมูลและ Backup บางส่วน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -264,7 +264,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้วิจัยประเมินด้วยความเชื่อมั่นปานกลางถึงสูงว่า APT29 หรือกลุ่มย่อยเกี่ยวข้อง; Exploit ทั้งหมดเป็นช่องโหว่ที่มี Patch แล้ว",
+                    "text": "ผู้โจมตีเข้าถึง Management Server และรัน Malware เพื่อลบข้อมูล ทำให้ Beget ต้องตัดระบบออกจากเครือข่ายและทยอยกู้ Shared Hosting, VPS, S3 และ Kubernetes",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -272,7 +272,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "5/8 · เร่งอัปเดต Mobile Fleet",
+                    "text": "5/7 · อยู่ระหว่างกู้คืน; ข้อมูลบางส่วนไม่สามารถกู้ได้",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -291,7 +291,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
@@ -309,11 +309,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#E67E22"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "DreamHost ยืนยัน File Manager ถูกเจาะและ FTP/SFTP Credential บางส่วนถูกเปิดเผย",
+                    "text": "SEGA แจ้งอีเมลผู้รับ Newsletter 2.19 ล้านรายการรั่วจากผู้ให้บริการภายนอก",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -321,7 +321,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีใช้ช่องโหว่ใน Third-party Software เข้าถึง Credential ของผู้ใช้ File Manager ระหว่างประมาณเดือนสิงหาคมถึง 23 ตุลาคม",
+                    "text": "ผู้ให้บริการ ARARA ถูกเข้าถึงโดยไม่ได้รับอนุญาต ทำให้อีเมล 2,196,044 รายการและข้อมูลประกอบบางส่วนรั่วไหล; SEGA ระบุว่า Password และข้อมูลบัตรเครดิตไม่อยู่ในขอบเขต",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -329,7 +329,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "6/8 · หมุนเวียน Credential และตรวจระบบ",
+                    "text": "6/7 · ยืนยันการรั่วไหล; ยังไม่พบการนำข้อมูลไปใช้ผิดวัตถุประสงค์",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -348,7 +348,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
@@ -366,11 +366,11 @@
                     "text": "HIGH",
                     "weight": "bold",
                     "size": "xs",
-                    "color": "#E67E22"
+                    "color": "#D75A0B"
                   },
                   {
                     "type": "text",
-                    "text": "mSecure ระบุผู้โจมตีได้สำเนา Database ที่เข้ารหัสของผู้ใช้ Cloud Sync",
+                    "text": "York University ยืนยันข้อมูลจาก Web Form ของหลายหน่วยงานถูกขโมย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -378,7 +378,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "บริษัทไม่พบหลักฐานว่าข้อมูลลับภายใน Database ถูกเปิดอ่าน แต่แนะนำให้เปลี่ยน Master Password, Password สำคัญ, 2FA และ Passkey",
+                    "text": "ผู้ไม่หวังดีเข้าถึงแบบฟอร์มออนไลน์บางส่วนและขโมยข้อมูลส่วนบุคคลที่ส่งมาตั้งแต่ปี 2007 ในบางระบบ; มหาวิทยาลัยระบุว่ายังไม่พบการเคลื่อนย้ายไปยังระบบ IT ส่วนอื่น",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -386,7 +386,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "7/8 · ดำเนินการเชิงป้องกัน",
+                    "text": "7/7 · ควบคุมเหตุแล้วและกำลังแจ้งผู้ได้รับผลกระทบ",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -405,64 +405,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#E67E22"
-                  },
-                  {
-                    "type": "text",
-                    "text": "NIKKE PC Launcher ถูกแก้ไข Script เพื่อกระจาย Remote-access และ Data-stealing Malware",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ผู้พัฒนายืนยัน Third Party Tampering และออก Client Fix เมื่อ 4 พฤศจิกายน; ขอบเขตผลกระทบยังอยู่ระหว่างสอบสวน",
-                    "size": "sm",
-                    "wrap": true,
-                    "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "8/8 · อัปเดตและตรวจ Endpoint",
-                    "size": "xs",
-                    "wrap": true,
-                    "color": "#64748B",
-                    "margin": "md"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#0B1E38",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-05/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-10/"
                     }
                   }
                 ]
