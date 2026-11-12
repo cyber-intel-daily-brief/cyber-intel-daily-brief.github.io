@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261111-0700",
+  "report_id": "CIB-20261112-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 11 พ.ย. 2569 (รอบ 07:00 น.)\n8 เหตุการณ์สำคัญ | Critical 4 | High 4\nTop 3: Microsoft Outlook Zero-Day · Xen Orchestra Auth Bypass · SAP Critical Patch Day"
+        "text": "Cyber Intel Daily Brief — 12 พ.ย. 2569 (รอบ 07:00 น.)\n8 เหตุการณ์สำคัญ | Critical 4 | High 4\nTop 3: ScreenConnect MSP Campaign · Cisco BroadWorks KEV · Railway Secret Exposure"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 11 พฤศจิกายน 2569",
+        "altText": "Cyber Intel Daily Brief — 12 พฤศจิกายน 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft แก้ Outlook Zero-Day ที่ถูกใช้ขโมย NTLM Credential",
+                    "text": "Active ScreenConnect Campaign กระทบ MSP และปลายทางลูกค้าหลายองค์กร",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-124194 เป็นช่องโหว่ Spoofing ใน Outlook ที่ถูกใช้โจมตีจริง; การเปิดไฟล์ข้อความที่สร้างขึ้นเฉพาะอาจทำให้ Outlook เชื่อมต่อไปยังตำแหน่งเครือข่ายของผู้โจมตีและเปิดเผยข้อมูลยืนยันตัวตน",
+                    "text": "ConnectWise กำลังสอบสวนการใช้ ScreenConnect Environment ที่ถูกยึดเพื่อติดตั้ง Rogue Remote-access Client; Huntress ตรวจพบ MSP 6 รายและ Endpoint อย่างน้อย 286 เครื่องใน 47 องค์กร",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -44,7 +44,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1/8 · ถูกใช้โจมตีจริง; มี Security Update แล้ว",
+                    "text": "1/8 · อยู่ระหว่างสอบสวน; จำนวนผลกระทบยังเพิ่มขึ้น",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -63,7 +63,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Xen Orchestra ถูกโจมตีผ่าน Authentication Bypass และอาจยึด Host ระดับ Root",
+                    "text": "CISA เพิ่ม Cisco BroadWorks CVE-2026-20320 เข้า KEV หลังพบการโจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -93,7 +93,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Vates ยืนยันการโจมตี VSA-2026-062 ซึ่งใช้ Cookie ที่สร้างขึ้นเฉพาะเพื่อข้ามการยืนยันตัวตน รับสิทธิ Admin และอาจต่อยอดยึด XCP-ng Node ระดับ Root",
+                    "text": "ช่องโหว่ XXE ใน BroadWorks OCI-P เปิดทางให้ผู้โจมตีจากระยะไกลอ่านไฟล์ Configuration ที่ละเอียดอ่อน; Cisco มีรุ่นแก้ไขแล้วและไม่มี Workaround",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -101,7 +101,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2/8 · Active Exploitation; รุ่นแก้ไขเผยแพร่แล้ว",
+                    "text": "2/8 · Active Exploitation; อยู่ใน CISA KEV",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -120,7 +120,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -142,7 +142,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "SAP ออกแพตช์ช่องโหว่ CVSS 10.0 สี่รายการใน NetWeaver, Gateway และ Web Dispatcher",
+                    "text": "Railway ระบุ Secret ของ Workspace สูงสุดราว 100,000 แห่งอาจถูกถอดรหัส",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -150,7 +150,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "SAP Security Patch Day เดือนพฤศจิกายนแก้ช่องโหว่ระดับ 10.0 สี่รายการ รวม Memory Corruption, Missing Authentication และ Broken Access Control ในระบบองค์กรสำคัญ",
+                    "text": "ผู้โจมตีเชื่อมช่องโหว่หลายจุดและเข้าถึง Environment Variable ของ Workspace สูงสุด 1.85%; Railway ประเมินความเสียหายจากการใช้ AI Key โดยไม่ได้รับอนุญาตราว 740,000 ดอลลาร์",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -158,7 +158,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "3/8 · มีแพตช์แล้ว; ไม่พบข้อมูลยืนยัน Active Exploitation",
+                    "text": "3/8 · ควบคุมเหตุแล้ว; Token และ Session ถูกยกเลิก",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -177,7 +177,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -199,7 +199,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ESET พบ Turla ใช้ Cereal ดักเก็บอีเมลบน Exchange ของหน่วยงานรัฐ",
+                    "text": "GhostFrame เปลี่ยน ESXi ที่ถูกยึดเป็นศูนย์ควบคุม VM และขโมย Credential",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -207,7 +207,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Cereal เป็นชุดเครื่องมือ Cyber Espionage ที่ฝังใน Microsoft Exchange, ทำงานใน Memory และเลือกเก็บอีเมล; ESET พบในหน่วยงานรัฐคาซัคสถานและโรมาเนีย",
+                    "text": "Insikt Group พบ Post-exploitation Framework สำหรับ VMware ESXi ที่ใช้สิทธิ Root ควบคุม VM, ทำ Network Pivot และเก็บ Credential; พบในกิจกรรมที่ทับซ้อนกับ Settra Ransomware",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -215,7 +215,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "4/8 · ESET ยืนยันเหยื่อ 2 หน่วยงานรัฐและ Attribution ระดับ High Confidence",
+                    "text": "4/8 · พบใช้งานจริงหลังผู้โจมตีได้ Root; ไม่ใช่ช่องโหว่ Initial Access",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -234,7 +234,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -256,7 +256,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Google แก้ Chrome Zero-Day CVE-2026-125350 ที่มี Exploit ใช้งานจริง",
+                    "text": "Maersk ยืนยันข้อมูลถูกนำออกจาก Legacy System แต่ยังไม่กระทบการขนส่ง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -264,7 +264,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Chrome 157.0.8103.50/.51 แก้ Use-After-Free ใน XML; Google ยืนยันว่ามี Exploit สำหรับช่องโหว่นี้อยู่ในสภาพแวดล้อมจริง",
+                    "text": "Maersk พบ Unauthorized Access และ Data Extraction จากระบบท้องถิ่นที่รับมาจากการซื้อกิจการ โดยระบุว่ายังไม่พบผลกระทบต่อระบบหลัก, API, EDI หรือการดำเนินงานลูกค้า",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -272,7 +272,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "5/8 · Exploit in the wild; Stable Update แล้ว",
+                    "text": "5/8 · ควบคุมเหตุแล้วและอยู่ระหว่างสอบสวน",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -291,7 +291,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -313,7 +313,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีใช้ Trusted AWS Access ของ Qubole เข้าถึง Cloud ลูกค้าหลายองค์กร",
+                    "text": "Notion ระบุ Fireworks Incident เปิดเผย AI Chat Transcript ของ Workspace บางส่วน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -321,7 +321,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Wiz พบการใช้ Credential จาก AWS Account ที่เชื่อมโยง Qubole เพื่อ AssumeRole เข้าสู่บัญชีลูกค้า อ่าน Secrets และขโมยข้อมูล S3 ระหว่าง 14–26 ตุลาคม",
+                    "text": "เหตุผู้ให้บริการ AI ภายนอกกระทบ Workspace น้อยกว่า 1%; Notion พบ Transcript ที่ใช้กับ Insights และแนะนำให้ถือว่าข้อมูลในบทสนทนาถูกเปิดเผย",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -329,7 +329,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "6/8 · ยืนยันการเข้าถึงหลาย Environment; อยู่ระหว่างตรวจสอบ",
+                    "text": "6/8 · แจ้งผู้ได้รับผลกระทบแล้ว; Insights ถูกปิดระหว่างสอบสวน",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -348,7 +348,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -370,7 +370,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Nitori ระบุข้อมูลลูกค้าสูงสุด 37.62 ล้านระเบียนอาจรั่วไหล",
+                    "text": "CopperDragon เชื่อมสามกลุ่มจารกรรมที่มุ่งเป้ารัฐ โทรคมนาคม ทหาร และโครงสร้างพื้นฐาน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -378,7 +378,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Nitori พบ Unauthorized Access ต่อ Management Server ของร้านค้าออนไลน์ และประเมินว่าข้อมูลลูกค้าสูงสุด 37.62 ล้านระเบียนอาจถูกนำออกไป",
+                    "text": "Check Point Research เชื่อม SilentDelivery, OceanGate และ DarkWire ผ่าน Sparrow Malware Ecosystem และประเมินว่า CopperDragon อาจทำหน้าที่เป็นผู้จัดหาเครื่องมือให้ China-nexus Actor หลายกลุ่ม",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -386,7 +386,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "7/8 · ควบคุมการเข้าถึงแล้ว; กำลังแจ้งผู้ได้รับผลกระทบ",
+                    "text": "7/8 · Source Assessment; พบกิจกรรมใน 21 ประเทศ",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -405,7 +405,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
@@ -427,7 +427,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Fireworks AI เปิดเผยผลกระทบเพิ่มเติมหลังผู้ให้บริการ Cloud ถูกโจมตี",
+                    "text": "eMudhra เพิกถอน Intermediate CA เพิ่มอีก 8 รายการจากการจัดการ Private Key ไม่เป็นไปตามนโยบาย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -435,7 +435,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีเข้าถึง Development Machine ผ่านผู้ให้บริการ Cloud ภายนอกและทำให้ Resource Metadata, Billing Data รวมถึง Dataset/Model Weight บางส่วนได้รับผลกระทบ",
+                    "text": "การสอบสวนพบ Custom Script เคยนำ RSA Private Key ผ่าน Host Memory ระหว่างย้าย HSM ทำให้ไม่สามารถยืนยันการปฏิบัติตามข้อกำหนด จึงเพิกถอน Intermediate เพิ่มเป็นรวม 16 รายการ",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -443,7 +443,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "8/8 · ควบคุมเหตุแล้ว; แจ้งลูกค้าที่ได้รับผลกระทบ",
+                    "text": "8/8 · Intermediate ที่เกี่ยวข้องถูกเพิกถอน; ลูกค้าถูกย้ายหรือออกใหม่",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -462,7 +462,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-11/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-12/"
                     }
                   }
                 ]
