@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261114-0700",
+  "report_id": "CIB-20261115-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 14 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: Check Point Gateway Exploitation · SCKit ScreenConnect · PTC Windchill RCE"
+        "text": "Cyber Intel Daily Brief — 15 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: Cursor Supply-chain Incident · Citrix NetScaler Critical Update · UnrealIRCd KEV"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 14 พฤศจิกายน 2569",
+        "altText": "Cyber Intel Daily Brief — 15 พฤศจิกายน 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -28,7 +28,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1. Check Point Gateway ถูกใช้ PHP2Shell ร่วมกับ CVE-2026-123039 เพื่อยึดสิทธิ root",
+                    "text": "1. Cursor เปิดเผย Supply-chain Incident ที่ปล่อย Claude Code Extension ปลอม",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -36,7 +36,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Check Point ยืนยันการโจมตี Security Gateway ที่ยังไม่ติดแพตช์ โดยใช้ PHP2Shell เป็นจุดเริ่มต้นและยกระดับสิทธิด้วย CVE-2026-123039; บางกรณีมีการทำลายระบบต่อเนื่อง",
+                    "text": "Credential ที่รั่วจากผู้ให้บริการ Fireworks ถูกใช้เข้าถึงระบบบางส่วนของ Cursor และวาง Extension ปลอมใน Marketplace; ผู้ใช้สูงสุด 5,000 รายอาจได้รับ Build ที่เป็นอันตราย",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -44,7 +44,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Active Exploitation; Patch Available",
+                    "text": "สถานะ: Contained; Customer Remediation Required",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -63,7 +63,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
@@ -85,7 +85,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2. SCKit แพร่ผ่าน ScreenConnect และดัก Session ของช่างเทคนิค",
+                    "text": "2. Citrix แก้ช่องโหว่ 28 รายการใน NetScaler ADC และ Gateway",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -93,7 +93,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Huntress พบสองระลอกที่กระทบอย่างน้อย 288 Endpoint ใน 48 องค์กร และเพิ่มอีก 205 Host ใน 41 องค์กร พร้อม Rogue Client และชุดเครื่องมือ SCKit",
+                    "text": "CVE-2026-120868 คะแนน CVSS 9.3 กระทบทุก Deployment รวมค่าเริ่มต้น ขณะที่ช่องโหว่อื่นขึ้นกับฟังก์ชัน DNS, DoH, SMPP, Gateway หรือ AAA",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -101,7 +101,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Active Campaign; Initial Access Linked to RMM+ Extension",
+                    "text": "สถานะ: Patch Available; No Confirmed Exploitation",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -120,7 +120,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
@@ -142,7 +142,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "3. PTC ออกแพตช์ CVE-2026-126325 สำหรับ Windchill และ FlexPLM",
+                    "text": "3. CISA เพิ่ม CVE-2026-114713 ของ UnrealIRCd เข้าบัญชี KEV",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -150,7 +150,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "PTC แจ้งแพตช์ใหม่สำหรับช่องโหว่ Critical ใน Windchill และ FlexPLM โดยระบบที่ PTC โฮสต์ได้รับแพตช์แล้ว ส่วนระบบ Self-hosted ต้องดำเนินการโดยผู้ดูแล",
+                    "text": "ช่องโหว่ Label-tag Injection ทำให้ผู้ใช้ทั่วไปบนเครือข่ายที่มี IRC Server เชื่อมต่ออย่างน้อยสองเครื่องแทรกคำสั่งด้วยสิทธิ Server และถูกยืนยันว่ามีการใช้โจมตี",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -158,7 +158,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Patch Available; Immediate Action Required",
+                    "text": "สถานะ: Active Exploitation; Patch/Hot-patch Available",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -177,7 +177,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
@@ -199,7 +199,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "4. MongoDB แก้ CVE-2026-118383 ระดับ CVSS 9.5",
+                    "text": "4. สหรัฐฯ รื้อโครงสร้าง FaceStealer ของเกาหลีเหนือหลังขโมยคริปโตกว่า 400 ล้านดอลลาร์",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -207,7 +207,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "MongoDB ระบุว่าช่องโหว่อาจเปิดทางให้เข้าถึง Server โดยไม่ได้รับอนุญาต และแนะนำให้ผู้ใช้ Community Edition อัปเกรดทันที; ยังไม่พบความพยายามโจมตี",
+                    "text": "FBI และ DOJ ยึด Cloud Infrastructure และ Webcam Video เหยื่อกว่า 900 รายจากแคมเปญ Social Engineering ที่ใช้วิดีโอปลอมและการประชุมออนไลน์",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -215,7 +215,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Patch Available; No Known Exploitation",
+                    "text": "สถานะ: Law-enforcement Disruption; Threat Remains Active",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -234,7 +234,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
@@ -256,7 +256,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "5. Uber แจ้งข้อมูลใบขับขี่ผู้ขับขี่รั่วจากผู้ให้บริการภายนอก",
+                    "text": "5. Trezor ยืนยัน Hardware Implant ใน Safe 5 จำนวน 3 เครื่องจากผู้จำหน่าย CryptoBilis",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -264,7 +264,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Uber แจ้งเหตุ Credential ของผู้ให้บริการภายนอกถูกขโมยและใช้เข้าถึงข้อมูลผู้ขับขี่ โดยตัวเลขจากเอกสารแจ้งเตือนหลายรัฐรวมอย่างน้อยหลายพันราย แต่ยังไม่มีจำนวนรวม",
+                    "text": "Implant สามารถอ่าน Recovery Words และ Passphrase จากหน้าจออุปกรณ์; Firmware 2.13.1 ทำให้ Implant ชุดที่พบใช้งานไม่ได้ แต่ไม่ป้องกันข้อมูลที่อาจถูกเก็บก่อนอัปเดต",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -272,7 +272,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Notification Ongoing; Scope Not Final",
+                    "text": "สถานะ: Confirmed Limited Incident; Fix Available",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -291,7 +291,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
@@ -313,7 +313,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "6. Operation TorNado จับกุมผู้ค้าและผู้ซื้อ Dark Web 354 ราย",
+                    "text": "6. PostgreSQL ออกอัปเดตความปลอดภัยแก้ CVE-2026-6460 และช่องโหว่อื่น",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -321,7 +321,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "Europol ประสาน 14 ประเทศยึดทรัพย์อาชญากรรมกว่า 210 ล้านยูโรและจับกุม 354 รายในปฏิบัติการต่อเครือข่ายตลาดมืด",
+                    "text": "CVE-2026-6460 คะแนน 8.8 ทำให้ผู้ใช้ที่สร้าง Object ได้รันโค้ดในบริบท OS ของ Database ผ่าน Type Confusion; PostgreSQL 14 สิ้นสุดการสนับสนุนหลังรุ่นนี้",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -329,7 +329,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Law-enforcement Disruption",
+                    "text": "สถานะ: Patch Available; Authentication Required",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -348,7 +348,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
@@ -370,7 +370,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "7. Cyberattack กระทบบริการ ePUAP ของภาครัฐโปแลนด์",
+                    "text": "7. SilentAir ใช้โครงข่ายโทรคมนาคมเอเชียสกัดกั้น SMS และรหัส 2FA",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true,
@@ -378,7 +378,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "หน่วยงานรัฐท้องถิ่นโปแลนด์แจ้งปัญหาบริการ ePUAP จาก Cyberattack ต่อโครงสร้างบริการอิเล็กทรอนิกส์ภาครัฐ ขณะที่ระบบ e-Delivery กลับมาใช้งานได้แล้ว",
+                    "text": "Enea พบ Signaling Attack ผ่าน SS7 และ Diameter จากโครงข่ายที่ถูกยึดในอย่างน้อย 6 ประเทศเอเชีย มุ่งเป้าไต้หวันและเป้าหมายในหลายประเทศ",
                     "size": "sm",
                     "wrap": true,
                     "color": "#475569",
@@ -386,7 +386,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "สถานะ: Service Disruption; Recovery Ongoing",
+                    "text": "สถานะ: Threat Activity Observed; China Nexus Low Confidence",
                     "size": "xs",
                     "wrap": true,
                     "color": "#64748B",
@@ -405,7 +405,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-14/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
                     }
                   }
                 ]
