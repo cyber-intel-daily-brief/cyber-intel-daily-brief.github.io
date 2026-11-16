@@ -1,53 +1,51 @@
 {
-  "report_id": "CIB-20261115-0700",
+  "report_id": "CIB-20261116-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 15 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: Cursor Supply-chain Incident · Citrix NetScaler Critical Update · UnrealIRCd KEV"
+        "text": "Cyber Intel Daily Brief — 16 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3: FBI ARTEX Warning · Quantum Systems Supply Chain · TSMC Cloud-provider Breach"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 15 พฤศจิกายน 2569",
+        "altText": "Cyber Intel Daily Brief — 16 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
             {
               "type": "bubble",
               "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#B91C1C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL · 1",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
               "body": {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "1. Cursor เปิดเผย Supply-chain Incident ที่ปล่อย Claude Code Extension ปลอม",
+                    "text": "FBI เตือน ARTEX เร่งวงจรโจมตีด้วย AI และถูกใช้ในเหตุ Supply Chain จริง",
                     "weight": "bold",
                     "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
+                    "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Credential ที่รั่วจากผู้ให้บริการ Fireworks ถูกใช้เข้าถึงระบบบางส่วนของ Cursor และวาง Extension ปลอมใน Marketplace; ผู้ใช้สูงสุด 5,000 รายอาจได้รับ Build ที่เป็นอันตราย",
+                    "text": "ARTEX ทำให้ผู้โจมตีอัตโนมัติตั้งแต่สำรวจถึงขโมยข้อมูล; บางเหตุเข้าถึงสิทธิระดับสูงภายในไม่ถึง 3 ชั่วโมง",
                     "size": "sm",
-                    "wrap": true,
                     "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Contained; Customer Remediation Required",
-                    "size": "xs",
                     "wrap": true,
-                    "color": "#64748B",
                     "margin": "md"
                   }
                 ]
@@ -63,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
                     }
                   }
                 ]
@@ -72,39 +70,37 @@
             {
               "type": "bubble",
               "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#B91C1C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "CRITICAL · 2",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
               "body": {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "2. Citrix แก้ช่องโหว่ 28 รายการใน NetScaler ADC และ Gateway",
+                    "text": "Quantum Systems ยืนยันการโจมตีไซเบอร์ ขณะรายงานภายนอกชี้ไปที่ไฟล์อัปเดต QBase ที่เป็นอันตราย",
                     "weight": "bold",
                     "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
+                    "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-120868 คะแนน CVSS 9.3 กระทบทุก Deployment รวมค่าเริ่มต้น ขณะที่ช่องโหว่อื่นขึ้นกับฟังก์ชัน DNS, DoH, SMPP, Gateway หรือ AAA",
+                    "text": "ผู้ผลิตโดรนทางทหารควบคุมเหตุได้แล้ว; รายงานสื่อระบุว่า Update Server ของซอฟต์แวร์วางแผนภารกิจถูกใช้ส่งไฟล์อันตราย",
                     "size": "sm",
-                    "wrap": true,
                     "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Patch Available; No Confirmed Exploitation",
-                    "size": "xs",
                     "wrap": true,
-                    "color": "#64748B",
                     "margin": "md"
                   }
                 ]
@@ -120,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
                     }
                   }
                 ]
@@ -129,39 +125,37 @@
             {
               "type": "bubble",
               "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 3",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
               "body": {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CRITICAL",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D7263D"
-                  },
-                  {
-                    "type": "text",
-                    "text": "3. CISA เพิ่ม CVE-2026-114713 ของ UnrealIRCd เข้าบัญชี KEV",
+                    "text": "TSMC ยืนยันข้อมูลพนักงานรั่วจากระบบของผู้ให้บริการ Cloud",
                     "weight": "bold",
                     "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
+                    "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ช่องโหว่ Label-tag Injection ทำให้ผู้ใช้ทั่วไปบนเครือข่ายที่มี IRC Server เชื่อมต่ออย่างน้อยสองเครื่องแทรกคำสั่งด้วยสิทธิ Server และถูกยืนยันว่ามีการใช้โจมตี",
+                    "text": "ข้อมูลพนักงานปัจจุบันและอดีตถูกเผยแพร่ภายนอกโดยไม่ได้รับอนุญาต; TSMC ไม่พบหลักฐานว่าระบบบริษัทหรือข้อมูลลูกค้าถูกเจาะ",
                     "size": "sm",
-                    "wrap": true,
                     "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Active Exploitation; Patch/Hot-patch Available",
-                    "size": "xs",
                     "wrap": true,
-                    "color": "#64748B",
                     "margin": "md"
                   }
                 ]
@@ -177,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
                     }
                   }
                 ]
@@ -186,39 +180,37 @@
             {
               "type": "bubble",
               "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 4",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
               "body": {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "4. สหรัฐฯ รื้อโครงสร้าง FaceStealer ของเกาหลีเหนือหลังขโมยคริปโตกว่า 400 ล้านดอลลาร์",
+                    "text": "La Poste เผยเหตุ Maileva ทำข้อมูลระบุตัวบุคคล 22 ล้านรายรั่วไหล",
                     "weight": "bold",
                     "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
+                    "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "FBI และ DOJ ยึด Cloud Infrastructure และ Webcam Video เหยื่อกว่า 900 รายจากแคมเปญ Social Engineering ที่ใช้วิดีโอปลอมและการประชุมออนไลน์",
+                    "text": "ชื่อ นามสกุล และที่อยู่ไปรษณีย์ของผู้รับเอกสารราว 22 ล้านรายได้รับผลกระทบ; ไม่พบการแก้ไขหรือทำลายข้อมูล",
                     "size": "sm",
-                    "wrap": true,
                     "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Law-enforcement Disruption; Threat Remains Active",
-                    "size": "xs",
                     "wrap": true,
-                    "color": "#64748B",
                     "margin": "md"
                   }
                 ]
@@ -234,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
                     }
                   }
                 ]
@@ -243,39 +235,37 @@
             {
               "type": "bubble",
               "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 5",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
               "body": {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "5. Trezor ยืนยัน Hardware Implant ใน Safe 5 จำนวน 3 เครื่องจากผู้จำหน่าย CryptoBilis",
+                    "text": "Ransomware กระทบ ActiveCloud ทำ Hosting, Email และ Virtual Server หยุดชะงักหลายวัน",
                     "weight": "bold",
                     "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
+                    "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Implant สามารถอ่าน Recovery Words และ Passphrase จากหน้าจออุปกรณ์; Firmware 2.13.1 ทำให้ Implant ชุดที่พบใช้งานไม่ได้ แต่ไม่ป้องกันข้อมูลที่อาจถูกเก็บก่อนอัปเดต",
+                    "text": "ผู้ให้บริการ Cloud ในเบลารุสกู้บริการหลักได้แล้ว แต่ลูกค้าบางรายยังมีปัญหา; บริษัทยังไม่พบหลักฐานข้อมูลลูกค้าถูกขโมย",
                     "size": "sm",
-                    "wrap": true,
                     "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Confirmed Limited Incident; Fix Available",
-                    "size": "xs",
                     "wrap": true,
-                    "color": "#64748B",
                     "margin": "md"
                   }
                 ]
@@ -291,121 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "6. PostgreSQL ออกอัปเดตความปลอดภัยแก้ CVE-2026-6460 และช่องโหว่อื่น",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "CVE-2026-6460 คะแนน 8.8 ทำให้ผู้ใช้ที่สร้าง Object ได้รันโค้ดในบริบท OS ของ Database ผ่าน Type Confusion; PostgreSQL 14 สิ้นสุดการสนับสนุนหลังรุ่นนี้",
-                    "size": "sm",
-                    "wrap": true,
-                    "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Patch Available; Authentication Required",
-                    "size": "xs",
-                    "wrap": true,
-                    "color": "#64748B",
-                    "margin": "md"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#0B1E38",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH",
-                    "weight": "bold",
-                    "size": "xs",
-                    "color": "#D75A0B"
-                  },
-                  {
-                    "type": "text",
-                    "text": "7. SilentAir ใช้โครงข่ายโทรคมนาคมเอเชียสกัดกั้น SMS และรหัส 2FA",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true,
-                    "margin": "sm"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Enea พบ Signaling Attack ผ่าน SS7 และ Diameter จากโครงข่ายที่ถูกยึดในอย่างน้อย 6 ประเทศเอเชีย มุ่งเป้าไต้หวันและเป้าหมายในหลายประเทศ",
-                    "size": "sm",
-                    "wrap": true,
-                    "color": "#475569",
-                    "margin": "md"
-                  },
-                  {
-                    "type": "text",
-                    "text": "สถานะ: Threat Activity Observed; China Nexus Low Confidence",
-                    "size": "xs",
-                    "wrap": true,
-                    "color": "#64748B",
-                    "margin": "md"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#0B1E38",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-15/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
                     }
                   }
                 ]
