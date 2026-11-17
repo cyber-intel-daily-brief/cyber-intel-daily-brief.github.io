@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261116-0700",
+  "report_id": "CIB-20261117-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 16 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3: FBI ARTEX Warning · Quantum Systems Supply Chain · TSMC Cloud-provider Breach"
+        "text": "Cyber Intel Daily Brief — 17 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3: Barracuda–ARTEX Cloud Intrusion · Copeland XWEB EVO Active Probing · Linux NoisyTCP"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 16 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 17 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "FBI เตือน ARTEX เร่งวงจรโจมตีด้วย AI และถูกใช้ในเหตุ Supply Chain จริง",
+                    "text": "Barracuda เชื่อมโยงเหตุ Cloud Intrusion กับ ARTEX หลัง Access Key ของคู่ค้ารั่ว",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ARTEX ทำให้ผู้โจมตีอัตโนมัติตั้งแต่สำรวจถึงขโมยข้อมูล; บางเหตุเข้าถึงสิทธิระดับสูงภายในไม่ถึง 3 ชั่วโมง",
+                    "text": "ผู้โจมตีใช้ Cloud Access Key ที่ยังไม่ถูกยกเลิก เคลื่อนผ่าน Cloud, Data Analytics, Source Code และ Kubernetes ภายใน 44 ชั่วโมง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Quantum Systems ยืนยันการโจมตีไซเบอร์ ขณะรายงานภายนอกชี้ไปที่ไฟล์อัปเดต QBase ที่เป็นอันตราย",
+                    "text": "Copeland XWEB EVO ถูกสแกนโจมตีหลังเปิดเผยช่องโหว่ไม่นาน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ผู้ผลิตโดรนทางทหารควบคุมเหตุได้แล้ว; รายงานสื่อระบุว่า Update Server ของซอฟต์แวร์วางแผนภารกิจถูกใช้ส่งไฟล์อันตราย",
+                    "text": "VulnCheck พบการพยายามใช้ CVE-2026-124014 ภายในไม่ถึง 2 ชั่วโมง และตรวจพบการสแกน CVE-2026-124010 สำหรับสั่งคำสั่งระดับ Root",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
                     }
                   }
                 ]
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "TSMC ยืนยันข้อมูลพนักงานรั่วจากระบบของผู้ให้บริการ Cloud",
+                    "text": "NoisyTCP กระทบ Linux Kernel และอาจทำให้ Server ล่มจากระยะไกลก่อนยืนยันตัวตน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ข้อมูลพนักงานปัจจุบันและอดีตถูกเผยแพร่ภายนอกโดยไม่ได้รับอนุญาต; TSMC ไม่พบหลักฐานว่าระบบบริษัทหรือข้อมูลลูกค้าถูกเจาะ",
+                    "text": "CVE-2026-99288 เป็น Race Condition ใน TCP Request Socket; ผู้วิจัยทำให้ Nginx, Apache และ SSH บน VM ล่มได้ภายในประมาณ 5 วินาทีถึง 2 นาที",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "La Poste เผยเหตุ Maileva ทำข้อมูลระบุตัวบุคคล 22 ล้านรายรั่วไหล",
+                    "text": "Fandango แจ้งข้อมูลบัตรชำระเงินจากหน้า Checkout ถูกเข้าถึงโดยไม่ได้รับอนุญาต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ชื่อ นามสกุล และที่อยู่ไปรษณีย์ของผู้รับเอกสารราว 22 ล้านรายได้รับผลกระทบ; ไม่พบการแก้ไขหรือทำลายข้อมูล",
+                    "text": "ธุรกรรมบางส่วนระหว่าง 8–11 ตุลาคมอาจเปิดเผยเลขบัตร CVV วันหมดอายุ Billing ZIP และอีเมล",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Ransomware กระทบ ActiveCloud ทำ Hosting, Email และ Virtual Server หยุดชะงักหลายวัน",
+                    "text": "Coles Group สอบสวนเหตุ Cybersecurity โดยยังไม่พบหลักฐานข้อมูลถูกขโมย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ผู้ให้บริการ Cloud ในเบลารุสกู้บริการหลักได้แล้ว แต่ลูกค้าบางรายยังมีปัญหา; บริษัทยังไม่พบหลักฐานข้อมูลลูกค้าถูกขโมย",
+                    "text": "ร้านค้าปลีกขนาดใหญ่ของออสเตรเลียยังเปิดร้านและ Online Shopping ตามปกติ พร้อมประสาน Australian Cyber Security Centre",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-16/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
                     }
                   }
                 ]
