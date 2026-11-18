@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261118-0700",
+  "report_id": "CIB-20261119-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 18 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Optimizely Supply-chain Incident · Fugaku Unauthorized Access · Uber–Fireworks AI Breach"
+        "text": "Cyber Intel Daily Brief — 19 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Microsoft Agent Framework Supply Chain · Apache Roller Active Exploitation · NGINX HTTP/2 Memory Corruption"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 18 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 19 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Optimizely Web Experimentation ถูกใช้เป็นช่องทางกระจาย JavaScript อันตราย",
+                    "text": "Microsoft Agent Framework บน PyPI ถูกแทรก Credential Stealer",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Optimizely ยืนยันว่าผู้ไม่ได้รับอนุญาตใช้ช่องโหว่เพิ่ม JavaScript อันตรายในโครงการของลูกค้าบางส่วน ก่อนแก้ช่องโหว่และนำโค้ดออกแล้ว",
+                    "text": "แพ็กเกจ agent-framework รุ่น 1.26.1 และ 1.26.2 ถูกปนเปื้อนโค้ดที่ทำงานทุกครั้งเมื่อเริ่ม Python และขโมย Credential จากเครื่องนักพัฒนาและระบบ Build",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "RIKEN ระงับ Fugaku หลังตรวจพบการเข้าถึงโดยไม่ได้รับอนุญาตและข้อมูลผู้ใช้อาจรั่ว",
+                    "text": "Apache Roller RCE ไม่ต้องยืนยันตัวตนถูกใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "RIKEN ระบุว่าไฟล์ใน Home Directory และข้อมูลยืนยันตัวตนอาจถูกนำออก กระทบผู้ใช้ Fugaku สูงสุด 4,222 ราย และ RIKYU สูงสุด 375 ราย",
+                    "text": "Apache ยืนยันการโจมตี CVE-2026-129448 ผ่าน XML-RPC Endpoint ซึ่งเปิดทางให้รันคำสั่งจากระยะไกลก่อนยืนยันตัวตน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
                     }
                   }
                 ]
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Uber แจ้งผู้ขับขี่เกือบ 150,000 รายได้รับผลกระทบจากเหตุของ Fireworks AI",
+                    "text": "NGINX แก้ช่องโหว่หน่วยความจำใน HTTP/2 ที่อาจนำไปสู่ RCE",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "หนังสือแจ้งหน่วยงานรัฐระบุว่าบุคคลภายนอกใช้ Credential ภายในของผู้ให้บริการเข้าถึงบัญชี Uber และข้อมูลใบขับขี่ของผู้ขับขี่ 149,346 ราย",
+                    "text": "CVE-2026-123007 อาจทำให้ Worker ล่ม หน่วยความจำเสียหาย หรือรันคำสั่งได้เมื่อ ASLR ถูกปิดหรือถูกข้าม; รุ่น 1.31.9 และ 1.30.7 แก้ไขแล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Tor ออก 0.4.9.17 เร่งด่วนเพื่อเสริมการป้องกัน DDoS ที่กระทบ Relay ส่วนใหญ่",
+                    "text": "OpenJDK Memory Corruption อาจนำไปสู่ RCE ในเงื่อนไขเฉพาะ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Tor Project ระบุว่า Relay ทั่วเครือข่ายถูกกดดันจาก Client Circuit จำนวนมาก และขอให้ผู้ดูแล Relay อัปเกรดเป็น 0.4.9.17 โดยเร็ว",
+                    "text": "CVE-2026-114938 กระทบ JVM บน x86-64 ที่รองรับชุดคำสั่งเฉพาะ เมื่อข้อมูล Base64 จากผู้โจมตีเข้าสู่ Decoder; มีรุ่นแก้ไขแล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "งานวิจัยพบ Secret ใน Public Container Image ถูกนำไปใช้ภายในไม่กี่วินาที",
+                    "text": "ผู้ให้บริการ IT ของสหกรณ์เครดิตไอร์แลนด์เปิดเผยข้อมูลผู้รับโอน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "การทดลอง Honeypot 300 Image พบ AWS Key ถูกเรียกใช้เร็วสุด 7.86 วินาทีหลังเผยแพร่ และ AWS Key ทั้ง 100 ชุดถูกใช้ภายใน 15 นาที",
+                    "text": "Wellington IT แจ้งเหตุที่กระทบสหกรณ์เครดิตเกือบ 50 แห่ง โดยข้อมูลชื่อผู้รับโอน, Reference และ IBAN อาจถูกเข้าถึง แต่ยอดเงินและข้อมูล Login ไม่อยู่ในขอบเขต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
                     }
                   }
                 ]
@@ -310,14 +310,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "นักวิจัยยึดบัญชีผู้เผยแพร่โมเดล Kokoro บน Hugging Face ผ่านโดเมนที่หมดอายุ",
+                    "text": "Google เผย COLD RELIC ใช้ข้อมูลจากเหยื่อเดิมสร้างตัวตนปลอมโจมตีองค์กรถัดไป",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ทีมวิจัยใช้โดเมนที่จดใหม่รีเซ็ตรหัสผ่านบัญชีผู้เผยแพร่ และสาธิตการเปลี่ยนพฤติกรรมโมเดลด้วยการปรับ Weight โดยไม่ได้อัปโหลด Weight ที่แก้ไขขึ้นแพลตฟอร์ม",
+                    "text": "Mandiant พบการใช้ข้อมูลพนักงานและตัวตนจากเหตุปี 2568 เป็นฉากบังหน้าโจมตีอีกองค์กรในปี 2569 พร้อมการใช้ Residential Proxy และ Cross-cloud Identity Abuse",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -336,7 +336,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
                     }
                   }
                 ]
