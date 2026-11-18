@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261117-0700",
+  "report_id": "CIB-20261118-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 17 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 2 | High 3\nTop 3: Barracuda–ARTEX Cloud Intrusion · Copeland XWEB EVO Active Probing · Linux NoisyTCP"
+        "text": "Cyber Intel Daily Brief — 18 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Optimizely Supply-chain Incident · Fugaku Unauthorized Access · Uber–Fireworks AI Breach"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 17 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 18 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Barracuda เชื่อมโยงเหตุ Cloud Intrusion กับ ARTEX หลัง Access Key ของคู่ค้ารั่ว",
+                    "text": "Optimizely Web Experimentation ถูกใช้เป็นช่องทางกระจาย JavaScript อันตราย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ผู้โจมตีใช้ Cloud Access Key ที่ยังไม่ถูกยกเลิก เคลื่อนผ่าน Cloud, Data Analytics, Source Code และ Kubernetes ภายใน 44 ชั่วโมง",
+                    "text": "Optimizely ยืนยันว่าผู้ไม่ได้รับอนุญาตใช้ช่องโหว่เพิ่ม JavaScript อันตรายในโครงการของลูกค้าบางส่วน ก่อนแก้ช่องโหว่และนำโค้ดออกแล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Copeland XWEB EVO ถูกสแกนโจมตีหลังเปิดเผยช่องโหว่ไม่นาน",
+                    "text": "RIKEN ระงับ Fugaku หลังตรวจพบการเข้าถึงโดยไม่ได้รับอนุญาตและข้อมูลผู้ใช้อาจรั่ว",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "VulnCheck พบการพยายามใช้ CVE-2026-124014 ภายในไม่ถึง 2 ชั่วโมง และตรวจพบการสแกน CVE-2026-124010 สำหรับสั่งคำสั่งระดับ Root",
+                    "text": "RIKEN ระบุว่าไฟล์ใน Home Directory และข้อมูลยืนยันตัวตนอาจถูกนำออก กระทบผู้ใช้ Fugaku สูงสุด 4,222 ราย และ RIKYU สูงสุด 375 ราย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
                     }
                   }
                 ]
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "NoisyTCP กระทบ Linux Kernel และอาจทำให้ Server ล่มจากระยะไกลก่อนยืนยันตัวตน",
+                    "text": "Uber แจ้งผู้ขับขี่เกือบ 150,000 รายได้รับผลกระทบจากเหตุของ Fireworks AI",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-99288 เป็น Race Condition ใน TCP Request Socket; ผู้วิจัยทำให้ Nginx, Apache และ SSH บน VM ล่มได้ภายในประมาณ 5 วินาทีถึง 2 นาที",
+                    "text": "หนังสือแจ้งหน่วยงานรัฐระบุว่าบุคคลภายนอกใช้ Credential ภายในของผู้ให้บริการเข้าถึงบัญชี Uber และข้อมูลใบขับขี่ของผู้ขับขี่ 149,346 ราย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Fandango แจ้งข้อมูลบัตรชำระเงินจากหน้า Checkout ถูกเข้าถึงโดยไม่ได้รับอนุญาต",
+                    "text": "Tor ออก 0.4.9.17 เร่งด่วนเพื่อเสริมการป้องกัน DDoS ที่กระทบ Relay ส่วนใหญ่",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ธุรกรรมบางส่วนระหว่าง 8–11 ตุลาคมอาจเปิดเผยเลขบัตร CVV วันหมดอายุ Billing ZIP และอีเมล",
+                    "text": "Tor Project ระบุว่า Relay ทั่วเครือข่ายถูกกดดันจาก Client Circuit จำนวนมาก และขอให้ผู้ดูแล Relay อัปเกรดเป็น 0.4.9.17 โดยเร็ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Coles Group สอบสวนเหตุ Cybersecurity โดยยังไม่พบหลักฐานข้อมูลถูกขโมย",
+                    "text": "งานวิจัยพบ Secret ใน Public Container Image ถูกนำไปใช้ภายในไม่กี่วินาที",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ร้านค้าปลีกขนาดใหญ่ของออสเตรเลียยังเปิดร้านและ Online Shopping ตามปกติ พร้อมประสาน Australian Cyber Security Centre",
+                    "text": "การทดลอง Honeypot 300 Image พบ AWS Key ถูกเรียกใช้เร็วสุด 7.86 วินาทีหลังเผยแพร่ และ AWS Key ทั้ง 100 ชุดถูกใช้ภายใน 15 นาที",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,62 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-17/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 6",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "นักวิจัยยึดบัญชีผู้เผยแพร่โมเดล Kokoro บน Hugging Face ผ่านโดเมนที่หมดอายุ",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true
+                  },
+                  {
+                    "type": "text",
+                    "text": "ทีมวิจัยใช้โดเมนที่จดใหม่รีเซ็ตรหัสผ่านบัญชีผู้เผยแพร่ และสาธิตการเปลี่ยนพฤติกรรมโมเดลด้วยการปรับ Weight โดยไม่ได้อัปโหลด Weight ที่แก้ไขขึ้นแพลตฟอร์ม",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md"
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "color": "#0B1E38",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-18/"
                     }
                   }
                 ]
