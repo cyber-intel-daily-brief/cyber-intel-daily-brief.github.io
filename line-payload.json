@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261119-0700",
+  "report_id": "CIB-20261120-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 19 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Microsoft Agent Framework Supply Chain · Apache Roller Active Exploitation · NGINX HTTP/2 Memory Corruption"
+        "text": "Cyber Intel Daily Brief — 20 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: PHP Critical Security Release · Drupal Core RCE · CISA KEV Update"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 19 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 20 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Microsoft Agent Framework บน PyPI ถูกแทรก Credential Stealer",
+                    "text": "PHP ออก Security Release สำหรับทุกสาขาที่รองรับ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "แพ็กเกจ agent-framework รุ่น 1.26.1 และ 1.26.2 ถูกปนเปื้อนโค้ดที่ทำงานทุกครั้งเมื่อเริ่ม Python และขโมย Credential จากเครื่องนักพัฒนาและระบบ Build",
+                    "text": "PHP เผยแพร่รุ่น 8.5.13, 8.4.28, 8.3.37 และ 8.2.36 เพื่อแก้ช่องโหว่ด้านความมั่นคงปลอดภัย โดยประกาศล่วงหน้าระบุว่าความรุนแรงสูงสุดอยู่ในระดับ Critical",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-20/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Apache Roller RCE ไม่ต้องยืนยันตัวตนถูกใช้โจมตีจริง",
+                    "text": "Drupal Core Critical RCE ผ่านตัวติดตั้ง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Apache ยืนยันการโจมตี CVE-2026-129448 ผ่าน XML-RPC Endpoint ซึ่งเปิดทางให้รันคำสั่งจากระยะไกลก่อนยืนยันตัวตน",
+                    "text": "Drupal แจ้งช่องโหว่ CVE-2026-132165 ซึ่งภายใต้เงื่อนไขเฉพาะอาจทำให้ผู้โจมตีใช้ install.php เพื่อติดตั้งระบบใหม่ ยึดเว็บไซต์ หรือรันโค้ดจากระยะไกล",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-20/"
                     }
                   }
                 ]
@@ -128,11 +128,11 @@
               "header": {
                 "type": "box",
                 "layout": "vertical",
-                "backgroundColor": "#C2410C",
+                "backgroundColor": "#B91C1C",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH · 3",
+                    "text": "CRITICAL · 3",
                     "color": "#FFFFFF",
                     "weight": "bold",
                     "size": "sm"
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "NGINX แก้ช่องโหว่หน่วยความจำใน HTTP/2 ที่อาจนำไปสู่ RCE",
+                    "text": "CISA เพิ่ม 4 ช่องโหว่ที่ถูกใช้โจมตีจริงใน KEV",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-123007 อาจทำให้ Worker ล่ม หน่วยความจำเสียหาย หรือรันคำสั่งได้เมื่อ ASLR ถูกปิดหรือถูกข้าม; รุ่น 1.31.9 และ 1.30.7 แก้ไขแล้ว",
+                    "text": "CISA เพิ่มช่องโหว่ของ Synology DSM, LiteLLM, Apache Axis และ REDCap รวม 4 รายการใน Known Exploited Vulnerabilities Catalog หลังพบหลักฐานการใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-20/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "OpenJDK Memory Corruption อาจนำไปสู่ RCE ในเงื่อนไขเฉพาะ",
+                    "text": "ASUS Control Center Express มีช่องโหว่ Hard-coded Cryptographic Key",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-114938 กระทบ JVM บน x86-64 ที่รองรับชุดคำสั่งเฉพาะ เมื่อข้อมูล Base64 จากผู้โจมตีเข้าสู่ Decoder; มีรุ่นแก้ไขแล้ว",
+                    "text": "ASUS แจ้งช่องโหว่หลายรายการใน Control Center Express Agent รุ่นก่อน 1.7.29 ซึ่งรวมความเสี่ยงจากกุญแจเข้ารหัสที่ฝังไว้ในผลิตภัณฑ์",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-20/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "ผู้ให้บริการ IT ของสหกรณ์เครดิตไอร์แลนด์เปิดเผยข้อมูลผู้รับโอน",
+                    "text": "TfL แจ้งบัญชี Oyster Photocard ราว 265,000 รายอาจถูกเข้าถึง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Wellington IT แจ้งเหตุที่กระทบสหกรณ์เครดิตเกือบ 50 แห่ง โดยข้อมูลชื่อผู้รับโอน, Reference และ IBAN อาจถูกเข้าถึง แต่ยอดเงินและข้อมูล Login ไม่อยู่ในขอบเขต",
+                    "text": "Transport for London ระบุว่าบัญชี Oyster Photocard ราว 265,000 รายอาจได้รับผลกระทบ หลังตรวจพบกิจกรรมน่าสงสัยและนำเว็บไซต์ Photocard ออกจากระบบชั่วคราว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-20/"
                     }
                   }
                 ]
@@ -310,14 +310,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Google เผย COLD RELIC ใช้ข้อมูลจากเหยื่อเดิมสร้างตัวตนปลอมโจมตีองค์กรถัดไป",
+                    "text": "SBC Medical ยืนยันข้อมูลลูกค้า 1.624 ล้านรายถูกดึงออกจากระบบ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Mandiant พบการใช้ข้อมูลพนักงานและตัวตนจากเหตุปี 2568 เป็นฉากบังหน้าโจมตีอีกองค์กรในปี 2569 พร้อมการใช้ Residential Proxy และ Cross-cloud Identity Abuse",
+                    "text": "SBC Medical Group เปิดเผยเหตุเข้าถึงฐานข้อมูลโดยไม่ได้รับอนุญาตในญี่ปุ่น และยืนยันว่าบุคคลภายนอกเข้าถึงพร้อมดึงข้อมูลลูกค้าพื้นฐานของ 1,624,000 ราย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -336,7 +336,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-19/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-20/"
                     }
                   }
                 ]
