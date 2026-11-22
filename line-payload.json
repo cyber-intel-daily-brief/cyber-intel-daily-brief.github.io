@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261121-0700",
+  "report_id": "CIB-20261122-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 21 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 2 | High 5\nTop 3: VMware vCenter Zero-day · F5 BIG-IP Critical RCE · N-able Cloud Email Incident"
+        "text": "Cyber Intel Daily Brief — 22 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: Cisco Expressway Active Exploitation · MONAI Label AI Zero-day · Apache Tomcat TLS-PSK"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 21 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 22 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "VMware vCenter Authentication Bypass ถูกใช้เป็น Zero-day",
+                    "text": "AI Agent ใช้ช่องโหว่ Zero-day ใน MONAI Label ยึด Server ระดับ Root",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Broadcom แก้ CVE-2026-123890 ระดับ CVSS 9.8 ซึ่งเปิดทางให้ผู้โจมตีที่เข้าถึงเครือข่ายของ vCenter ข้ามการยืนยันตัวตน; Mandiant ยืนยันการใช้โจมตีตั้งแต่เดือนกันยายน",
+                    "text": "Amazon Threat Intelligence พบผู้ปฏิบัติการที่เชื่อมโยงกับจีนใช้ Cairn AI agents ค้นพบ Path Traversal ในแอปพลิเคชันภาพการแพทย์ และพัฒนาไปสู่ Reverse Shell สิทธิ์ root ภายในเวลาสั้น",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-22/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "F5 ออกแพตช์ฉุกเฉินแก้ BIG-IP RCE 5 รายการ",
+                    "text": "Cisco Expressway CVE-2026-76466 ถูกยืนยันการใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "F5 เผยแพร่ Out-of-band Security Notification สำหรับช่องโหว่ Stack-based Buffer Overflow ระดับ Critical ใน BIG-IP APM และ iRules ซึ่งอาจทำให้ผู้โจมตีจากระยะไกลที่ไม่ยืนยันตัวตนรันโค้ดได้ภายใต้การตั้งค่าที่ได้รับผลกระทบ",
+                    "text": "CISA เพิ่ม CVE-2026-76466 เข้า Known Exploited Vulnerabilities หลังพบหลักฐานการโจมตีจริง; ช่องโหว่ Hard-coded Credentials อาจเปิดให้ผู้โจมตีจากระยะไกลรันคำสั่งระบบในสิทธิ์ root",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-22/"
                     }
                   }
                 ]
@@ -128,11 +128,11 @@
               "header": {
                 "type": "box",
                 "layout": "vertical",
-                "backgroundColor": "#C2410C",
+                "backgroundColor": "#B91C1C",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH · 3",
+                    "text": "CRITICAL · 3",
                     "color": "#FFFFFF",
                     "weight": "bold",
                     "size": "sm"
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "N-able ยืนยันเหตุเจาะระบบ Mail Assure และ SpamExperts Hosted Cloud",
+                    "text": "Apache Tomcat TLS-PSK บน TLS 1.3 ไม่ตรวจสอบ Peer",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "N-able ระบุว่าการหยุดชะงักของ Mail Assure และ SpamExperts Hosted Cloud เกิดจากการเข้าถึง Server โดยไม่ได้รับอนุญาต พร้อมปิด UI และ API ระหว่างกู้คืน",
+                    "text": "Apache เปิดเผย CVE-2026-133325 ระดับ Critical ซึ่งทำให้ Node ที่ไม่ผ่านการยืนยันตัวตนเข้าร่วม Cluster ได้ เมื่อใช้ TLS 1.3 ร่วมกับ TLS-PSK",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-22/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "WhatsApp แก้ช่องโหว่ Android ที่อาจถูกใช้ร่วมกับข้อความหลอกลวง",
+                    "text": "Microsoft Entra Connect Health เปิดเผยข้อมูล Tenant จากช่องโหว่ API",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "WhatsApp ระบุว่า CVE-2026-23871 อาจถูกนำไปใช้ร่วมกับข้อความ Spam บางรูปแบบ เพื่อทำให้อุปกรณ์เป้าหมายเปิดเผยข้อมูล IP เมื่อแสดงข้อความ Click to WhatsApp ที่จัดทำขึ้นเฉพาะ",
+                    "text": "Microsoft ยืนยันว่าผู้โจมตีใช้ช่องโหว่ Entra Connect Health API เพื่อเข้าถึงข้อมูลติดต่อผู้ดูแลและข้อมูลกำหนดค่า Tenant แบบอ่านอย่างเดียว ก่อนบริษัทแก้ไขฝั่งบริการเมื่อ 19 พฤศจิกายน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-22/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Bell Canada ยืนยันข้อมูลลูกค้าองค์กรถูกดึงออกจากระบบ",
+                    "text": "SAP NetWeaver CVE-2025-42884 ถูกเพิ่มเข้า CISA KEV",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Bell Canada ยืนยันเหตุวันที่ 17 พฤศจิกายน ซึ่งผู้โจมตีเข้าถึงระบบบางส่วน รวมถึงระบบสั่งและ Provision วงจรสื่อสาร และดึงข้อมูลลูกค้าองค์กรออกไป",
+                    "text": "CISA เพิ่มช่องโหว่ JNDI Injection ใน SAP NetWeaver Enterprise Portal เข้า KEV เมื่อ 20 พฤศจิกายน เนื่องจากมีหลักฐานการใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,117 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "backgroundColor": "#C2410C",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH · 6",
-                    "color": "#FFFFFF",
-                    "weight": "bold",
-                    "size": "sm"
-                  }
-                ]
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "ข้อมูลลูกค้า Chase, Visa และ Mastercard รั่วผ่านผู้ให้บริการภายนอก",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true
-                  },
-                  {
-                    "type": "text",
-                    "text": "JPMorgan Chase, Visa และ Mastercard ยืนยันเหตุที่เกี่ยวข้องกับผู้ให้บริการภายนอก ส่งผลให้ข้อมูลลูกค้าบางส่วน เช่น ชื่อและอีเมล ถูกเข้าถึงหรือเผยแพร่ โดยระบบชำระเงินหลักของบริษัทไม่ได้รับผลกระทบ",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#0B1E38",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "backgroundColor": "#C2410C",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH · 7",
-                    "color": "#FFFFFF",
-                    "weight": "bold",
-                    "size": "sm"
-                  }
-                ]
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Equinor ยุติการโจมตีไซเบอร์โดยการผลิตไม่หยุดชะงัก",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true
-                  },
-                  {
-                    "type": "text",
-                    "text": "Equinor ระบุว่าการโจมตีต่อระบบ IT บางส่วนซึ่งตรวจพบตั้งแต่ 17 พฤศจิกายนถูกหยุดแล้ว โดยการผลิตดำเนินตามปกติและยังไม่พบข้อมูลถูกขโมยหรือแก้ไข",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#0B1E38",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-21/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-22/"
                     }
                   }
                 ]
