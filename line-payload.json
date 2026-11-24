@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261123-0700",
+  "report_id": "CIB-20261124-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 23 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: Rackspace Kubernetes Secrets · GL.iNet Cloud Exploitation · Ghostscript Upload2Shell"
+        "text": "Cyber Intel Daily Brief — 24 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: Azure APIM Credential Exposure · ScreenConnect Technician Exploitation · ASP.NET Anti-CSRF RCE"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 23 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 24 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Rackspace Spot ถูกเจาะและเข้าถึง Kubernetes Secrets ของลูกค้า",
+                    "text": "Microsoft เตือนช่องทางเข้าถึง Azure APIM Classic ถูกใช้แตะต้องข้อมูลรับรอง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Rackspace แจ้งลูกค้าว่าผู้โจมตีใช้ข้อมูลรับรองที่รั่วไหลเข้าถึงแพลตฟอร์ม Spot สร้าง Workload ที่ไม่ได้รับอนุญาต และอ่าน Kubernetes Secrets ใน Cluster ที่ได้รับผลกระทบ",
+                    "text": "Microsoft แจ้งลูกค้าว่าช่องทางเข้าถึง Management plane ของ Azure API Management Classic อาจถูกบุคคลไม่ได้รับอนุญาตใช้เข้าถึง Secret และข้อมูลรับรองที่จัดเก็บไว้ ก่อนบริษัทปิดเส้นทางดังกล่าวเมื่อ 19 พฤศจิกายน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "GL.iNet Cloud ถูกใช้ติดตั้ง Malware บน Router และ KVM",
+                    "text": "พบการใช้ CVE-2026-84869 โจมตีเครื่องช่างเทคนิค ScreenConnect",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "GL.iNet ยืนยันว่าบุคคลไม่ได้รับอนุญาตใช้ช่องโหว่ในบริการ Cloud remote management เพื่อติดตั้งซอฟต์แวร์อันตรายบน Router และอุปกรณ์ KVM บางส่วน",
+                    "text": "Huntress ยืนยันการใช้ CVE-2026-84869 กับ ScreenConnect เพื่อส่งและรันไฟล์อันตรายบนเครื่องของช่างเทคนิค MSP โดยไม่แสดงคำยืนยันเมื่อช่างเชื่อมต่อ Remote session",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
                     }
                   }
                 ]
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Ghostscript Upload2Shell หลบ -dSAFER และรันคำสั่งจากเอกสาร",
+                    "text": "Idunno.AntiCsrf มีช่องโหว่ RCE และพบการใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "CVE-2026-125396 เปิดให้เอกสาร PostScript ที่จัดทำขึ้นเฉพาะหลบ Ghostscript -dSAFER sandbox และรันคำสั่งด้วยสิทธิ์ของ Process ที่ Render เอกสาร",
+                    "text": "Mandiant เปิดเผย CVE-2026-131914 ในไลบรารี Idunno.AntiCsrf รุ่นเก่า ซึ่งอาจเปิดให้ผู้โจมตีจากภายนอกส่ง HTTP POST เพื่อรันคำสั่งในบริบทของ IIS Worker process และยืนยันว่าพบการใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "OpenRouter ถอดผู้ให้บริการหลังพบความเสี่ยงข้อมูล Prompt ใน AI Supply Chain",
+                    "text": "เกาหลีใต้สอบสวนเหตุข้อมูล KEPCO ON และระบบจัดซื้อ SRM รั่วไหล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "OpenRouter ถอดผู้ให้บริการ 3 ราย ลบ 125 Endpoints ออกจากสิทธิ์ Zero Data Retention และแจ้งลูกค้าที่อาจได้รับผลกระทบ หลังงานวิจัย Dragos พบหลักฐาน Prompt รั่วและผู้ให้บริการบางรายถูกเจาะ",
+                    "text": "คณะกรรมการคุ้มครองข้อมูลส่วนบุคคลเกาหลีใต้เริ่มสอบสวนหลัง KEPCO รายงานว่าข้อมูลจากบริการลูกค้า KEPCO ON และระบบจัดซื้ออิเล็กทรอนิกส์ SRM ถูกผู้โจมตีคัดลอกออกไป",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Cleverbridge ยืนยันข้อมูลบัตรชำระเงินถูกคัดลอกจากแพลตฟอร์ม",
+                    "text": "GlobeTopper เปิดเผยเหตุขโมย API Credential และแลก Gift Card โดยมิชอบ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Cleverbridge ระบุว่าบุคคลที่สามคัดลอกข้อมูลบัตรชำระเงินจากแพลตฟอร์ม; หนังสือแจ้งผู้ได้รับผลกระทบระบุ Card number, Expiry date และ CVV/CVC",
+                    "text": "iQSTEL เปิดเผยว่าเหตุเข้าถึง GlobeTopper โดยไม่ได้รับอนุญาตทำให้ผู้โจมตีได้ API credential และ Integration key ของลูกค้าธุรกิจบางราย พร้อมแลก Gift card มูลค่าประมาณ 70,000 ดอลลาร์โดยมิชอบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-23/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
                     }
                   }
                 ]
