@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261124-0700",
+  "report_id": "CIB-20261125-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 24 พ.ย. 2569 (รอบ 07:00 น.)\n5 เหตุการณ์สำคัญ | Critical 3 | High 2\nTop 3: Azure APIM Credential Exposure · ScreenConnect Technician Exploitation · ASP.NET Anti-CSRF RCE"
+        "text": "Cyber Intel Daily Brief — 25 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Check Point Management Intrusion · VMware vCenter Auth Bypass · Radware Cloud WAF Credential Exposure"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 24 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 25 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Microsoft เตือนช่องทางเข้าถึง Azure APIM Classic ถูกใช้แตะต้องข้อมูลรับรอง",
+                    "text": "พบแคมเปญเจาะระบบ Check Point Security Management Servers หลายประเทศ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft แจ้งลูกค้าว่าช่องทางเข้าถึง Management plane ของ Azure API Management Classic อาจถูกบุคคลไม่ได้รับอนุญาตใช้เข้าถึง Secret และข้อมูลรับรองที่จัดเก็บไว้ ก่อนบริษัทปิดเส้นทางดังกล่าวเมื่อ 19 พฤศจิกายน",
+                    "text": "GreyNoise ยืนยันแคมเปญโจมตี Check Point Security Management Servers อย่างน้อย 24 เครื่องใน 17 ประเทศ กระทบอย่างน้อย 22 องค์กร รวมถึงหน่วยงานในประเทศไทยและภาคส่วนโครงสร้างพื้นฐานสำคัญ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "พบการใช้ CVE-2026-84869 โจมตีเครื่องช่างเทคนิค ScreenConnect",
+                    "text": "Broadcom แก้ช่องโหว่ข้ามการยืนยันตัวตนใน VMware vCenter",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Huntress ยืนยันการใช้ CVE-2026-84869 กับ ScreenConnect เพื่อส่งและรันไฟล์อันตรายบนเครื่องของช่างเทคนิค MSP โดยไม่แสดงคำยืนยันเมื่อช่างเชื่อมต่อ Remote session",
+                    "text": "Broadcom เผยแพร่แพตช์ CVE-2026-123903 ระดับ Critical (CVSS 9.8) ซึ่งเปิดให้ผู้โจมตีจากเครือข่ายข้ามการยืนยันตัวตนของบริการ vmdir บน VMware vCenter ได้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
                     }
                   }
                 ]
@@ -128,11 +128,11 @@
               "header": {
                 "type": "box",
                 "layout": "vertical",
-                "backgroundColor": "#B91C1C",
+                "backgroundColor": "#C2410C",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CRITICAL · 3",
+                    "text": "HIGH · 3",
                     "color": "#FFFFFF",
                     "weight": "bold",
                     "size": "sm"
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Idunno.AntiCsrf มีช่องโหว่ RCE และพบการใช้โจมตีจริง",
+                    "text": "รายงานเหตุ Radware Cloud WAF เปิดเผยข้อมูลติดต่อและ Credential ส่งออก Log",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Mandiant เปิดเผย CVE-2026-131914 ในไลบรารี Idunno.AntiCsrf รุ่นเก่า ซึ่งอาจเปิดให้ผู้โจมตีจากภายนอกส่ง HTTP POST เพื่อรันคำสั่งในบริบทของ IIS Worker process และยืนยันว่าพบการใช้โจมตีจริง",
+                    "text": "ตามรายงาน Root Cause Analysis ที่ BleepingComputer ได้รับ ผู้ไม่หวังดีเข้าถึง API บริหาร Cloud WAF ภายในของ Radware ซึ่งเปิดสู่อินเทอร์เน็ตโดยไม่ต้องยืนยันตัวตน และอาจเข้าถึง Credential ส่งออก Log ของลูกค้าบางราย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "เกาหลีใต้สอบสวนเหตุข้อมูล KEPCO ON และระบบจัดซื้อ SRM รั่วไหล",
+                    "text": "คณะกรรมาธิการยุโรปยืนยัน EU Academy ถูกเจาะและข้อมูลส่วนบุคคลรั่วไหล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "คณะกรรมการคุ้มครองข้อมูลส่วนบุคคลเกาหลีใต้เริ่มสอบสวนหลัง KEPCO รายงานว่าข้อมูลจากบริการลูกค้า KEPCO ON และระบบจัดซื้ออิเล็กทรอนิกส์ SRM ถูกผู้โจมตีคัดลอกออกไป",
+                    "text": "คณะกรรมาธิการยุโรปยืนยันว่าแพลตฟอร์ม EU Academy ได้รับผลกระทบจากการโจมตีไซเบอร์ ทำให้ข้อมูลส่วนบุคคลของผู้ใช้รั่วไหล และได้ปิดการเข้าถึงสาธารณะระหว่างสอบสวน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "GlobeTopper เปิดเผยเหตุขโมย API Credential และแลก Gift Card โดยมิชอบ",
+                    "text": "แคมเปญ Inception ใช้โทรศัพท์หลอกขโมย SSO และกรรโชกข้อมูล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "iQSTEL เปิดเผยว่าเหตุเข้าถึง GlobeTopper โดยไม่ได้รับอนุญาตทำให้ผู้โจมตีได้ API credential และ Integration key ของลูกค้าธุรกิจบางราย พร้อมแลก Gift card มูลค่าประมาณ 70,000 ดอลลาร์โดยมิชอบ",
+                    "text": "ReversingLabs และ Okta รายงานแคมเปญ Voice Phishing ที่เชื่อมโยงกับกลุ่มซึ่งใช้ชื่อ Inception โดยมุ่งขโมยข้อมูลรับรอง SSO และ MFA ก่อนนำไปสู่การยึดบัญชี ขโมยข้อมูล และกรรโชก",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,62 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-24/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 6",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Turnitin ตรวจพบกิจกรรมไม่ได้รับอนุญาตในระบบที่ให้บริการลูกค้าบางส่วน",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true
+                  },
+                  {
+                    "type": "text",
+                    "text": "Turnitin แจ้งว่าตรวจพบกิจกรรมที่ไม่ได้รับอนุญาตในระบบที่ให้บริการลูกค้าบางส่วน ได้เริ่มกระบวนการตอบสนองเหตุและประสานผู้เชี่ยวชาญภายนอก หน่วยงานบังคับใช้กฎหมาย และหน่วยงานกำกับแล้ว",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md"
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "color": "#0B1E38",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
                     }
                   }
                 ]
