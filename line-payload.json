@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261125-0700",
+  "report_id": "CIB-20261126-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 25 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 2 | High 4\nTop 3: Check Point Management Intrusion · VMware vCenter Auth Bypass · Radware Cloud WAF Credential Exposure"
+        "text": "Cyber Intel Daily Brief — 26 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: PAN-OS Fragnesia Active Exploitation · Drupal Active Access Bypass · Danfoss Unpatched ICS Flaw"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 25 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 26 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "พบแคมเปญเจาะระบบ Check Point Security Management Servers หลายประเทศ",
+                    "text": "Palo Alto Networks ยืนยันการใช้ Fragnesia โจมตี PAN-OS ที่เปิด Management Interface สู่อินเทอร์เน็ต",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "GreyNoise ยืนยันแคมเปญโจมตี Check Point Security Management Servers อย่างน้อย 24 เครื่องใน 17 ประเทศ กระทบอย่างน้อย 22 องค์กร รวมถึงหน่วยงานในประเทศไทยและภาคส่วนโครงสร้างพื้นฐานสำคัญ",
+                    "text": "Palo Alto Networks ยืนยันว่าพบการใช้ CVE-2026-46300 หรือ Fragnesia เพื่อยกระดับสิทธิ์บน PAN-OS โดยเหตุที่สังเกตได้ทั้งหมดมุ่งเป้าระบบซึ่งเปิด Management interface สู่อินเทอร์เน็ต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Broadcom แก้ช่องโหว่ข้ามการยืนยันตัวตนใน VMware vCenter",
+                    "text": "Drupal ออกแพตช์ฉุกเฉิน CVE-2026-136716 หลังพบการใช้โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Broadcom เผยแพร่แพตช์ CVE-2026-123903 ระดับ Critical (CVSS 9.8) ซึ่งเปิดให้ผู้โจมตีจากเครือข่ายข้ามการยืนยันตัวตนของบริการ vmdir บน VMware vCenter ได้",
+                    "text": "Drupal Security Team เปิดเผยช่องโหว่ Access bypass ระดับ Highly Critical ใน Drupal core ซึ่งอาจนำไปสู่การยึดเว็บไซต์ที่อยู่ในสถานะติดตั้งไม่สมบูรณ์ และยืนยันว่าพบการใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
                     }
                   }
                 ]
@@ -128,11 +128,11 @@
               "header": {
                 "type": "box",
                 "layout": "vertical",
-                "backgroundColor": "#C2410C",
+                "backgroundColor": "#B91C1C",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH · 3",
+                    "text": "CRITICAL · 3",
                     "color": "#FFFFFF",
                     "weight": "bold",
                     "size": "sm"
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "รายงานเหตุ Radware Cloud WAF เปิดเผยข้อมูลติดต่อและ Credential ส่งออก Log",
+                    "text": "Danfoss เตือนช่องโหว่ไม่ต้องยืนยันตัวตนในระบบควบคุมความเย็น AK-SM 8xxA",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ตามรายงาน Root Cause Analysis ที่ BleepingComputer ได้รับ ผู้ไม่หวังดีเข้าถึง API บริหาร Cloud WAF ภายในของ Radware ซึ่งเปิดสู่อินเทอร์เน็ตโดยไม่ต้องยืนยันตัวตน และอาจเข้าถึง Credential ส่งออก Log ของลูกค้าบางราย",
+                    "text": "Danfoss เปิดเผย CVE-2026-129713 ระดับ Critical (CVSS 9.3) ใน CGI handler ของ AK-SM 8xxA ซึ่งอาจทำให้หน่วยความจำเสียหาย Web server รีสตาร์ต และอาจรันโค้ดด้วยสิทธิ์ของ Web server โดยยังไม่มีแพตช์ในขณะนี้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "คณะกรรมาธิการยุโรปยืนยัน EU Academy ถูกเจาะและข้อมูลส่วนบุคคลรั่วไหล",
+                    "text": "1Password เปิดเผยเหตุผู้โจมตีใช้บัญชี GitHub พนักงานแทรกโค้ดอันตรายสู่ Backend",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "คณะกรรมาธิการยุโรปยืนยันว่าแพลตฟอร์ม EU Academy ได้รับผลกระทบจากการโจมตีไซเบอร์ ทำให้ข้อมูลส่วนบุคคลของผู้ใช้รั่วไหล และได้ปิดการเข้าถึงสาธารณะระหว่างสอบสวน",
+                    "text": "1Password ระบุว่าผู้โจมตีเข้าถึงบัญชี GitHub ของพนักงานและใช้สิทธิ์ดังกล่าวแตะต้อง Source code กับ CI/CD ก่อนผลักโค้ดอันตรายไปยัง Backend เพื่อดาวน์โหลดข้อมูลบัญชีของลูกค้าบางส่วน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "แคมเปญ Inception ใช้โทรศัพท์หลอกขโมย SSO และกรรโชกข้อมูล",
+                    "text": "Microsoft พบหลายกลุ่มภัยคุกคามใช้ ARTEX เร่งโจมตีระบบด้วย AI Agent",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ReversingLabs และ Okta รายงานแคมเปญ Voice Phishing ที่เชื่อมโยงกับกลุ่มซึ่งใช้ชื่อ Inception โดยมุ่งขโมยข้อมูลรับรอง SSO และ MFA ก่อนนำไปสู่การยึดบัญชี ขโมยข้อมูล และกรรโชก",
+                    "text": "Microsoft Threat Intelligence รายงานว่ากลุ่มภัยคุกคามทั้งที่ได้รับการสนับสนุนจากรัฐและหวังผลทางการเงินนำ ARTEX ซึ่งเป็น Agentic AI framework มาใช้เร่งการสำรวจระบบ โจมตีข้อมูลรับรอง และใช้ช่องโหว่ Web application",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
                     }
                   }
                 ]
@@ -310,14 +310,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Turnitin ตรวจพบกิจกรรมไม่ได้รับอนุญาตในระบบที่ให้บริการลูกค้าบางส่วน",
+                    "text": "Hex.pm ยืนยันเซิร์ฟเวอร์ 6 เครื่องถูกสั่งรันคำสั่งผ่านช่องโหว่ RCE",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Turnitin แจ้งว่าตรวจพบกิจกรรมที่ไม่ได้รับอนุญาตในระบบที่ให้บริการลูกค้าบางส่วน ได้เริ่มกระบวนการตอบสนองเหตุและประสานผู้เชี่ยวชาญภายนอก หน่วยงานบังคับใช้กฎหมาย และหน่วยงานกำกับแล้ว",
+                    "text": "ผู้ดูแล Hex.pm ยืนยันว่าผู้โจมตีใช้ CVE-2026-129514 ส่งคำขออันตรายและรันคำสั่งบน Web server 6 เครื่อง ก่อนทีมงานบล็อก Traffic และแทนที่เซิร์ฟเวอร์ด้วย Build ที่แก้ไขแล้วภายในประมาณ 20 นาที",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -336,7 +336,62 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-25/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 7",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "FinCEN ปิดระบบบางส่วนหลังพบการเข้าถึงโดยไม่ได้รับอนุญาต",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true
+                  },
+                  {
+                    "type": "text",
+                    "text": "หน่วยงาน Financial Crimes Enforcement Network ของกระทรวงการคลังสหรัฐฯ ระบุว่าพบการเข้าถึงระบบบางส่วนโดยไม่ได้รับอนุญาต และปิดระบบที่เกี่ยวข้องบางรายการเพื่อความปลอดภัยระหว่างการสอบสวน",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md"
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "color": "#0B1E38",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
                     }
                   }
                 ]
