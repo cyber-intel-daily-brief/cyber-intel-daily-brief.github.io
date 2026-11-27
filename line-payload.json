@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261126-0700",
+  "report_id": "CIB-20261127-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 26 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 3 | High 4\nTop 3: PAN-OS Fragnesia Active Exploitation · Drupal Active Access Bypass · Danfoss Unpatched ICS Flaw"
+        "text": "Cyber Intel Daily Brief — 27 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: Mitel MiCollab Pre-patch Exploitation · Juniper Session Smart RCE · GeoServer Exploit Chain"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 26 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 27 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Palo Alto Networks ยืนยันการใช้ Fragnesia โจมตี PAN-OS ที่เปิด Management Interface สู่อินเทอร์เน็ต",
+                    "text": "Mitel MiCollab ถูกใช้โจมตีก่อนมีแพตช์และขยายผลถึง Active Directory",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Palo Alto Networks ยืนยันว่าพบการใช้ CVE-2026-46300 หรือ Fragnesia เพื่อยกระดับสิทธิ์บน PAN-OS โดยเหตุที่สังเกตได้ทั้งหมดมุ่งเป้าระบบซึ่งเปิด Management interface สู่อินเทอร์เน็ต",
+                    "text": "Accenture APEX Labs ประเมินด้วยความเชื่อมั่นสูงว่าผู้โจมตีใช้ช่องโหว่หลายรายการใน Mitel MiCollab ก่อน Mitel เผยแพร่แพตช์ โดยพบ Web shell ก่อนประกาศและการขยายผลจากระบบ MiCollab ไปยัง Active Directory อย่างรวดเร็ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Drupal ออกแพตช์ฉุกเฉิน CVE-2026-136716 หลังพบการใช้โจมตีจริง",
+                    "text": "CISA ยืนยันการใช้ช่องโหว่ Juniper Session Smart Conductor โจมตีจริง",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Drupal Security Team เปิดเผยช่องโหว่ Access bypass ระดับ Highly Critical ใน Drupal core ซึ่งอาจนำไปสู่การยึดเว็บไซต์ที่อยู่ในสถานะติดตั้งไม่สมบูรณ์ และยืนยันว่าพบการใช้โจมตีจริง",
+                    "text": "CISA เพิ่ม CVE-2026-103406 ใน Known Exploited Vulnerabilities Catalog หลังพบหลักฐานการใช้โจมตี ช่องโหว่นี้เปิดให้ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนรันคำสั่งบน Session Smart Conductor ได้",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
                     }
                   }
                 ]
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Danfoss เตือนช่องโหว่ไม่ต้องยืนยันตัวตนในระบบควบคุมความเย็น AK-SM 8xxA",
+                    "text": "พบความพยายามใช้ช่องโหว่ GeoServer ที่เชื่อมเป็นห่วงโซ่ RCE โดยไม่ยืนยันตัวตน",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Danfoss เปิดเผย CVE-2026-129713 ระดับ Critical (CVSS 9.3) ใน CGI handler ของ AK-SM 8xxA ซึ่งอาจทำให้หน่วยความจำเสียหาย Web server รีสตาร์ต และอาจรันโค้ดด้วยสิทธิ์ของ Web server โดยยังไม่มีแพตช์ในขณะนี้",
+                    "text": "หน่วยงาน Cyber Centre ของแคนาดาและงานวิจัย watchTowr รายงานกิจกรรมโจมตีช่องโหว่ GeoServer หลายรายการ ซึ่งสามารถเชื่อมต่อกันเพื่ออ่านไฟล์ ข้ามกฎบริการ ปลอม Session ผู้ดูแล และนำไปสู่ Remote code execution",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
                     }
                   }
                 ]
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "1Password เปิดเผยเหตุผู้โจมตีใช้บัญชี GitHub พนักงานแทรกโค้ดอันตรายสู่ Backend",
+                    "text": "SYS010 ใช้โฆษณา Meta ติดตั้ง Extension ที่ขโมยบัญชีธุรกิจและอ่านอีเมล",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "1Password ระบุว่าผู้โจมตีเข้าถึงบัญชี GitHub ของพนักงานและใช้สิทธิ์ดังกล่าวแตะต้อง Source code กับ CI/CD ก่อนผลักโค้ดอันตรายไปยัง Backend เพื่อดาวน์โหลดข้อมูลบัญชีของลูกค้าบางส่วน",
+                    "text": "Bitdefender Labs พบแคมเปญ SYS010 ใช้โฆษณา Meta โปรโมตโปรแกรม Wallpaper ปลอมเพื่อติดตั้ง Browser extension ที่ขโมย Cookie และข้อมูล Meta Business พร้อมอ่าน Gmail หรือ Outlook และลบข้อความแจ้งเตือนบางรายการ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Microsoft พบหลายกลุ่มภัยคุกคามใช้ ARTEX เร่งโจมตีระบบด้วย AI Agent",
+                    "text": "Remus Stealer ปลอมเป็น Google Sheets Extension เพื่อขโมยข้อความ Gmail",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Microsoft Threat Intelligence รายงานว่ากลุ่มภัยคุกคามทั้งที่ได้รับการสนับสนุนจากรัฐและหวังผลทางการเงินนำ ARTEX ซึ่งเป็น Agentic AI framework มาใช้เร่งการสำรวจระบบ โจมตีข้อมูลรับรอง และใช้ช่องโหว่ Web application",
+                    "text": "Gen Threat Labs ยืนยันว่าความสามารถที่ผู้พัฒนา Remus อ้างว่าเป็น Gmail Zero-day แท้จริงเกิดจาก Extension อันตรายที่ติดตั้งเงียบใน Chrome และอ่านอีเมลจาก Session ที่ผู้ใช้ลงชื่อเข้าใช้อยู่",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
                     }
                   }
                 ]
@@ -310,14 +310,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Hex.pm ยืนยันเซิร์ฟเวอร์ 6 เครื่องถูกสั่งรันคำสั่งผ่านช่องโหว่ RCE",
+                    "text": "พบแพ็กเกจ NuGet อันตราย 13 รายการในแบบทดสอบสมัครงาน .NET ปลอม",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "ผู้ดูแล Hex.pm ยืนยันว่าผู้โจมตีใช้ CVE-2026-129514 ส่งคำขออันตรายและรันคำสั่งบน Web server 6 เครื่อง ก่อนทีมงานบล็อก Traffic และแทนที่เซิร์ฟเวอร์ด้วย Build ที่แก้ไขแล้วภายในประมาณ 20 นาที",
+                    "text": "Socket พบแพ็กเกจ NuGet อันตราย 13 รายการที่ใช้ในแบบทดสอบสมัครงานปลอมสำหรับนักพัฒนา Windows .NET โดยการ Build หรือ Run โครงการอาจดาวน์โหลด Payload จาก GitHub ทำ DLL side-loading หรือรันไฟล์อันตราย",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -336,62 +336,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "bubble",
-              "size": "kilo",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "backgroundColor": "#C2410C",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "HIGH · 7",
-                    "color": "#FFFFFF",
-                    "weight": "bold",
-                    "size": "sm"
-                  }
-                ]
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "FinCEN ปิดระบบบางส่วนหลังพบการเข้าถึงโดยไม่ได้รับอนุญาต",
-                    "weight": "bold",
-                    "size": "md",
-                    "wrap": true
-                  },
-                  {
-                    "type": "text",
-                    "text": "หน่วยงาน Financial Crimes Enforcement Network ของกระทรวงการคลังสหรัฐฯ ระบุว่าพบการเข้าถึงระบบบางส่วนโดยไม่ได้รับอนุญาต และปิดระบบที่เกี่ยวข้องบางรายการเพื่อความปลอดภัยระหว่างการสอบสวน",
-                    "size": "sm",
-                    "color": "#475569",
-                    "wrap": true,
-                    "margin": "md"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#0B1E38",
-                    "action": {
-                      "type": "uri",
-                      "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-26/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
                     }
                   }
                 ]
