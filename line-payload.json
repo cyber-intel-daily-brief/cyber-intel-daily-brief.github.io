@@ -1,14 +1,14 @@
 {
-  "report_id": "CIB-20261127-0700",
+  "report_id": "CIB-20261128-0700",
   "broadcast": {
     "messages": [
       {
         "type": "text",
-        "text": "Cyber Intel Daily Brief — 27 พ.ย. 2569 (รอบ 07:00 น.)\n6 เหตุการณ์สำคัญ | Critical 3 | High 3\nTop 3: Mitel MiCollab Pre-patch Exploitation · Juniper Session Smart RCE · GeoServer Exploit Chain"
+        "text": "Cyber Intel Daily Brief — 28 พ.ย. 2569 (รอบ 07:00 น.)\n7 เหตุการณ์สำคัญ | Critical 4 | High 3\nTop 3: US Air Force Cloud One Reported Breach · SoftwareOK Supply-chain Compromise · Cacti 4HTTP2SHELL Zero-day"
       },
       {
         "type": "flex",
-        "altText": "Cyber Intel Daily Brief — 27 พ.ย. 2569",
+        "altText": "Cyber Intel Daily Brief — 28 พ.ย. 2569",
         "contents": {
           "type": "carousel",
           "contents": [
@@ -35,14 +35,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Mitel MiCollab ถูกใช้โจมตีก่อนมีแพตช์และขยายผลถึง Active Directory",
+                    "text": "มีรายงานว่า Cloud One ของกองทัพอากาศสหรัฐฯ ถูกเจาะและอยู่ระหว่างประเมินความเสียหาย",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Accenture APEX Labs ประเมินด้วยความเชื่อมั่นสูงว่าผู้โจมตีใช้ช่องโหว่หลายรายการใน Mitel MiCollab ก่อน Mitel เผยแพร่แพตช์ โดยพบ Web shell ก่อนประกาศและการขยายผลจากระบบ MiCollab ไปยัง Active Directory อย่างรวดเร็ว",
+                    "text": "Reuters รายงานโดยอ้างบุคคลสามรายที่ทราบเหตุการณ์ว่า Cloud One ซึ่งเป็นแพลตฟอร์ม Cloud หลักของกองทัพอากาศสหรัฐฯ ถูกเจาะ และ Cyber Command เข้าร่วมประเมินความเสียหาย กองทัพอากาศสหรัฐฯ ไม่ยืนยันรายละเอียดด้านสถานะหรือขอบเขตของระบบ",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -61,7 +61,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
                     }
                   }
                 ]
@@ -90,14 +90,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "CISA ยืนยันการใช้ช่องโหว่ Juniper Session Smart Conductor โจมตีจริง",
+                    "text": "ไฟล์ติดตั้ง Q-Dir และ DesktopOK จากเว็บไซต์ทางการถูกฝัง Python RAT",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "CISA เพิ่ม CVE-2026-103406 ใน Known Exploited Vulnerabilities Catalog หลังพบหลักฐานการใช้โจมตี ช่องโหว่นี้เปิดให้ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนรันคำสั่งบน Session Smart Conductor ได้",
+                    "text": "AhnLab ASEC ยืนยันว่าพบไฟล์ติดตั้ง Q‑Dir และ DesktopOK บางรุ่นจากเว็บไซต์ SoftwareOK ถูกดัดแปลง รวมถึงพบการสร้างไฟล์อันตรายระหว่างกระบวนการอัปเดตของโปรแกรมที่ติดตั้งอยู่แล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -116,7 +116,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
                     }
                   }
                 ]
@@ -145,14 +145,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "พบความพยายามใช้ช่องโหว่ GeoServer ที่เชื่อมเป็นห่วงโซ่ RCE โดยไม่ยืนยันตัวตน",
+                    "text": "Cacti 1.2.31 มี Zero-day RCE พร้อม PoC ขณะที่ยังไม่มีแพตช์",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "หน่วยงาน Cyber Centre ของแคนาดาและงานวิจัย watchTowr รายงานกิจกรรมโจมตีช่องโหว่ GeoServer หลายรายการ ซึ่งสามารถเชื่อมต่อกันเพื่ออ่านไฟล์ ข้ามกฎบริการ ปลอม Session ผู้ดูแล และนำไปสู่ Remote code execution",
+                    "text": "นักวิจัยเผยแพร่ Proof-of-concept ชื่อ 4HTTP2SHELL ซึ่งใช้คำขอ HTTP สี่ครั้งเพื่อรันคำสั่งบน Cacti Core 1.2.31 เมื่อเปิด Guest account โดยยังไม่มี CVE หรือแพตช์ และยังไม่มีหลักฐานยืนยันการใช้โจมตีจริง",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -171,7 +171,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
                     }
                   }
                 ]
@@ -183,11 +183,11 @@
               "header": {
                 "type": "box",
                 "layout": "vertical",
-                "backgroundColor": "#C2410C",
+                "backgroundColor": "#B91C1C",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "HIGH · 4",
+                    "text": "CRITICAL · 4",
                     "color": "#FFFFFF",
                     "weight": "bold",
                     "size": "sm"
@@ -200,14 +200,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "SYS010 ใช้โฆษณา Meta ติดตั้ง Extension ที่ขโมยบัญชีธุรกิจและอ่านอีเมล",
+                    "text": "Linux NFS2ROOT อาจทำให้ผู้โจมตีระยะไกลได้สิทธิ์ Root บน NFS Server",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Bitdefender Labs พบแคมเปญ SYS010 ใช้โฆษณา Meta โปรโมตโปรแกรม Wallpaper ปลอมเพื่อติดตั้ง Browser extension ที่ขโมย Cookie และข้อมูล Meta Business พร้อมอ่าน Gmail หรือ Outlook และลบข้อความแจ้งเตือนบางรายการ",
+                    "text": "Linux Kernel CVE Team และ Red Hat เปิดเผย CVE‑2026‑99362 ซึ่งเป็น Out-of-bounds write ใน nfsd ผู้โจมตีที่ไม่ผ่านการยืนยันตัวตนอาจทำให้ Kernel crash หรืออาจรันโค้ดได้ โดยมี PoC เผยแพร่แล้ว",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -226,7 +226,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
                     }
                   }
                 ]
@@ -255,14 +255,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Remus Stealer ปลอมเป็น Google Sheets Extension เพื่อขโมยข้อความ Gmail",
+                    "text": "SAP ตรวจพบกิจกรรมผิดปกติใน GitHub และดำเนินมาตรการป้องกันระบบพัฒนา",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Gen Threat Labs ยืนยันว่าความสามารถที่ผู้พัฒนา Remus อ้างว่าเป็น Gmail Zero-day แท้จริงเกิดจาก Extension อันตรายที่ติดตั้งเงียบใน Chrome และอ่านอีเมลจาก Session ที่ผู้ใช้ลงชื่อเข้าใช้อยู่",
+                    "text": "SAP ยืนยันว่าตรวจพบกิจกรรมผิดปกติและดำเนินมาตรการเพื่อปกป้องลูกค้าและบริการ รายงานข่าวระบุว่ามีการใช้ Token ของพนักงานเข้าถึง GitHub แต่ SAP ระบุว่ายังไม่พบหลักฐานการเข้าถึงข้อมูลธุรกิจของลูกค้าโดยไม่ได้รับอนุญาต",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -281,7 +281,7 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
                     }
                   }
                 ]
@@ -310,14 +310,14 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "พบแพ็กเกจ NuGet อันตราย 13 รายการในแบบทดสอบสมัครงาน .NET ปลอม",
+                    "text": "Boston Scientific แจ้งเหตุ Vishing นำไปสู่การดาวน์โหลดข้อมูลส่วนบุคคลและสุขภาพ",
                     "weight": "bold",
                     "size": "md",
                     "wrap": true
                   },
                   {
                     "type": "text",
-                    "text": "Socket พบแพ็กเกจ NuGet อันตราย 13 รายการที่ใช้ในแบบทดสอบสมัครงานปลอมสำหรับนักพัฒนา Windows .NET โดยการ Build หรือ Run โครงการอาจดาวน์โหลด Payload จาก GitHub ทำ DLL side-loading หรือรันไฟล์อันตราย",
+                    "text": "Boston Scientific แจ้งว่าผู้โจมตีใช้ Social engineering แบบ Vishing เข้าถึง Cloud-based business applications และดาวน์โหลดข้อมูลระหว่าง 7–12 พฤษภาคม 2569 ก่อนบริษัทระบุผู้ได้รับผลกระทบและเริ่มแจ้งเตือนในเดือนพฤศจิกายน",
                     "size": "sm",
                     "color": "#475569",
                     "wrap": true,
@@ -336,7 +336,62 @@
                     "action": {
                       "type": "uri",
                       "label": "ดูรายละเอียดเต็ม",
-                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-27/"
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "bubble",
+              "size": "kilo",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "backgroundColor": "#C2410C",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "HIGH · 7",
+                    "color": "#FFFFFF",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ]
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "pCloud ยืนยันการโจมตี pCloud Pass และการพยายามเข้าสู่ระบบบัญชีบางส่วน",
+                    "weight": "bold",
+                    "size": "md",
+                    "wrap": true
+                  },
+                  {
+                    "type": "text",
+                    "text": "pCloud ระบุว่าการโจมตี pCloud Pass ถูกควบคุมแล้ว มีอีเมลของผู้ใช้จำนวนน้อยถูกเปิดเผยและเกิดความพยายามเข้าสู่ระบบ บริษัทระบุว่าข้อมูลใน Vault เข้ารหัสบนอุปกรณ์และไม่ได้รับการยืนยันว่าถูกถอดรหัส",
+                    "size": "sm",
+                    "color": "#475569",
+                    "wrap": true,
+                    "margin": "md"
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "color": "#0B1E38",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูรายละเอียดเต็ม",
+                      "uri": "https://cyber-intel-daily-brief.github.io/archive/2026-11-28/"
                     }
                   }
                 ]
